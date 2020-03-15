@@ -24,10 +24,10 @@ Click Run
   
  # Libraries we use
  [BMDialPad](https://github.com/IamSaurav/BMDialPad) - MIT License
-[PMAlertController] (https://github.com/pmusolino/PMAlertController) MIT License
-[NotificationBannerSwift] (https://github.com/Daltron/NotificationBanner)MIT License
-[paper-onboarding] (https://github.com/Ramotion/paper-onboarding)MIT License
-[CountdownLabel] (https://github.com/fromkk/CountdownLabel)MIT License
+[PMAlertController](https://github.com/pmusolino/PMAlertController) MIT License
+[NotificationBannerSwift](https://github.com/Daltron/NotificationBanner)MIT License
+[paper-onboarding](https://github.com/Ramotion/paper-onboarding)MIT License
+[CountdownLabel](https://github.com/fromkk/CountdownLabel)MIT License
 
 
 
