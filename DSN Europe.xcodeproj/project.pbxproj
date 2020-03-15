@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63FDFDD398C1B9E78E72C28F /* Pods_DSN_EuropeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C031C31DA465F1C079F7DF9 /* Pods_DSN_EuropeUITests.framework */; };
+		83B0A68F241E7BE800E09314 /* DSN_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0A68E241E7BE800E09314 /* DSN_UITests.swift */; };
 		89AFC9ADECB9A072DAD73B6E /* Pods_DSN_EuropeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339E4F7886F3C2DC78CC4345 /* Pods_DSN_EuropeTests.framework */; };
 		9C0DCC4C21D692E000109A07 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0DCC4B21D692E000109A07 /* StoreKit.framework */; };
 		9C0DCCA721D75F9E00109A07 /* star-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0DCCA621D75F9E00109A07 /* star-8.png */; };
@@ -28,7 +28,6 @@
 		9C5E3550219623C800846683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E354F219623C800846683 /* Assets.xcassets */; };
 		9C5E3553219623C800846683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E3551219623C800846683 /* LaunchScreen.storyboard */; };
 		9C5E355E219623C800846683 /* DSN_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E355D219623C800846683 /* DSN_ConverterTests.swift */; };
-		9C5E3569219623C800846683 /* DSN_ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E3568219623C800846683 /* DSN_ConverterUITests.swift */; };
 		9C5E3580219625E400846683 /* BMDialViewOrg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E357F219625E400846683 /* BMDialViewOrg.swift */; };
 		9C5E35822196266E00846683 /* PhoneDigitOrg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E35812196266E00846683 /* PhoneDigitOrg.swift */; };
 		9C764A6821C82744009696F4 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C764A6721C82744009696F4 /* ReportViewController.swift */; };
@@ -59,14 +58,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C5E355A219623C800846683 /* PBXContainerItemProxy */ = {
+		83B0A691241E7BE800E09314 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C5E353A219623C600846683 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9C5E3541219623C600846683;
-			remoteInfo = "DSN Converter";
+			remoteInfo = "DSN Europe";
 		};
-		9C5E3565219623C800846683 /* PBXContainerItemProxy */ = {
+		9C5E355A219623C800846683 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C5E353A219623C600846683 /* Project object */;
 			proxyType = 1;
@@ -82,6 +81,9 @@
 		339E4F7886F3C2DC78CC4345 /* Pods_DSN_EuropeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_EuropeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		650A9741F8B8B415E7E02757 /* Pods_DSN_Europe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_Europe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7804009795AF198C0406A666 /* Pods-DSN EuropeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeUITests/Pods-DSN EuropeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83B0A68C241E7BE800E09314 /* DSN UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSN UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B0A68E241E7BE800E09314 /* DSN_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSN_UITests.swift; sourceTree = "<group>"; };
+		83B0A690241E7BE800E09314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D10E15D1212585A3EF71EB7 /* Pods-DSN EuropeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeTests/Pods-DSN EuropeTests.release.xcconfig"; sourceTree = "<group>"; };
 		900C13A8508B2059C82DB452 /* Pods_DSN_Converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_Converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0DCC4B21D692E000109A07 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -107,9 +109,6 @@
 		9C5E3559219623C800846683 /* DSN EuropeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSN EuropeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E355D219623C800846683 /* DSN_ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSN_ConverterTests.swift; sourceTree = "<group>"; };
 		9C5E355F219623C800846683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C5E3564219623C800846683 /* DSN EuropeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSN EuropeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C5E3568219623C800846683 /* DSN_ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSN_ConverterUITests.swift; sourceTree = "<group>"; };
-		9C5E356A219623C800846683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C5E357F219625E400846683 /* BMDialViewOrg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMDialViewOrg.swift; sourceTree = "<group>"; };
 		9C5E35812196266E00846683 /* PhoneDigitOrg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDigitOrg.swift; sourceTree = "<group>"; };
 		9C764A6721C82744009696F4 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +146,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		83B0A689241E7BE800E09314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C5E353F219623C600846683 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,17 +170,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C5E3561219623C800846683 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63FDFDD398C1B9E78E72C28F /* Pods_DSN_EuropeUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83B0A68D241E7BE800E09314 /* DSN UITests */ = {
+			isa = PBXGroup;
+			children = (
+				83B0A68E241E7BE800E09314 /* DSN_UITests.swift */,
+				83B0A690241E7BE800E09314 /* Info.plist */,
+			);
+			path = "DSN UITests";
+			sourceTree = "<group>";
+		};
 		9C0DCC4D21D757DB00109A07 /* Backgroud Img */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +213,7 @@
 			children = (
 				9C5E3544219623C600846683 /* DSN Converter */,
 				9C5E355C219623C800846683 /* DSN ConverterTests */,
-				9C5E3567219623C800846683 /* DSN ConverterUITests */,
+				83B0A68D241E7BE800E09314 /* DSN UITests */,
 				9C5E3543219623C600846683 /* Products */,
 				F3587F5B68C712F9634F272B /* Pods */,
 				BA56FF51AA0AFF59AA3320F9 /* Frameworks */,
@@ -218,7 +225,7 @@
 			children = (
 				9C5E3542219623C600846683 /* DSN Europe.app */,
 				9C5E3559219623C800846683 /* DSN EuropeTests.xctest */,
-				9C5E3564219623C800846683 /* DSN EuropeUITests.xctest */,
+				83B0A68C241E7BE800E09314 /* DSN UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,15 +260,6 @@
 				9C5E355F219623C800846683 /* Info.plist */,
 			);
 			path = "DSN ConverterTests";
-			sourceTree = "<group>";
-		};
-		9C5E3567219623C800846683 /* DSN ConverterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9C5E3568219623C800846683 /* DSN_ConverterUITests.swift */,
-				9C5E356A219623C800846683 /* Info.plist */,
-			);
-			path = "DSN ConverterUITests";
 			sourceTree = "<group>";
 		};
 		9C5E35782196244600846683 /* BmDialLibrary */ = {
@@ -388,6 +386,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		83B0A68B241E7BE800E09314 /* DSN UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B0A693241E7BE800E09314 /* Build configuration list for PBXNativeTarget "DSN UITests" */;
+			buildPhases = (
+				83B0A688241E7BE800E09314 /* Sources */,
+				83B0A689241E7BE800E09314 /* Frameworks */,
+				83B0A68A241E7BE800E09314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B0A692241E7BE800E09314 /* PBXTargetDependency */,
+			);
+			name = "DSN UITests";
+			productName = "DSN UITests";
+			productReference = 83B0A68C241E7BE800E09314 /* DSN UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9C5E3541219623C600846683 /* DSN Europe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C5E356D219623C800846683 /* Build configuration list for PBXNativeTarget "DSN Europe" */;
@@ -426,35 +442,20 @@
 			productReference = 9C5E3559219623C800846683 /* DSN EuropeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9C5E3563219623C800846683 /* DSN EuropeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C5E3573219623C800846683 /* Build configuration list for PBXNativeTarget "DSN EuropeUITests" */;
-			buildPhases = (
-				2BF546930C994989A80B6548 /* [CP] Check Pods Manifest.lock */,
-				9C5E3560219623C800846683 /* Sources */,
-				9C5E3561219623C800846683 /* Frameworks */,
-				9C5E3562219623C800846683 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9C5E3566219623C800846683 /* PBXTargetDependency */,
-			);
-			name = "DSN EuropeUITests";
-			productName = "DSN ConverterUITests";
-			productReference = 9C5E3564219623C800846683 /* DSN EuropeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9C5E353A219623C600846683 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = ForceMobileStudios;
 				TargetAttributes = {
+					83B0A68B241E7BE800E09314 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9C5E3541219623C600846683;
+					};
 					9C5E3541219623C600846683 = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
@@ -464,10 +465,6 @@
 						};
 					};
 					9C5E3558219623C800846683 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 9C5E3541219623C600846683;
-					};
-					9C5E3563219623C800846683 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 9C5E3541219623C600846683;
 					};
@@ -488,12 +485,19 @@
 			targets = (
 				9C5E3541219623C600846683 /* DSN Europe */,
 				9C5E3558219623C800846683 /* DSN EuropeTests */,
-				9C5E3563219623C800846683 /* DSN EuropeUITests */,
+				83B0A68B241E7BE800E09314 /* DSN UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		83B0A68A241E7BE800E09314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C5E3540219623C600846683 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,13 +530,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C5E3562219623C800846683 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -548,24 +545,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DSN EuropeTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2BF546930C994989A80B6548 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DSN EuropeUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -610,6 +589,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		83B0A688241E7BE800E09314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B0A68F241E7BE800E09314 /* DSN_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C5E353E219623C600846683 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -650,26 +637,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C5E3560219623C800846683 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C5E3569219623C800846683 /* DSN_ConverterUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		83B0A692241E7BE800E09314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C5E3541219623C600846683 /* DSN Europe */;
+			targetProxy = 83B0A691241E7BE800E09314 /* PBXContainerItemProxy */;
+		};
 		9C5E355B219623C800846683 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9C5E3541219623C600846683 /* DSN Europe */;
 			targetProxy = 9C5E355A219623C800846683 /* PBXContainerItemProxy */;
-		};
-		9C5E3566219623C800846683 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9C5E3541219623C600846683 /* DSN Europe */;
-			targetProxy = 9C5E3565219623C800846683 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -693,6 +672,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		83B0A694241E7BE800E09314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQ9T47YT3S;
+				INFOPLIST_FILE = "DSN UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mil.airmencoders.mqf.efb.DSN-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DSN Europe";
+			};
+			name = Debug;
+		};
+		83B0A695241E7BE800E09314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQ9T47YT3S;
+				INFOPLIST_FILE = "DSN UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mil.airmencoders.mqf.efb.DSN-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DSN Europe";
+			};
+			name = Release;
+		};
 		9C5E356B219623C800846683 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -895,51 +914,18 @@
 			};
 			name = Release;
 		};
-		9C5E3574219623C800846683 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A949C5A0BCA726818A1520EF /* Pods-DSN EuropeUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2LSS6W8997;
-				INFOPLIST_FILE = "DSN ConverterUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-ConverterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "DSN Converter";
-			};
-			name = Debug;
-		};
-		9C5E3575219623C800846683 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7804009795AF198C0406A666 /* Pods-DSN EuropeUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2LSS6W8997;
-				INFOPLIST_FILE = "DSN ConverterUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-ConverterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "DSN Converter";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		83B0A693241E7BE800E09314 /* Build configuration list for PBXNativeTarget "DSN UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B0A694241E7BE800E09314 /* Debug */,
+				83B0A695241E7BE800E09314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9C5E353D219623C600846683 /* Build configuration list for PBXProject "DSN Europe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -963,15 +949,6 @@
 			buildConfigurations = (
 				9C5E3571219623C800846683 /* Debug */,
 				9C5E3572219623C800846683 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C5E3573219623C800846683 /* Build configuration list for PBXNativeTarget "DSN EuropeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C5E3574219623C800846683 /* Debug */,
-				9C5E3575219623C800846683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

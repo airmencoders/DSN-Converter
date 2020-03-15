@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import DSN_Converter
+@testable import DSN_Europe
 
 class DSN_ConverterTests: XCTestCase {
 
