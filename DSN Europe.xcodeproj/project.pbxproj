@@ -323,7 +323,8 @@
 				9C5E3549219623C600846683 /* Main.storyboard */,
 				9CB5E97021AAD10A0099FC61 /* PhoneCallViewController.swift */,
 			);
-			path = "Main ";
+			name = "Main ";
+			path = Main;
 			sourceTree = "<group>";
 		};
 		F7E9CC19241D5A44003C59FB /* Report Error View */ = {
@@ -340,7 +341,8 @@
 				9CADA76B21E11BE5007535CF /* BetaViewController.swift */,
 				9CE0C05F21A7F81E00ADF6BF /* SettingsTableViewController.swift */,
 			);
-			path = "Settings View ";
+			name = "Settings View ";
+			path = "Settings View";
 			sourceTree = "<group>";
 		};
 		F7E9CC1B241D5A65003C59FB /* Support DSN View */ = {
@@ -382,7 +384,8 @@
 				9C0DCCA821D75FA300109A07 /* star.png */,
 				9C7C7E12220F6F3200A23AD7 /* dog-tags-military-6.png */,
 			);
-			path = "Multimedia  ";
+			name = "Multimedia  ";
+			path = Multimedia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
