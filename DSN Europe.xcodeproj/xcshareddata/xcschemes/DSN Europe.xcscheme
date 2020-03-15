@@ -42,19 +42,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "83B0A67D241E7B8B00E09314"
+               BlueprintIdentifier = "83B0A68B241E7BE800E09314"
                BuildableName = "DSN EuropeUITests.xctest"
                BlueprintName = "DSN EuropeUITests"
-               ReferencedContainer = "container:DSN Europe.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "83B0A68B241E7BE800E09314"
-               BuildableName = "DSN UITests.xctest"
-               BlueprintName = "DSN UITests"
                ReferencedContainer = "container:DSN Europe.xcodeproj">
             </BuildableReference>
          </TestableReference>
