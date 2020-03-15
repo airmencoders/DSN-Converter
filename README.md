@@ -1,2 +1,27 @@
-# AF-DSN
- DSN App
+# DSN Converter
+A repo for an DOD wide DSN to commercial conversion app. 
+
+# How to run the code locally
+
+Requires XCode (from Apple) and Cocoapods.
+Download or Clone the project
+Run pod install
+Open DSN Europe.xcworkspace
+Click Run
+
+# What we got so far 
+ DSN Europe 
+ - All U.S Air Force bases in Europe.
+ - All U.S Army bases in Europe.
+ - All U.S Navy bases in Europe.
+ 
+ # What we need 
+  - Android version of the app( https://github.com/airmencoders/AF-DSN-Android) 
+  - Web App
+  - U.S Bases in Asia 
+  - U.S Bases in CONUS
+  - Add comments to the codes
+  
+  
+
+
