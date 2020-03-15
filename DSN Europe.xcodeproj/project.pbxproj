@@ -53,6 +53,7 @@
 		9CE0C06021A7F81E00ADF6BF /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C05F21A7F81E00ADF6BF /* SettingsTableViewController.swift */; };
 		9CE86CBB2219447F00B5B64C /* aircraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE86CBA2219447E00B5B64C /* aircraft.png */; };
 		9CE86CBD2219450000B5B64C /* aircraft-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE86CBC221944FF00B5B64C /* aircraft-2.png */; };
+		EFF672DDBC70A1A8314FB72A /* Pods_DSN_EuropeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C031C31DA465F1C079F7DF9 /* Pods_DSN_EuropeUITests.framework */; };
 		F4717C1F9313A29781052DAC /* Pods_DSN_Europe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650A9741F8B8B415E7E02757 /* Pods_DSN_Europe.framework */; };
 		F7E9CC17241D56BA003C59FB /* airmanCoders.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F7E9CC16241D56BA003C59FB /* airmanCoders.JPG */; };
 /* End PBXBuildFile section */
@@ -150,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF672DDBC70A1A8314FB72A /* Pods_DSN_EuropeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +392,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83B0A6BD241E83A500E09314 /* Build configuration list for PBXNativeTarget "DSN EuropeUITests" */;
 			buildPhases = (
+				543AE27AC0043A85A2FD423A /* [CP] Check Pods Manifest.lock */,
 				83B0A6B2241E83A500E09314 /* Sources */,
 				83B0A6B3241E83A500E09314 /* Frameworks */,
 				83B0A6B4241E83A500E09314 /* Resources */,
@@ -551,6 +554,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		543AE27AC0043A85A2FD423A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DSN EuropeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9B563B75298A3440C3F4B90A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -674,6 +699,7 @@
 /* Begin XCBuildConfiguration section */
 		83B0A6BE241E83A500E09314 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A949C5A0BCA726818A1520EF /* Pods-DSN EuropeUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ9T47YT3S;
@@ -694,6 +720,7 @@
 		};
 		83B0A6BF241E83A500E09314 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7804009795AF198C0406A666 /* Pods-DSN EuropeUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ9T47YT3S;

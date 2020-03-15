@@ -13,13 +13,17 @@ pod 'paper-onboarding'
   # Pods for DSN Europe
 
   target 'DSN EuropeTests' do
+    use_frameworks!
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'DSN EuropeUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
+
+end
+
+target 'DSN EuropeUITests' do
+  use_frameworks!
+  inherit! :search_paths
+  # Pods for testing
 end

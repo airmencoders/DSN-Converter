@@ -7,7 +7,7 @@
 //
 
 import XCTest
-
+@testable import DSN_Europe
 class DSN_EuropeUITests: XCTestCase {
 
     override func setUp() {
