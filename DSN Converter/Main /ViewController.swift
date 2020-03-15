@@ -12,6 +12,8 @@ import CoreData
 import ContactsUI
 import CoreTelephony
 
+
+//Variables 
 var dnsCommercialGlobal = " "
 var dnsCommercialGlobalNoLbl = " "
 var dsnPhoneGlobal = " "
