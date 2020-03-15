@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2031C0D063B40B001C5B6622 /* Pods_DSN_ConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB89F4D55A82206AF0A1253 /* Pods_DSN_ConverterTests.framework */; };
 		63FDFDD398C1B9E78E72C28F /* Pods_DSN_EuropeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C031C31DA465F1C079F7DF9 /* Pods_DSN_EuropeUITests.framework */; };
 		89AFC9ADECB9A072DAD73B6E /* Pods_DSN_EuropeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339E4F7886F3C2DC78CC4345 /* Pods_DSN_EuropeTests.framework */; };
-		8FDEF1915005A07B3768F6DE /* Pods_DSN_ConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110B4D9F8FE92994A0483991 /* Pods_DSN_ConverterUITests.framework */; };
 		9C0DCC4C21D692E000109A07 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0DCC4B21D692E000109A07 /* StoreKit.framework */; };
 		9C0DCCA721D75F9E00109A07 /* star-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0DCCA621D75F9E00109A07 /* star-8.png */; };
 		9C0DCCA921D75FA400109A07 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0DCCA821D75FA300109A07 /* star.png */; };
@@ -78,7 +76,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		110B4D9F8FE92994A0483991 /* Pods_DSN_ConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_ConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA1D5AB6A9AA855ED3132E2 /* Pods-DSN Converter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN Converter.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN Converter/Pods-DSN Converter.release.xcconfig"; sourceTree = "<group>"; };
 		258B7DFE0A9A457FA861D0D5 /* Pods-DSN ConverterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterUITests/Pods-DSN ConverterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C031C31DA465F1C079F7DF9 /* Pods_DSN_EuropeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_EuropeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +84,6 @@
 		7804009795AF198C0406A666 /* Pods-DSN EuropeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeUITests/Pods-DSN EuropeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8D10E15D1212585A3EF71EB7 /* Pods-DSN EuropeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeTests/Pods-DSN EuropeTests.release.xcconfig"; sourceTree = "<group>"; };
 		900C13A8508B2059C82DB452 /* Pods_DSN_Converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_Converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BB89F4D55A82206AF0A1253 /* Pods_DSN_ConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_ConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0DCC4B21D692E000109A07 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9C0DCCA621D75F9E00109A07 /* star-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-8.png"; sourceTree = "<group>"; };
 		9C0DCCA821D75FA300109A07 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
@@ -164,7 +160,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2031C0D063B40B001C5B6622 /* Pods_DSN_ConverterTests.framework in Frameworks */,
 				89AFC9ADECB9A072DAD73B6E /* Pods_DSN_EuropeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +168,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FDEF1915005A07B3768F6DE /* Pods_DSN_ConverterUITests.framework in Frameworks */,
 				63FDFDD398C1B9E78E72C28F /* Pods_DSN_EuropeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,8 +288,6 @@
 			children = (
 				9C0DCC4B21D692E000109A07 /* StoreKit.framework */,
 				900C13A8508B2059C82DB452 /* Pods_DSN_Converter.framework */,
-				9BB89F4D55A82206AF0A1253 /* Pods_DSN_ConverterTests.framework */,
-				110B4D9F8FE92994A0483991 /* Pods_DSN_ConverterUITests.framework */,
 				650A9741F8B8B415E7E02757 /* Pods_DSN_Europe.framework */,
 				339E4F7886F3C2DC78CC4345 /* Pods_DSN_EuropeTests.framework */,
 				2C031C31DA465F1C079F7DF9 /* Pods_DSN_EuropeUITests.framework */,
@@ -585,27 +577,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DSN Europe/Pods-DSN Europe-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CountdownLabel/CountdownLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/PMAlertController/PMAlertController.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSN Europe/Pods-DSN Europe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountdownLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMAlertController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSN Europe/Pods-DSN Europe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DSN Europe/Pods-DSN Europe-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSN Europe/Pods-DSN Europe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B83B7BF070F8DA630ED31177 /* [CP] Check Pods Manifest.lock */ = {
