@@ -1,0 +1,18 @@
+name: UIandUnitTests
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+    
+    steps:
+    - uses: actions/checkout@master
+    - name: Install Dependences
+      run: |
+        pod repo update
+        pod install
+        
+    - name: Test
+      run: xcodebuild -workspace MQF.xcworkspace -scheme "MQF"  -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' test
