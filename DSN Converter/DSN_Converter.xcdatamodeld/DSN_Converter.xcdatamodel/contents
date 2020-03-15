@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Contacts" representedClassName="Contacts" syncable="YES" codeGenerationType="class">
+        <attribute name="commercialContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateAddContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dsnContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameContact" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Favorites" representedClassName="Favorites" syncable="YES" codeGenerationType="class">
+        <attribute name="commercialPhoneFav" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commercialPhoneNoLbl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateofAddFav" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dsnPhoneFav" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationFav" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameFav" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Recent" representedClassName="Recent" syncable="YES" codeGenerationType="class">
+        <attribute name="commercialPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commercialPhoneNoLbl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateofCall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dsnPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeofCall" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contacts" positionX="-54" positionY="45" width="128" height="120"/>
+        <element name="Favorites" positionX="-54" positionY="27" width="128" height="135"/>
+        <element name="Recent" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
+</model>

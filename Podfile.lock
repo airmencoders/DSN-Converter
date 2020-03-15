@@ -1,0 +1,36 @@
+PODS:
+  - CountdownLabel (4.0.1)
+  - MarqueeLabel/Swift (3.2.0)
+  - NotificationBannerSwift (2.0.1):
+    - MarqueeLabel/Swift (~> 3.2.0)
+    - SnapKit (~> 4.2.0)
+  - paper-onboarding (5.0.0)
+  - PMAlertController (3.5.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - CountdownLabel
+  - NotificationBannerSwift
+  - paper-onboarding
+  - PMAlertController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CountdownLabel
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - paper-onboarding
+    - PMAlertController
+    - SnapKit
+
+SPEC CHECKSUMS:
+  CountdownLabel: c9975e3f329140b5e7d1f45cd63b1300badd1712
+  MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
+  NotificationBannerSwift: 007774aa590cc9680647b92b2f217bef5c00c32c
+  paper-onboarding: a2e3a710fd27ac0b5635ec5490660e7ec09289b5
+  PMAlertController: 06dab8160066fc4ce991c880e3722cd403e2926a
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 6136f58f5e54753c327c6750f9365d32e4f8e394
+
+COCOAPODS: 1.5.2
