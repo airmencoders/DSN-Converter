@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let uiTesting = ProcessInfo.processInfo.arguments.contains("ui-testing")
+        if(uiTesting){
+            self.UITesting()
+        }
         
         
      
@@ -49,6 +53,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+    }
+    
+    func UITesting(){
+        UserDefaults.standard.set(0, forKey: "dsnService")
+        UserDefaults.standard.synchronize()
     }
 
     // MARK: - Core Data stack

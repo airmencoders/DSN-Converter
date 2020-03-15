@@ -3,7 +3,7 @@
 </p>
 
 
-  [![Language](https://img.shields.io/badge/Swift-3%20%26%204-orange.svg)]()
+  [![Language](https://img.shields.io/badge/Swift-4%20%26%205-orange.svg)]()
   [![GitHub license](https://img.shields.io/cocoapods/l/PMAlertController.svg)](https://github.com/pmusolino/PMAlertController/blob/master/LICENSE)
   [![Pod version](https://img.shields.io/cocoapods/v/PMAlertController.svg?style=flat)](https://cocoapods.org/pods/PMAlertController)
   [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-yellow.svg)](https://github.com/Carthage/Carthage)
@@ -32,7 +32,7 @@ PMAlertController is a small library that allows you to substitute Apple's uncus
 - [x] Carthage
 - [x] Animation with UIKit Dynamics
 - [x] Objective-C compatibility
-- [x] Swift 2.3, Swift 3, Swift 4, Swift 4.2 support
+- [x] Swift 4, Swift 4.2 & Swift 5 support
 - [ ] Swift Package Manager
 
 
@@ -40,7 +40,7 @@ PMAlertController is a small library that allows you to substitute Apple's uncus
 ----------------
 
 - iOS 9.0+
-- Xcode 9+
+- Xcode 10+
 
 ## CocoaPods
 ----------------
@@ -127,7 +127,9 @@ self.present(alertVC, animated: true, completion: nil)
 
 ## Swift compatibility
 
-- If you use **Swift 4.0 or higher**, you can use the [latest release](https://github.com/pmusolino/PMAlertController/releases).
+- If you use **Swift 5.0 or higher**, you can use the [latest release](https://github.com/pmusolino/PMAlertController/releases).
+
+- If you use **Swift 4.0 or higher**, you can use the [release 3.5.0](https://github.com/pmusolino/PMAlertController/releases/tag/3.5.0).
 
 - If you use **Swift 3**, you can use the [release 2.1.3](https://github.com/pmusolino/PMAlertController/releases/tag/2.1.3).
 
@@ -152,8 +154,16 @@ You may now use this library with [React Native](https://github.com/facebook/rea
 
 ## Acknowledgements
 
-Made with ❤️ by [Paolo Musolino](https://github.com/pmusolino).
-The design is inspired by the [Musement App](https://itunes.apple.com/app/musement-tours-attractions/id828471190). The flag icon on the demo app is by [Freepik](http://freepik.com).
+**Made with ❤️ by [Paolo Musolino](https://github.com/pmusolino).**
+
+***Follow me on:***
+#### 💼 [Linkedin](https://www.linkedin.com/in/paolomusolino/)
+
+#### 🤖 [Twitter](https://twitter.com/pmusolino)
+
+#### 🌇 [Instagram](https://www.instagram.com/pmusolino/)
+
+#### 👨🏼‍🎤 [Facebook](https://www.facebook.com/paolomusolino)
 
 
 ## MIT License

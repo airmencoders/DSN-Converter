@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-DSN Europe/Pods-DSN Europe-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CountdownLabel/CountdownLabel.framework
+${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
+${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework
+${BUILT_PRODUCTS_DIR}/PMAlertController/PMAlertController.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework

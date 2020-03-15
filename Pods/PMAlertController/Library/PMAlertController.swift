@@ -23,6 +23,7 @@ import UIKit
     @IBOutlet weak open var headerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak open var headerViewTopSpaceConstraint: NSLayoutConstraint!
     @IBOutlet weak open var alertImage: UIImageView!
+    @IBOutlet weak open var alertContentStackView: UIStackView!
     @IBOutlet weak open var alertTitle: UILabel!
     @IBOutlet weak open var alertDescription: UILabel!
     @IBOutlet weak open var alertContentStackViewLeadingConstraint: NSLayoutConstraint!
@@ -59,7 +60,7 @@ import UIKit
     
     
     //MARK: - Initialiser
-    @objc public convenience init(title: String, description: String, image: UIImage?, style: PMAlertControllerStyle) {
+    @objc public convenience init(title: String?, description: String?, image: UIImage?, style: PMAlertControllerStyle) {
         self.init()
         guard let nib = loadNibAlertController(), let unwrappedView = nib[0] as? UIView else { return }
         self.view = unwrappedView
@@ -69,12 +70,21 @@ import UIKit
         
         alertView.layer.cornerRadius = 5
         (image != nil) ? (alertImage.image = image) : (headerViewHeightConstraint.constant = 0)
-        alertTitle.text = title
-        alertDescription.text = description
         
+        if let title = title {
+            alertTitle.text = title
+        }else{
+            alertTitle.isHidden = true
+        }
+        
+        if let description = description {
+            alertDescription.text = description
+        }else{
+            alertDescription.isHidden = true
+        }
         
         //if alert width = 270, else width = screen width - 36
-        style == .alert ? (alertViewWidthConstraint.constant = 270) : (alertViewWidthConstraint.constant = UIScreen.main.bounds.width - 36)
+        alertViewWidthConstraint.constant = (style == .alert) ? 270 : UIScreen.main.bounds.width - 36
         
         //Gesture recognizer for background dismiss with background touch
         let tapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(dismissAlertControllerFromBackgroundTap))
@@ -112,10 +122,10 @@ import UIKit
         self.animateDismissWithGravity(.cancel)
         self.dismiss(animated: true, completion: nil)
     }
-
+    
     //MARK: - Text Fields
-    @objc open func addTextField(_ configuration: (_ textField: UITextField?) -> Void){
-        let textField = UITextField()
+    @objc open func addTextField(textField:UITextField? = nil, _ configuration: (_ textField: UITextField?) -> Void){
+        let textField = textField ?? UITextField()
         textField.delegate = self
         textField.returnKeyType = .done
         textField.font = UIFont(name: "Avenir-Heavy", size: 17)
