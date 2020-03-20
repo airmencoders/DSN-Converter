@@ -2,9 +2,9 @@
 //  ChooseBranchViewController.swift
 //  DSN Converter
 //
-//  Created by Mac Fusion on 3/7/19.
-//  Copyright © 2019 ForceMobileStudios. All rights reserved.
+//  Created by Roger Rivl on 11/9/18.
 //
+
 
 import UIKit
 import PMAlertController

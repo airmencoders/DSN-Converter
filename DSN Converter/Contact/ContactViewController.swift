@@ -2,9 +2,9 @@
 //  ContactViewController.swift
 //  DSN Converter
 //
-//  Created by Mac Fusion on 11/15/18.
-//  Copyright © 2018 ForceMobileStudios. All rights reserved.
-//
+//  Created by Roger Rivl on 11/9/18.
+// Not in Use
+
 
 import UIKit
 import CoreData

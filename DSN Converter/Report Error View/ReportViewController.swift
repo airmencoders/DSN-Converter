@@ -2,9 +2,8 @@
 //  ReportViewController.swift
 //  DSN Converter
 //
-//  Created by Mac Fusion on 12/17/18.
-//  Copyright © 2018 ForceMobileStudios. All rights reserved.
-//
+//  Created by Roger Rivl on 11/9/18.
+// Reports to Google Sheets when users submit a DSN Conversion. 
 
 import UIKit
 import NotificationBannerSwift

@@ -2,9 +2,7 @@
 //  OnBoardViewController.swift
 //  DSN Converter
 //
-//  Created by Mac Fusion on 2/9/19.
-//  Copyright © 2019 ForceMobileStudios. All rights reserved.
-//
+//  Created by https://github.com/Ramotion/paper-onboarding
 
 import UIKit
 

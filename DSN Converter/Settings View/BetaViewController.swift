@@ -2,9 +2,9 @@
 //  BetaViewController.swift
 //  DSN Converter
 //
-//  Created by Mac Fusion on 1/5/19.
-//  Copyright © 2019 ForceMobileStudios. All rights reserved.
-//
+//  Created by Roger Rivl on 11/9/18.
+// Not in USE
+
 
 import UIKit
 import MessageUI

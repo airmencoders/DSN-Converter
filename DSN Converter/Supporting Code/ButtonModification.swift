@@ -1,9 +1,10 @@
 //
 //  ButtonModification.swift
-//  GoogleToolboxForMac
+//  DSN Converter
 //
-//  Created by Mac Fusion on 9/2/17.
+//  Created by Roger Rivl on 11/9/18.
 //
+
 
 import UIKit
 

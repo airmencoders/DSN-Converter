@@ -2,9 +2,9 @@
 //  SettingsTableViewController.swift
 //  DSN Converter
 //
-//  Created by Mac Fusion on 11/23/18.
-//  Copyright © 2018 ForceMobileStudios. All rights reserved.
-//
+//  Created by Roger Rivl on 11/9/18.
+// Settings
+
 
 import UIKit
 import StoreKit
@@ -52,22 +52,6 @@ class SettingsTableViewController: UITableViewController {
         
     }
     
-    @IBAction func copyRights(_ sender: Any) {
-        if let url = URL(string: "http://forcemobilestudios.com/page9.html") {
-            UIApplication.shared.open(url, options: [:])
-        }
-    }
-    
-    @IBAction func Facebook(_ sender: Any) {
-        if let url = URL(string: "https://www.facebook.com/forcemobilestudios") {
-            UIApplication.shared.open(url, options: [:])
-        }
-    }
-    @IBAction func Website(_ sender: Any) {
-        if let url = URL(string: "https://forcemobilestudios.com") {
-            UIApplication.shared.open(url, options: [:])
-        }
-    }
     @IBAction func Review(_ sender: Any) {
         if #available( iOS 10.3,*){
             SKStoreReviewController.requestReview()
@@ -75,7 +59,7 @@ class SettingsTableViewController: UITableViewController {
         
     }
     
-    //Need to work on it
+  
     
     @IBAction func Share(_ sender: Any) {
         

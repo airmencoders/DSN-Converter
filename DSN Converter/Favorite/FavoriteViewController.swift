@@ -2,9 +2,9 @@
 //  FavoriteViewController.swift
 //  DSN Converter
 //
-//  Created by Mac Fusion on 11/12/18.
-//  Copyright © 2018 ForceMobileStudios. All rights reserved.
-//
+//  Created by Roger Rivl on 11/9/18.
+// Favorite View 
+
 
 import UIKit
 import CoreData

@@ -1,10 +1,10 @@
 //
 //  DisagnableSignin.swift
-//  AADD RAB
+//  DSN Converter
 //
-//  Created by Mac Fusion on 9/2/17.
-//  Copyright © 2017 DnRtek. All rights reserved.
+//  Created by Roger Rivl on 11/9/18.
 //
+
 
 import UIKit
 import CoreData

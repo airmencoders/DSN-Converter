@@ -2,9 +2,9 @@
 //  SupportTableViewCell.swift
 //  DSN Converter
 //
-//  Created by Mac Fusion on 11/11/18.
-//  Copyright © 2018 ForceMobileStudios. All rights reserved.
+//  Created by Roger Rivl on 11/9/18.
 //
+
 
 import UIKit
 

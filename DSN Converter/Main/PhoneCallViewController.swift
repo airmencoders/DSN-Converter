@@ -2,9 +2,9 @@
 //  PhoneCallViewController.swift
 //  DSN Converter
 //
-//  Created by Mac Fusion on 11/25/18.
-//  Copyright © 2018 ForceMobileStudios. All rights reserved.
-//
+//  Created by Roger Rivl on 11/9/18.
+// All DSN conversion with their prefix are here. 
+
 
 import UIKit
 import CoreData
