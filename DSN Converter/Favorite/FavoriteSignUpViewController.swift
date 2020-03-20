@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 class FavoriteSignUpViewController: UIViewController {
 
+    
     @IBOutlet weak var favNameText: DesignableTextField!
     @IBOutlet weak var dsnLbl: UILabel!
     @IBOutlet weak var commLbl: UILabel!

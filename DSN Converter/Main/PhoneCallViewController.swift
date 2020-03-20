@@ -215,6 +215,11 @@ UIViewController,CNContactViewControllerDelegate{
     let Ext541Lbl = "+49 6111 43 541"
     let Ext541NoLbl = "+49611143541"
     
+    // GERMANY - Kaiserslautern
+    let Ext542Lbl = "+49 6111 43 542"
+    let Ext542NoLbl = "+49611143542"
+   
+    
     // GERMANY - Stuttgart
     let Ext421Lbl = "+49 7117 29"
     let Ext421NoLbl = "+49711729"
@@ -307,29 +312,17 @@ UIViewController,CNContactViewControllerDelegate{
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    @IBOutlet weak var lblUpgrade: UILabel!
+  
     
     var getDsnNumber = ""
    
-    //Testing Interstitial
+
     
     
     
     @IBOutlet weak var favBtn: ButtonModification!
     @IBOutlet weak var contactBtn: ButtonModification!
     @IBOutlet weak var sharebtn: ButtonModification!
-    @IBOutlet weak var learnMoreBtn: ButtonModification!
     @IBOutlet weak var DsnNotFound: UIView!
     
     @IBOutlet weak var callBtn: ButtonModification!
@@ -776,6 +769,13 @@ UIViewController,CNContactViewControllerDelegate{
                 }else if areaCode == "541" {
                     phoneOutput = Ext541Lbl + "" + phoneNumber
                     phoneOutPutNoLbl = Ext541NoLbl + phoneNumber
+                    DsnLocation = "Kaiserslautern"
+                    LocationLbl.text = DsnLocation
+                    dsnLocationGlobal = DsnLocation
+                    
+                }else if areaCode == "542" {
+                    phoneOutput = Ext542Lbl + "" + phoneNumber
+                    phoneOutPutNoLbl = Ext542NoLbl + phoneNumber
                     DsnLocation = "Kaiserslautern"
                     LocationLbl.text = DsnLocation
                     dsnLocationGlobal = DsnLocation

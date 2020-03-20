@@ -19,14 +19,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DSN Europe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UN-hm-kXA">
                                 <rect key="frame" x="42" y="94" width="291" height="80"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airmanCoders.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="c5M-br-sHV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Airman Coders.png" translatesAutoresizingMaskIntoConstraints="NO" id="c5M-br-sHV">
                                 <rect key="frame" x="42" y="187" width="291" height="293"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3UN-hm-kXA" firstAttribute="leading" secondItem="c5M-br-sHV" secondAttribute="leading" id="0iN-Iy-HkA"/>
                             <constraint firstItem="3UN-hm-kXA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Aic-1D-OUQ"/>
@@ -46,6 +45,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="airmanCoders.JPG" width="2322" height="1280"/>
+        <image name="Airman Coders.png" width="557.280029296875" height="307.20001220703125"/>
     </resources>
 </document>

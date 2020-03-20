@@ -55,6 +55,7 @@
 		9CE86CBD2219450000B5B64C /* aircraft-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE86CBC221944FF00B5B64C /* aircraft-2.png */; };
 		EFF672DDBC70A1A8314FB72A /* Pods_DSN_EuropeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C031C31DA465F1C079F7DF9 /* Pods_DSN_EuropeUITests.framework */; };
 		F4717C1F9313A29781052DAC /* Pods_DSN_Europe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650A9741F8B8B415E7E02757 /* Pods_DSN_Europe.framework */; };
+		F7D606642424D59F00C58458 /* Airman Coders.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D606632424D59F00C58458 /* Airman Coders.png */; };
 		F7E9CC17241D56BA003C59FB /* airmanCoders.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F7E9CC16241D56BA003C59FB /* airmanCoders.JPG */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +144,7 @@
 		E62CC920A8DAA1B1FB4C8AB6 /* Pods-DSN ConverterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterUITests/Pods-DSN ConverterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E67395F474BD1D8CFCF28000 /* Pods-DSN Europe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN Europe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN Europe/Pods-DSN Europe.debug.xcconfig"; sourceTree = "<group>"; };
 		EB081574A713E1F952BFDA0B /* Pods-DSN Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN Converter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN Converter/Pods-DSN Converter.debug.xcconfig"; sourceTree = "<group>"; };
+		F7D606632424D59F00C58458 /* Airman Coders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Airman Coders.png"; sourceTree = "<group>"; };
 		F7E9CC16241D56BA003C59FB /* airmanCoders.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = airmanCoders.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -368,6 +370,7 @@
 		F7E9CC1D241D5ABF003C59FB /* Multimedia   */ = {
 			isa = PBXGroup;
 			children = (
+				F7D606632424D59F00C58458 /* Airman Coders.png */,
 				F7E9CC16241D56BA003C59FB /* airmanCoders.JPG */,
 				9C3BFD842232DD63005169B5 /* jeep.png */,
 				9CC794E2223540D9001D186B /* images.jpeg */,
@@ -520,6 +523,7 @@
 				9C7C7E17220F6FA200A23AD7 /* dog-tags-military-7.png in Resources */,
 				9CC794E3223540DB001D186B /* images.jpeg in Resources */,
 				9CE86CBD2219450000B5B64C /* aircraft-2.png in Resources */,
+				F7D606642424D59F00C58458 /* Airman Coders.png in Resources */,
 				F7E9CC17241D56BA003C59FB /* airmanCoders.JPG in Resources */,
 				9CE86CBB2219447F00B5B64C /* aircraft.png in Resources */,
 				9C3BFD852232DD65005169B5 /* jeep.png in Resources */,
@@ -871,7 +875,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -892,7 +896,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

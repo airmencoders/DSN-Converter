@@ -22,9 +22,7 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     var googleDSNvar : String!
     var googleLocationvar : String!
  
-    @IBOutlet weak var nameTxt: DesignableTextField!
-    
-    @IBOutlet weak var emailText: DesignableTextField!
+
     
     @IBOutlet weak var commentText: DesignableTextField!
     
@@ -36,21 +34,21 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     var googleDSNids = "entry_428445608"
     var googleLocationids = "entry_1056081706"
     
-    @IBOutlet weak var commLbl: UILabel!
-    @IBOutlet weak var DsnLbl: UILabel!
-    @IBOutlet weak var locationLbl: UILabel!
+    @IBOutlet weak var commTxt: UITextField!
+    @IBOutlet weak var dsnTxt: UITextField!
+    @IBOutlet weak var locTxt: UITextField!
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        commLbl.text = dnsCommercialGlobal
-        DsnLbl.text = dsnPhoneGlobal
-        locationLbl.text = dsnLocationGlobal
+        commTxt.text = dnsCommercialGlobal
+        dsnTxt.text = dsnPhoneGlobal
+        locTxt.text = dsnLocationGlobal
         
-        nameTxt.delegate = self
-        emailText.delegate = self
+//
         commentText.delegate = self
     }
     
@@ -90,12 +88,10 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         
         let url = URL(string: googleFormLink)
         
-        var postData = googleName + "=" + "\(nameTxt.text!)"
-        postData += "&" + googleEmail + "=" + "\(emailText.text!)"
-       postData += "&" + googleComments + "=" + "\(commentText.text!)"
-        postData += "&" + googleCommercial + "=" + "\(dnsCommercialGlobal)"
-           postData += "&" + googleDSNvar + "=" + "\(dsnPhoneGlobal)"
-        postData += "&" + googleLocationvar + "=" + "\(dsnLocationGlobal)"
+        var postData = googleComments + "=" + "\(commentText.text!)"
+        postData += "&" + googleCommercial + "=" + "\(commTxt.text!)"
+        postData += "&" + googleDSNvar + "=" + "\(dsnTxt.text!)"
+        postData += "&" + googleLocationvar + "=" + "\(locTxt.text!)"
         
         
         print(googleCommercial)

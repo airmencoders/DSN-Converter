@@ -46,7 +46,7 @@ class SettingsTableViewController: UITableViewController {
     
    
     @IBAction func About(_ sender: Any) {
-        if let url = URL(string: "http://forcemobilestudios.com/page9.html") {
+        if let url = URL(string: "https://airmencoders.us") {
             UIApplication.shared.open(url, options: [:])
         }
         
@@ -81,7 +81,7 @@ class SettingsTableViewController: UITableViewController {
         
         //Share
         
-        let Text = "You should try DSN Europe.\n Download it on the App Store Now\n https://itunes.apple.com/tt/app/dsn-converter-europe/id1442345746?mt=8&ign-mpt=uo%3D2"
+        let Text = "You should try DSN Europe.\n Download it on the App Store Now\n"
         // let ActualNumber = "\(self.departmentsPhone[indexPath.row])"
         let activyVC = UIActivityViewController(activityItems:[Text], applicationActivities: nil)
         
@@ -90,7 +90,7 @@ class SettingsTableViewController: UITableViewController {
     }
     
     @IBAction func feedback(_ sender: Any) {
-        if let url = URL(string: "http://forcemobilestudios.com/page9.html") {
+        if let url = URL(string: "https://airmencoders.us") {
             UIApplication.shared.open(url, options: [:])
         }
         
