@@ -100,7 +100,7 @@
 		9C3BFD802232DBA3005169B5 /* tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tank.png; sourceTree = "<group>"; };
 		9C3BFD822232DD12005169B5 /* submarine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submarine.png; sourceTree = "<group>"; };
 		9C3BFD842232DD63005169B5 /* jeep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeep.png; sourceTree = "<group>"; };
-		9C5E3542219623C600846683 /* DSN Europe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSN Europe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5E3542219623C600846683 /* DSN Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSN Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E3545219623C600846683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5E3547219623C600846683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C5E354A219623C600846683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		9C5E3543219623C600846683 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C5E3542219623C600846683 /* DSN Europe.app */,
+				9C5E3542219623C600846683 /* DSN Converter.app */,
 				9C5E3559219623C800846683 /* DSN EuropeTests.xctest */,
 				83B0A6B6241E83A500E09314 /* DSN EuropeUITests.xctest */,
 			);
@@ -429,7 +429,7 @@
 			);
 			name = "DSN Europe";
 			productName = "DSN Converter";
-			productReference = 9C5E3542219623C600846683 /* DSN Europe.app */;
+			productReference = 9C5E3542219623C600846683 /* DSN Converter.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9C5E3558219623C800846683 /* DSN EuropeTests */ = {
@@ -877,7 +877,7 @@
 				);
 				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DSN Converter";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -898,7 +898,7 @@
 				);
 				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DSN Converter";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -922,7 +922,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSN Europe.app/DSN Europe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSN Converter.app/DSN Converter";
 			};
 			name = Debug;
 		};
@@ -944,7 +944,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSN Europe.app/DSN Europe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSN Converter.app/DSN Converter";
 			};
 			name = Release;
 		};
