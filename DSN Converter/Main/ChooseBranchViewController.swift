@@ -117,7 +117,7 @@ class ChooseBranchViewController: UIViewController {
             
             //Notification
             let leftView = UIImageView(image: #imageLiteral(resourceName: "phone-call-3") )
-            let banner = NotificationBanner(title: "DSN Europe", subtitle: "Please select your military branch.", leftView: leftView, style: .danger)
+            let banner = NotificationBanner(title: "DSN Converter", subtitle: "Please select your military branch.", leftView: leftView, style: .danger)
             banner.show()
             
         }

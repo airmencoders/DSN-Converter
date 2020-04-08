@@ -1065,7 +1065,7 @@ UIViewController,CNContactViewControllerDelegate{
         let homePhone = CNLabeledValue(label: "Commercial DSN", value: CNPhoneNumber(stringValue :"\(self.phoneOutput)"))
         
         contact.phoneNumbers = [homePhone]
-        contact.note = "Location: \(self.DsnLocation)\nThis commercial DSN was provided to you by DSN Converter - Europe."
+        contact.note = "Location: \(self.DsnLocation)\nThis commercial DSN was provided to you by DSN Converter."
         //contact.imageData = data // Set image data here
         let vc = CNContactViewController(forNewContact: contact)
         vc.delegate = self
@@ -1106,7 +1106,7 @@ UIViewController,CNContactViewControllerDelegate{
         
         
         
-        let Text = "Commerical: \(phoneOutput)\n DSN: \(getDsnNumber)\n Location: \(DsnLocation) \nThis commerical DSN was provided to you by DSN Europe.\n Download it free on the App Store."
+        let Text = "Commerical: \(phoneOutput)\n DSN: \(getDsnNumber)\n Location: \(DsnLocation) \nThis commerical DSN was provided to you by DSN Converter.\n Download it free on the App Store."
         // let ActualNumber = "\(self.departmentsPhone[indexPath.row])"
         let activyVC = UIActivityViewController(activityItems:[Text], applicationActivities: nil)
         
