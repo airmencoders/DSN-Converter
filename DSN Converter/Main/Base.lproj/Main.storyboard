@@ -41,11 +41,11 @@
         <scene sceneID="MkE-yU-EDb">
             <objects>
                 <viewController id="xN5-98-pcb" customClass="ChooseBranchViewController" customModule="DSN_Converter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="PQt-01-AiM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                    <view key="view" contentMode="scaleToFill" id="PQt-01-AiM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBn-fN-Ke4">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBn-fN-Ke4">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96E-K1-OkV">
@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1E-gD-l9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330.4347826086957" y="-377.44565217391306"/>
+            <point key="canvasLocation" x="1297" y="-394"/>
         </scene>
         <!--DSN Keypad-->
         <scene sceneID="tne-QT-ifu">
@@ -383,7 +383,7 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="521"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DSN Converter - Europe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlX-Ft-ZIX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DSN Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlX-Ft-ZIX">
                                         <rect key="frame" x="8" y="8" width="391" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
@@ -393,17 +393,17 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2cN-DI-Azc">
                                         <rect key="frame" x="8" y="62" width="398" height="441"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Please read and acknowledge the following statement before accessing DNS Converter - Europe.  
+                                        <mutableString key="text">Please read and acknowledge the following statement before accessing DNS Converter.  
 
 ** DO NOT DISCUSS CLASSIFIED INFORMATION **
 
   DSN Converter is an independent project and is not endorsed by the DOD or any armed forces services.   Our team has done an outstanding job in developing this app. Although we have tested various DSN conversions, some conversions may not work for reason out of our control.
 
-This app does not share or store any user information. All the conversions are done locally on your iPhone. Google Ads service is installed in this app with the purpose of displaying selected Ads in order to continue our development. At the end of each month, we are going to donate a percentage of our earnings to different Veterans groups. To check this amazing project and much more, please visit us at www.forcemobilestudios.com
 
 
 
-      By tapping Accept you are acknowledging our conditions. </string>
+
+      By tapping Accept you are acknowledging our conditions. </mutableString>
                                         <color key="textColor" red="0.96834520729999995" green="0.96834520729999995" blue="0.96834520729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2505,6 +2505,6 @@ This app does not share or store any user information. All the conversions are d
         <segue reference="gTo-vl-4FK"/>
         <segue reference="QdA-NA-EMF"/>
         <segue reference="eli-IL-UFh"/>
-        <segue reference="hRy-Hq-Ldm"/>
+        <segue reference="53S-WW-bo8"/>
     </inferredMetricsTieBreakers>
 </document>

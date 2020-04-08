@@ -13,7 +13,7 @@ class OnBoardViewController: UIViewController {
     
     fileprivate let items = [
         OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "phone-call-3"),
-                           title: "DSN Europe",
+                           title: "DSN Converter",
                            description: "DSN phone numbers are part of our everyday life as military members. Sometimes not having access to the right conversion outside of the office can be very frustrating. With DSN Europe you can dial a DSN number right from your cell phone and our algorithm will make the necessary conversion to a commercial phone number.",
                            pageIcon: #imageLiteral(resourceName: "phone-call-4"),
                            color: UIColor(red: 0.1045187339, green: 0.2495509088, blue: 0.4657436013, alpha: 1),
