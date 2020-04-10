@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C5E3541219623C600846683"
-               BuildableName = "DSN Europe.app"
+               BuildableName = "DSN Converter.app"
                BlueprintName = "DSN Europe"
                ReferencedContainer = "container:DSN Europe.xcodeproj">
             </BuildableReference>
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "83B0A68B241E7BE800E09314"
+               BlueprintIdentifier = "83B0A6B5241E83A500E09314"
                BuildableName = "DSN EuropeUITests.xctest"
                BlueprintName = "DSN EuropeUITests"
                ReferencedContainer = "container:DSN Europe.xcodeproj">
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C5E3541219623C600846683"
-            BuildableName = "DSN Europe.app"
+            BuildableName = "DSN Converter.app"
             BlueprintName = "DSN Europe"
             ReferencedContainer = "container:DSN Europe.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C5E3541219623C600846683"
-            BuildableName = "DSN Europe.app"
+            BuildableName = "DSN Converter.app"
             BlueprintName = "DSN Europe"
             ReferencedContainer = "container:DSN Europe.xcodeproj">
          </BuildableReference>
