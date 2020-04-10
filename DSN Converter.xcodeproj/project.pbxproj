@@ -717,9 +717,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mil.airmencoders.mqf.efb.DSN-EuropeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "DSN Europe";
+				TEST_TARGET_NAME = "DSN Converter";
 			};
 			name = Debug;
 		};
@@ -738,9 +739,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mil.airmencoders.mqf.efb.DSN-EuropeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "DSN Europe";
+				TEST_TARGET_NAME = "DSN Converter";
 			};
 			name = Release;
 		};
@@ -907,7 +909,6 @@
 			baseConfigurationReference = D7F6E08A181A6058088A3351 /* Pods-DSN ConverterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LSS6W8997;
 				INFOPLIST_FILE = "DSN ConverterTests/Info.plist";
@@ -929,7 +930,6 @@
 			baseConfigurationReference = DE2CDB60BF9F6BF262DF9676 /* Pods-DSN ConverterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LSS6W8997;
 				INFOPLIST_FILE = "DSN ConverterTests/Info.plist";
