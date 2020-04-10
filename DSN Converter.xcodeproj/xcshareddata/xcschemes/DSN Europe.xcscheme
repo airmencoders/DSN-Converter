@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C5E3541219623C600846683"
                BuildableName = "DSN Converter.app"
-               BlueprintName = "DSN Europe"
-               ReferencedContainer = "container:DSN Europe.xcodeproj">
+               BlueprintName = "DSN Converter"
+               ReferencedContainer = "container:DSN Converter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C5E3558219623C800846683"
-               BuildableName = "DSN EuropeTests.xctest"
-               BlueprintName = "DSN EuropeTests"
-               ReferencedContainer = "container:DSN Europe.xcodeproj">
+               BuildableName = "DSN ConverterTests.xctest"
+               BlueprintName = "DSN ConverterTests"
+               ReferencedContainer = "container:DSN Converter.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83B0A6B5241E83A500E09314"
-               BuildableName = "DSN EuropeUITests.xctest"
-               BlueprintName = "DSN EuropeUITests"
-               ReferencedContainer = "container:DSN Europe.xcodeproj">
+               BuildableName = "DSN ConverterUITests.xctest"
+               BlueprintName = "DSN ConverterUITests"
+               ReferencedContainer = "container:DSN Converter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,8 +66,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C5E3541219623C600846683"
             BuildableName = "DSN Converter.app"
-            BlueprintName = "DSN Europe"
-            ReferencedContainer = "container:DSN Europe.xcodeproj">
+            BlueprintName = "DSN Converter"
+            ReferencedContainer = "container:DSN Converter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,8 +83,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C5E3541219623C600846683"
             BuildableName = "DSN Converter.app"
-            BlueprintName = "DSN Europe"
-            ReferencedContainer = "container:DSN Europe.xcodeproj">
+            BlueprintName = "DSN Converter"
+            ReferencedContainer = "container:DSN Converter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
