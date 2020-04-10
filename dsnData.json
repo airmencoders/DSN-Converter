@@ -1,1 +1,43 @@
+#Data from https://www.mockaroo.com
 
+[{
+  "Dsn Location": "United States",
+  "DSN Prefix": "651-458-1734",
+  "Commercial": "(143) 8314224"
+}, {
+  "Dsn Location": "Madagascar",
+  "DSN Prefix": "420-438-8588",
+  "Commercial": "(886) 7949353"
+}, {
+  "Dsn Location": "Philippines",
+  "DSN Prefix": "118-260-4610",
+  "Commercial": "(647) 4707336"
+}, {
+  "Dsn Location": "China",
+  "DSN Prefix": "615-326-8510",
+  "Commercial": "(363) 6128392"
+}, {
+  "Dsn Location": "Brazil",
+  "DSN Prefix": "355-979-7060",
+  "Commercial": "(420) 8441242"
+}, {
+  "Dsn Location": "Japan",
+  "DSN Prefix": "915-820-5491",
+  "Commercial": "(940) 3488308"
+}, {
+  "Dsn Location": "Russia",
+  "DSN Prefix": "404-517-3324",
+  "Commercial": "(552) 2398018"
+}, {
+  "Dsn Location": "China",
+  "DSN Prefix": "142-520-0708",
+  "Commercial": "(869) 4173489"
+}, {
+  "Dsn Location": "Myanmar",
+  "DSN Prefix": "782-942-8519",
+  "Commercial": "(737) 9303694"
+}, {
+  "Dsn Location": "Czech Republic",
+  "DSN Prefix": "354-898-1896",
+  "Commercial": "(246) 8816372"
+}]
