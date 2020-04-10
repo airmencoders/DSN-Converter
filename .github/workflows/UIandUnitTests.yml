@@ -15,4 +15,4 @@ jobs:
         pod install
         
     - name: Test
-      run: xcodebuild -workspace "DSN Europe.xcworkspace" -scheme "DSN Europe"  -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' test
+      run: xcodebuild -workspace "DSN Europe.xcworkspace" -scheme "DSN Europe"  -destination 'platform=iOS Simulator,name=iPhone 11' test
