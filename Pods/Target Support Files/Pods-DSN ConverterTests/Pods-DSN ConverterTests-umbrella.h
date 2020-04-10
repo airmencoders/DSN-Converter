@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_DSN_EuropeVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_DSN_EuropeVersionString[];
+FOUNDATION_EXPORT double Pods_DSN_ConverterTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_DSN_ConverterTestsVersionString[];
 
