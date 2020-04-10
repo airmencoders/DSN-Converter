@@ -83,7 +83,7 @@
 		339E4F7886F3C2DC78CC4345 /* Pods_DSN_EuropeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_EuropeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		650A9741F8B8B415E7E02757 /* Pods_DSN_Europe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_Europe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7804009795AF198C0406A666 /* Pods-DSN EuropeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeUITests/Pods-DSN EuropeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		83B0A6B6241E83A500E09314 /* DSN EuropeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSN EuropeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B0A6B6241E83A500E09314 /* DSN ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSN ConverterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B0A6B8241E83A500E09314 /* DSN_EuropeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSN_EuropeUITests.swift; sourceTree = "<group>"; };
 		83B0A6BA241E83A500E09314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D10E15D1212585A3EF71EB7 /* Pods-DSN EuropeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeTests/Pods-DSN EuropeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		9C3BFD802232DBA3005169B5 /* tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tank.png; sourceTree = "<group>"; };
 		9C3BFD822232DD12005169B5 /* submarine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submarine.png; sourceTree = "<group>"; };
 		9C3BFD842232DD63005169B5 /* jeep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeep.png; sourceTree = "<group>"; };
-		9C5E3542219623C600846683 /* DSN Europe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSN Europe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5E3542219623C600846683 /* DSN Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSN Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E3545219623C600846683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5E3547219623C600846683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C5E354A219623C600846683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		9C5E354F219623C800846683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C5E3552219623C800846683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C5E3554219623C800846683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C5E3559219623C800846683 /* DSN EuropeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSN EuropeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5E3559219623C800846683 /* DSN ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSN ConverterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E355D219623C800846683 /* DSN_ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSN_ConverterTests.swift; sourceTree = "<group>"; };
 		9C5E355F219623C800846683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C5E357F219625E400846683 /* BMDialViewOrg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMDialViewOrg.swift; sourceTree = "<group>"; };
@@ -227,9 +227,9 @@
 		9C5E3543219623C600846683 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C5E3542219623C600846683 /* DSN Europe.app */,
-				9C5E3559219623C800846683 /* DSN EuropeTests.xctest */,
-				83B0A6B6241E83A500E09314 /* DSN EuropeUITests.xctest */,
+				9C5E3542219623C600846683 /* DSN Converter.app */,
+				9C5E3559219623C800846683 /* DSN ConverterTests.xctest */,
+				83B0A6B6241E83A500E09314 /* DSN ConverterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -394,9 +394,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83B0A6B5241E83A500E09314 /* DSN EuropeUITests */ = {
+		83B0A6B5241E83A500E09314 /* DSN ConverterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83B0A6BD241E83A500E09314 /* Build configuration list for PBXNativeTarget "DSN EuropeUITests" */;
+			buildConfigurationList = 83B0A6BD241E83A500E09314 /* Build configuration list for PBXNativeTarget "DSN ConverterUITests" */;
 			buildPhases = (
 				543AE27AC0043A85A2FD423A /* [CP] Check Pods Manifest.lock */,
 				83B0A6B2241E83A500E09314 /* Sources */,
@@ -408,14 +408,14 @@
 			dependencies = (
 				83B0A6BC241E83A500E09314 /* PBXTargetDependency */,
 			);
-			name = "DSN EuropeUITests";
+			name = "DSN ConverterUITests";
 			productName = "DSN EuropeUITests";
-			productReference = 83B0A6B6241E83A500E09314 /* DSN EuropeUITests.xctest */;
+			productReference = 83B0A6B6241E83A500E09314 /* DSN ConverterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		9C5E3541219623C600846683 /* DSN Europe */ = {
+		9C5E3541219623C600846683 /* DSN Converter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C5E356D219623C800846683 /* Build configuration list for PBXNativeTarget "DSN Europe" */;
+			buildConfigurationList = 9C5E356D219623C800846683 /* Build configuration list for PBXNativeTarget "DSN Converter" */;
 			buildPhases = (
 				B83B7BF070F8DA630ED31177 /* [CP] Check Pods Manifest.lock */,
 				9C5E353E219623C600846683 /* Sources */,
@@ -427,14 +427,14 @@
 			);
 			dependencies = (
 			);
-			name = "DSN Europe";
+			name = "DSN Converter";
 			productName = "DSN Converter";
-			productReference = 9C5E3542219623C600846683 /* DSN Europe.app */;
+			productReference = 9C5E3542219623C600846683 /* DSN Converter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9C5E3558219623C800846683 /* DSN EuropeTests */ = {
+		9C5E3558219623C800846683 /* DSN ConverterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C5E3570219623C800846683 /* Build configuration list for PBXNativeTarget "DSN EuropeTests" */;
+			buildConfigurationList = 9C5E3570219623C800846683 /* Build configuration list for PBXNativeTarget "DSN ConverterTests" */;
 			buildPhases = (
 				274F0E7432E384A17AF6AAC2 /* [CP] Check Pods Manifest.lock */,
 				9C5E3555219623C800846683 /* Sources */,
@@ -446,9 +446,9 @@
 			dependencies = (
 				9C5E355B219623C800846683 /* PBXTargetDependency */,
 			);
-			name = "DSN EuropeTests";
+			name = "DSN ConverterTests";
 			productName = "DSN ConverterTests";
-			productReference = 9C5E3559219623C800846683 /* DSN EuropeTests.xctest */;
+			productReference = 9C5E3559219623C800846683 /* DSN ConverterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -479,7 +479,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C5E353D219623C600846683 /* Build configuration list for PBXProject "DSN Europe" */;
+			buildConfigurationList = 9C5E353D219623C600846683 /* Build configuration list for PBXProject "DSN Converter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -492,9 +492,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C5E3541219623C600846683 /* DSN Europe */,
-				9C5E3558219623C800846683 /* DSN EuropeTests */,
-				83B0A6B5241E83A500E09314 /* DSN EuropeUITests */,
+				9C5E3541219623C600846683 /* DSN Converter */,
+				9C5E3558219623C800846683 /* DSN ConverterTests */,
+				83B0A6B5241E83A500E09314 /* DSN ConverterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -674,12 +674,12 @@
 /* Begin PBXTargetDependency section */
 		83B0A6BC241E83A500E09314 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C5E3541219623C600846683 /* DSN Europe */;
+			target = 9C5E3541219623C600846683 /* DSN Converter */;
 			targetProxy = 83B0A6BB241E83A500E09314 /* PBXContainerItemProxy */;
 		};
 		9C5E355B219623C800846683 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C5E3541219623C600846683 /* DSN Europe */;
+			target = 9C5E3541219623C600846683 /* DSN Converter */;
 			targetProxy = 9C5E355A219623C800846683 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -875,9 +875,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DSN Converter";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -896,9 +896,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DSN Converter";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -922,7 +922,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSN Europe.app/DSN Europe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSN Converter.app/DSN Converter";
 			};
 			name = Debug;
 		};
@@ -944,14 +944,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSN Europe.app/DSN Europe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSN Converter.app/DSN Converter";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83B0A6BD241E83A500E09314 /* Build configuration list for PBXNativeTarget "DSN EuropeUITests" */ = {
+		83B0A6BD241E83A500E09314 /* Build configuration list for PBXNativeTarget "DSN ConverterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83B0A6BE241E83A500E09314 /* Debug */,
@@ -960,7 +960,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C5E353D219623C600846683 /* Build configuration list for PBXProject "DSN Europe" */ = {
+		9C5E353D219623C600846683 /* Build configuration list for PBXProject "DSN Converter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C5E356B219623C800846683 /* Debug */,
@@ -969,7 +969,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C5E356D219623C800846683 /* Build configuration list for PBXNativeTarget "DSN Europe" */ = {
+		9C5E356D219623C800846683 /* Build configuration list for PBXNativeTarget "DSN Converter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C5E356E219623C800846683 /* Debug */,
@@ -978,7 +978,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C5E3570219623C800846683 /* Build configuration list for PBXNativeTarget "DSN EuropeTests" */ = {
+		9C5E3570219623C800846683 /* Build configuration list for PBXNativeTarget "DSN ConverterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C5E3571219623C800846683 /* Debug */,

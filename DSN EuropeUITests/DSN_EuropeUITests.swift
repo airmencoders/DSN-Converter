@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import DSN_Europe
+@testable import DSN_Converter
 class DSN_EuropeUITests: XCTestCase {
 
     override func setUp() {
@@ -76,12 +76,12 @@ class DSN_EuropeUITests: XCTestCase {
            
        }
 
-    func testLaunchPerformance() {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+//    func testLaunchPerformance() {
+//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+//            // This measures how long it takes to launch your application.
+//            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+//                XCUIApplication().launch()
+//            }
+//        }
+//    }
 }

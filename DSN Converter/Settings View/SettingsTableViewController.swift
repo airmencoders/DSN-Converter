@@ -65,7 +65,7 @@ class SettingsTableViewController: UITableViewController {
         
         //Share
         
-        let Text = "You should try DSN Europe.\n Download it on the App Store Now\n"
+        let Text = "You should try DSN Converter.\n Download it on the App Store Now\n"
         // let ActualNumber = "\(self.departmentsPhone[indexPath.row])"
         let activyVC = UIActivityViewController(activityItems:[Text], applicationActivities: nil)
         

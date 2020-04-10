@@ -341,7 +341,7 @@ class FavoriteViewController: UIViewController,UITableViewDelegate,UITableViewDa
             
             
             
-            let Text = "Commerical: \(String(describing: commPhone!))\n DSN: \(String(describing: dsnPhonelocal!))\n Location: \(String(describing: dsnLocationlocal!)) \nThis commerical DSN was provided to you by DSN Converter - Europe."
+            let Text = "Commerical: \(String(describing: commPhone!))\n DSN: \(String(describing: dsnPhonelocal!))\n Location: \(String(describing: dsnLocationlocal!)) \nThis commerical DSN was provided to you by DSN Converter."
             // let ActualNumber = "\(self.departmentsPhone[indexPath.row])"
             let activyVC = UIActivityViewController(activityItems:[Text], applicationActivities: nil)
             
