@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B101152947532A2770948BB /* Pods_DSN_ConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C703C5919B7A90EAEF5188C /* Pods_DSN_ConverterTests.framework */; };
 		83B0A6B9241E83A500E09314 /* DSN_EuropeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0A6B8241E83A500E09314 /* DSN_EuropeUITests.swift */; };
-		89AFC9ADECB9A072DAD73B6E /* Pods_DSN_EuropeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339E4F7886F3C2DC78CC4345 /* Pods_DSN_EuropeTests.framework */; };
 		9C0DCC4C21D692E000109A07 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0DCC4B21D692E000109A07 /* StoreKit.framework */; };
 		9C0DCCA721D75F9E00109A07 /* star-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0DCCA621D75F9E00109A07 /* star-8.png */; };
 		9C0DCCA921D75FA400109A07 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0DCCA821D75FA300109A07 /* star.png */; };
@@ -53,8 +53,8 @@
 		9CE0C06021A7F81E00ADF6BF /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0C05F21A7F81E00ADF6BF /* SettingsTableViewController.swift */; };
 		9CE86CBB2219447F00B5B64C /* aircraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE86CBA2219447E00B5B64C /* aircraft.png */; };
 		9CE86CBD2219450000B5B64C /* aircraft-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE86CBC221944FF00B5B64C /* aircraft-2.png */; };
-		EFF672DDBC70A1A8314FB72A /* Pods_DSN_EuropeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C031C31DA465F1C079F7DF9 /* Pods_DSN_EuropeUITests.framework */; };
-		F4717C1F9313A29781052DAC /* Pods_DSN_Europe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650A9741F8B8B415E7E02757 /* Pods_DSN_Europe.framework */; };
+		A10141D474C0159CB8F818F3 /* Pods_DSN_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900C13A8508B2059C82DB452 /* Pods_DSN_Converter.framework */; };
+		AB7BE8DE180A1AB3B15EC93C /* Pods_DSN_ConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CFC929D83DF761FABFB8EE /* Pods_DSN_ConverterUITests.framework */; };
 		F7D606642424D59F00C58458 /* Airman Coders.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D606632424D59F00C58458 /* Airman Coders.png */; };
 		F7E9CC17241D56BA003C59FB /* airmanCoders.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F7E9CC16241D56BA003C59FB /* airmanCoders.JPG */; };
 /* End PBXBuildFile section */
@@ -77,11 +77,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C703C5919B7A90EAEF5188C /* Pods_DSN_ConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_ConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA1D5AB6A9AA855ED3132E2 /* Pods-DSN Converter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN Converter.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN Converter/Pods-DSN Converter.release.xcconfig"; sourceTree = "<group>"; };
 		258B7DFE0A9A457FA861D0D5 /* Pods-DSN ConverterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterUITests/Pods-DSN ConverterUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2C031C31DA465F1C079F7DF9 /* Pods_DSN_EuropeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_EuropeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		339E4F7886F3C2DC78CC4345 /* Pods_DSN_EuropeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_EuropeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		650A9741F8B8B415E7E02757 /* Pods_DSN_Europe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_Europe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7804009795AF198C0406A666 /* Pods-DSN EuropeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeUITests/Pods-DSN EuropeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		83B0A6B6241E83A500E09314 /* DSN ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSN ConverterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B0A6B8241E83A500E09314 /* DSN_EuropeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSN_EuropeUITests.swift; sourceTree = "<group>"; };
@@ -137,6 +135,7 @@
 		9CE86CBA2219447E00B5B64C /* aircraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aircraft.png; sourceTree = "<group>"; };
 		9CE86CBC221944FF00B5B64C /* aircraft-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aircraft-2.png"; sourceTree = "<group>"; };
 		A949C5A0BCA726818A1520EF /* Pods-DSN EuropeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeUITests/Pods-DSN EuropeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3CFC929D83DF761FABFB8EE /* Pods_DSN_ConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_ConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7B5E4A005309E3BF89E79E /* Pods-DSN EuropeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeTests/Pods-DSN EuropeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7F6E08A181A6058088A3351 /* Pods-DSN ConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterTests/Pods-DSN ConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE2CDB60BF9F6BF262DF9676 /* Pods-DSN ConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterTests/Pods-DSN ConverterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFF672DDBC70A1A8314FB72A /* Pods_DSN_EuropeUITests.framework in Frameworks */,
+				AB7BE8DE180A1AB3B15EC93C /* Pods_DSN_ConverterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0DCC4C21D692E000109A07 /* StoreKit.framework in Frameworks */,
-				F4717C1F9313A29781052DAC /* Pods_DSN_Europe.framework in Frameworks */,
+				A10141D474C0159CB8F818F3 /* Pods_DSN_Converter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89AFC9ADECB9A072DAD73B6E /* Pods_DSN_EuropeTests.framework in Frameworks */,
+				3B101152947532A2770948BB /* Pods_DSN_ConverterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,9 +289,8 @@
 			children = (
 				9C0DCC4B21D692E000109A07 /* StoreKit.framework */,
 				900C13A8508B2059C82DB452 /* Pods_DSN_Converter.framework */,
-				650A9741F8B8B415E7E02757 /* Pods_DSN_Europe.framework */,
-				339E4F7886F3C2DC78CC4345 /* Pods_DSN_EuropeTests.framework */,
-				2C031C31DA465F1C079F7DF9 /* Pods_DSN_EuropeUITests.framework */,
+				1C703C5919B7A90EAEF5188C /* Pods_DSN_ConverterTests.framework */,
+				B3CFC929D83DF761FABFB8EE /* Pods_DSN_ConverterUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -554,7 +552,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DSN EuropeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DSN ConverterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -576,7 +574,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DSN EuropeUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DSN ConverterUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -589,15 +587,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DSN Europe/Pods-DSN Europe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DSN Converter/Pods-DSN Converter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DSN Europe/Pods-DSN Europe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DSN Converter/Pods-DSN Converter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSN Europe/Pods-DSN Europe-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSN Converter/Pods-DSN Converter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B83B7BF070F8DA630ED31177 /* [CP] Check Pods Manifest.lock */ = {
@@ -611,7 +609,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DSN Europe-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DSN Converter-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -706,7 +704,7 @@
 /* Begin XCBuildConfiguration section */
 		83B0A6BE241E83A500E09314 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A949C5A0BCA726818A1520EF /* Pods-DSN EuropeUITests.debug.xcconfig */;
+			baseConfigurationReference = 258B7DFE0A9A457FA861D0D5 /* Pods-DSN ConverterUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ9T47YT3S;
@@ -719,15 +717,16 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mil.airmencoders.mqf.efb.DSN-EuropeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "DSN Europe";
+				TEST_TARGET_NAME = "DSN Converter";
 			};
 			name = Debug;
 		};
 		83B0A6BF241E83A500E09314 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7804009795AF198C0406A666 /* Pods-DSN EuropeUITests.release.xcconfig */;
+			baseConfigurationReference = E62CC920A8DAA1B1FB4C8AB6 /* Pods-DSN ConverterUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ9T47YT3S;
@@ -740,9 +739,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mil.airmencoders.mqf.efb.DSN-EuropeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "DSN Europe";
+				TEST_TARGET_NAME = "DSN Converter";
 			};
 			name = Release;
 		};
@@ -864,7 +864,7 @@
 		};
 		9C5E356E219623C800846683 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E67395F474BD1D8CFCF28000 /* Pods-DSN Europe.debug.xcconfig */;
+			baseConfigurationReference = EB081574A713E1F952BFDA0B /* Pods-DSN Converter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -885,7 +885,7 @@
 		};
 		9C5E356F219623C800846683 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E23D6B803669602C246CDDF1 /* Pods-DSN Europe.release.xcconfig */;
+			baseConfigurationReference = 1FA1D5AB6A9AA855ED3132E2 /* Pods-DSN Converter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -906,10 +906,9 @@
 		};
 		9C5E3571219623C800846683 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA7B5E4A005309E3BF89E79E /* Pods-DSN EuropeTests.debug.xcconfig */;
+			baseConfigurationReference = D7F6E08A181A6058088A3351 /* Pods-DSN ConverterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LSS6W8997;
 				INFOPLIST_FILE = "DSN ConverterTests/Info.plist";
@@ -928,10 +927,9 @@
 		};
 		9C5E3572219623C800846683 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D10E15D1212585A3EF71EB7 /* Pods-DSN EuropeTests.release.xcconfig */;
+			baseConfigurationReference = DE2CDB60BF9F6BF262DF9676 /* Pods-DSN ConverterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LSS6W8997;
 				INFOPLIST_FILE = "DSN ConverterTests/Info.plist";
