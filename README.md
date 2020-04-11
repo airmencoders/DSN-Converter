@@ -1,4 +1,6 @@
 # DSN Converter
+![UIandUnitTests](https://github.com/airmencoders/DSN-Converter/workflows/UIandUnitTests/badge.svg)
+
 <img src="DSNEurope.png" width="300"> <img src="DSNEurope2.png" width="300">
 
 
