@@ -34,9 +34,6 @@ UIViewController,CNContactViewControllerDelegate{
     let Ext489NoLbl = "+49631536"
     
     
-   
-    
-    
     //Spangdahlem - Germany - USAF
     let Ext452Lbl = "+49 6565 61"
     let Ext452NoLbl = "+49656561"
@@ -413,7 +410,7 @@ UIViewController,CNContactViewControllerDelegate{
              reportaCorrection.isHidden = false
 
             
-                let inputComponets = getDsnNumber.characters.split {$0 == "-"}.map { (x) -> String in return String(x)}
+                let inputComponets = getDsnNumber.split {$0 == "-"}.map { (x) -> String in return String(x)}
                 
                 let areaCode = inputComponets [0]
                 let phoneNumber = inputComponets [1]

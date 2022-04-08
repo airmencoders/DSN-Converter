@@ -43,9 +43,9 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
 
         // Do any additional setup after loading the view.
         
-        commTxt.text = dnsCommercialGlobal
-        dsnTxt.text = dsnPhoneGlobal
-        locTxt.text = dsnLocationGlobal
+//        commTxt.text = dnsCommercialGlobal
+//        dsnTxt.text = dsnPhoneGlobal
+//        locTxt.text = dsnLocationGlobal
         
 //
         commentText.delegate = self
