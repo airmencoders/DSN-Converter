@@ -55,6 +55,8 @@
 		9CE86CBD2219450000B5B64C /* aircraft-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE86CBC221944FF00B5B64C /* aircraft-2.png */; };
 		A10141D474C0159CB8F818F3 /* Pods_DSN_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900C13A8508B2059C82DB452 /* Pods_DSN_Converter.framework */; };
 		AB7BE8DE180A1AB3B15EC93C /* Pods_DSN_ConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CFC929D83DF761FABFB8EE /* Pods_DSN_ConverterUITests.framework */; };
+		DB426C692801BAC700E1FE87 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB426C682801BAC700E1FE87 /* Notes.swift */; };
+		DB426C6B2801C3BF00E1FE87 /* DSNList.json in Resources */ = {isa = PBXBuildFile; fileRef = DB426C6A2801C3BF00E1FE87 /* DSNList.json */; };
 		F7D606642424D59F00C58458 /* Airman Coders.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D606632424D59F00C58458 /* Airman Coders.png */; };
 		F7E9CC17241D56BA003C59FB /* airmanCoders.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F7E9CC16241D56BA003C59FB /* airmanCoders.JPG */; };
 /* End PBXBuildFile section */
@@ -138,6 +140,8 @@
 		B3CFC929D83DF761FABFB8EE /* Pods_DSN_ConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSN_ConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7B5E4A005309E3BF89E79E /* Pods-DSN EuropeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN EuropeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN EuropeTests/Pods-DSN EuropeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7F6E08A181A6058088A3351 /* Pods-DSN ConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterTests/Pods-DSN ConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB426C682801BAC700E1FE87 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		DB426C6A2801C3BF00E1FE87 /* DSNList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DSNList.json; sourceTree = "<group>"; };
 		DE2CDB60BF9F6BF262DF9676 /* Pods-DSN ConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterTests/Pods-DSN ConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		E23D6B803669602C246CDDF1 /* Pods-DSN Europe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN Europe.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN Europe/Pods-DSN Europe.release.xcconfig"; sourceTree = "<group>"; };
 		E62CC920A8DAA1B1FB4C8AB6 /* Pods-DSN ConverterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterUITests/Pods-DSN ConverterUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +326,8 @@
 				9C5E3547219623C600846683 /* ViewController.swift */,
 				9C5E3549219623C600846683 /* Main.storyboard */,
 				9CB5E97021AAD10A0099FC61 /* PhoneCallViewController.swift */,
+				DB426C682801BAC700E1FE87 /* Notes.swift */,
+				DB426C6A2801C3BF00E1FE87 /* DSNList.json */,
 			);
 			name = "Main ";
 			path = Main;
@@ -526,6 +532,7 @@
 				9CE86CBB2219447F00B5B64C /* aircraft.png in Resources */,
 				9C3BFD852232DD65005169B5 /* jeep.png in Resources */,
 				9C5E354B219623C600846683 /* Main.storyboard in Resources */,
+				DB426C6B2801C3BF00E1FE87 /* DSNList.json in Resources */,
 				9C3BFD812232DBA5005169B5 /* tank.png in Resources */,
 				9C7C7E13220F6F3400A23AD7 /* dog-tags-military-6.png in Resources */,
 			);
@@ -632,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5E354E219623C600846683 /* DSN_Converter.xcdatamodeld in Sources */,
+				DB426C692801BAC700E1FE87 /* Notes.swift in Sources */,
 				9CCF21832199EA6E003484E9 /* FavTableViewCell.swift in Sources */,
 				9CCF21802199DE40003484E9 /* DisagnableSignin.swift in Sources */,
 				9CCF217E2199DB18003484E9 /* ButtonModification.swift in Sources */,
@@ -868,7 +876,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2LSS6W8997;
+				DEVELOPMENT_TEAM = RQ9T47YT3S;
 				INFOPLIST_FILE = "DSN Converter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -889,7 +897,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2LSS6W8997;
+				DEVELOPMENT_TEAM = RQ9T47YT3S;
 				INFOPLIST_FILE = "DSN Converter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (

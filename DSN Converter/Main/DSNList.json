@@ -1,0 +1,382 @@
+[
+  {
+    "prefix": 226,
+    "number": "+44 1638 52",
+    "location": "RAF Lakenheath"
+  },
+  {
+    "prefix": 236,
+    "number": "+44 1280 70",
+    "location": "RAF Croughton"
+  },
+  {
+    "prefix": 238,
+    "number": "+44 1638 54",
+    "location": "RAF Mildenhall"
+  },
+  {
+    "prefix": 268,
+    "number": "+44 1480 84",
+    "location": "RAF Alconbury/Molesworth"
+  },
+  {
+    "prefix": 336,
+    "number": "+49 6118 16",
+    "location": "Wiesbaden"
+  },
+  {
+    "prefix": 337,
+    "number": "+49 6117 05",
+    "location": "Wiesbaden"
+  },
+  {
+    "prefix": 338,
+    "number": "+49 6113 80",
+    "location": "Wiesbaden"
+  },
+  {
+    "prefix": 357,
+    "number": "+31 046 443",
+    "location": "Schinnen (NL)"
+  },
+  {
+    "prefix": 359,
+    "number": "+31 413 33",
+    "location": "Volkel"
+  },
+  {
+    "prefix": 360,
+    "number": "+31 046 443",
+    "location": "Schinnen (NL)"
+  },
+  {
+    "prefix": 361,
+    "number": "+32 06827",
+    "location": "Chievres Air Base/Caserne Daumerie"
+  },
+  {
+    "prefix": 364,
+    "number": "+31 45 526",
+    "location": "Brunssum (NL)"
+  },
+  {
+    "prefix": 366,
+    "number": "+32 06532",
+    "location": "SHAPE"
+  },
+  {
+    "prefix": 368,
+    "number": "+32 02717",
+    "location": "Brussels (B)"
+  },
+  {
+    "prefix": 378,
+    "number": "+49 7274 58",
+    "location": "Germersheim"
+  },
+  {
+    "prefix": 420,
+    "number": "+49 7118 19",
+    "location": "Stuttgart"
+  },
+  {
+    "prefix": 421,
+    "number": "+49 7117 29",
+    "location": "Stuttgart"
+  },
+  {
+    "prefix": 423,
+    "number": "+32 06544",
+    "location": "SHAPE"
+  },
+  {
+    "prefix": 430,
+    "number": "+49 7116 80",
+    "location": "Stuttgart"
+  },
+  {
+    "prefix": 431,
+    "number": "+49 7031 15",
+    "location": "Stuttgart"
+  },
+  {
+    "prefix": 440,
+    "number": "+49 8821 750",
+    "location": "Garmisch"
+  },
+  {
+    "prefix": 452,
+    "number": "+49 6565 61",
+    "location": "Spangdahlem"
+  },
+  {
+    "prefix": 466,
+    "number": "+49 9472 83",
+    "location": "Grafenwoehr/Vilsek"
+  },
+  {
+    "prefix": 467,
+    "number": "+49 9841 83",
+    "location": "Illesheim"
+  },
+  {
+    "prefix": 468,
+    "number": "+49 9811 83",
+    "location": "Ansbach"
+  },
+  {
+    "prefix": 473,
+    "number": "+49 9841 83",
+    "location": "Illesheim"
+  },
+  {
+    "prefix": 474,
+    "number": "+49 9641 454",
+    "location": "Grafenwoehr/Vilsek"
+  },
+  {
+    "prefix": 475,
+    "number": "+49 9641 83",
+    "location": "Grafenwoehr/Vilsek"
+  },
+  {
+    "prefix": 476,
+    "number": "+49 9662 83",
+    "location": "Grafenwoehr/Vilsek"
+  },
+  {
+    "prefix": 478,
+    "number": "+49 6371 405",
+    "location": "Ramstein"
+  },
+  {
+    "prefix": 479,
+    "number": "+49 6371 46",
+    "location": "Ramstein"
+  },
+  {
+    "prefix": 480,
+    "number": "+49 6371 47",
+    "location": "Ramstein"
+  },
+  {
+    "prefix": 481,
+    "number": "+49 6372 842",
+    "location": "Miesau"
+  },
+  {
+    "prefix": 483,
+    "number": "+49 631 411",
+    "location": "Kaiserslautern"
+  },
+  {
+    "prefix": 484,
+    "number": "+49 631 413",
+    "location": "Kaiserslautern"
+  },
+  {
+    "prefix": 485,
+    "number": "+49 678 36",
+    "location": "Baumholder"
+  },
+  {
+    "prefix": 486,
+    "number": "+49 6371 86",
+    "location": "Landstuhl (LRMC)"
+  },
+  {
+    "prefix": 488,
+    "number": "+49 6371 92",
+    "location": "Landstuhl (LRMC)"
+  },
+  {
+    "prefix": 489,
+    "number": "+49 631 536",
+    "location": "Kaiserslautern"
+  },
+  {
+    "prefix": 493,
+    "number": "+49 631 3406",
+    "location": "Kaiserslautern"
+  },
+  {
+    "prefix": 495,
+    "number": "+49 6331 86",
+    "location": "Pirmasens"
+  },
+  {
+    "prefix": 496,
+    "number": "+49 6302 67",
+    "location": "Sembach"
+  },
+  {
+    "prefix": 520,
+    "number": "+49 9472 83",
+    "location": "Grafenwoehr/Vilsek"
+  },
+  {
+    "prefix": 522,
+    "number": "+49 9472 708",
+    "location": "Grafenwoehr/Vilsek"
+  },
+  {
+    "prefix": 526,
+    "number": "+49 9641 70 526",
+    "location": "Grafenwoehr/Vilsek"
+  },
+  {
+    "prefix": 529,
+    "number": "+49 711 550 26",
+    "location": "Stuttgart"
+  },
+  {
+    "prefix": 531,
+    "number": "+49 611 143 531",
+    "location": "Baumholder"
+  },
+  {
+    "prefix": 535,
+    "number": "+351 295 57",
+    "location": "Lajes Field"
+  },
+  {
+    "prefix": 537,
+    "number": "+49 6111 43 537",
+    "location": "Wiesbaden"
+  },
+  {
+    "prefix": 541,
+    "number": "+49 6111 43 541",
+    "location": "Kaiserslautern"
+  },
+  {
+    "prefix": 542,
+    "number": "+49 6111 43 542",
+    "location": "Kaiserslautern"
+  },
+  {
+    "prefix": 544,
+    "number": "+49 611 143 544",
+    "location": "Sembach"
+  },
+  {
+    "prefix": 545,
+    "number": "+49 611 143 545",
+    "location": "Sembach"
+  },
+  {
+    "prefix": 546,
+    "number": "+49 6111 43 546",
+    "location": "Wiesbaden"
+  },
+  {
+    "prefix": 548,
+    "number": "+49 6111 43 548",
+    "location": "Wiesbaden"
+  },
+  {
+    "prefix": 549,
+    "number": "+49 611 143 549",
+    "location": "Sembach"
+  },
+  {
+    "prefix": 552,
+    "number": "+49 611 143 552",
+    "location": "Sembach"
+  },
+  {
+    "prefix": 569,
+    "number": "+49 9641 70 569",
+    "location": "Grafenwoehr/Vilsek"
+  },
+  {
+    "prefix": 570,
+    "number": "+49 6119 744",
+    "location": "Wiesbaden"
+  },
+  {
+    "prefix": 581,
+    "number": "+49 631 411",
+    "location": "Kaiserslautern"
+  },
+  {
+    "prefix": 590,
+    "number": "+49 6371 9464",
+    "location": "Landstuhl"
+  },
+  {
+    "prefix": 591,
+    "number": "+49 611 143 591",
+    "location": "Stuttgart"
+  },
+  {
+    "prefix": 593,
+    "number": "+49 611 143 593",
+    "location": "Stuttgart"
+  },
+  {
+    "prefix": 597,
+    "number": "+32 06825",
+    "location": "Chievres Air Base/Caserne Daumerie"
+  },
+  {
+    "prefix": 599,
+    "number": "+49 9641 70 599",
+    "location": "Grafenwoehr/Vilsek"
+  },
+  {
+    "prefix": 624,
+    "number": "+39 095 56",
+    "location": "NAS Sigonella"
+  },
+  {
+    "prefix": 626,
+    "number": "+39 081 568",
+    "location": "NSA Geata"
+  },
+  {
+    "prefix": 629,
+    "number": "+39 081 811",
+    "location": "NSA Naples"
+  },
+  {
+    "prefix": 632,
+    "number": "+39 0434 30",
+    "location": "Aviano"
+  },
+  {
+    "prefix": 633,
+    "number": "+39 050 54",
+    "location": "USAG Italy"
+  },
+  {
+    "prefix": 634,
+    "number": "+39 0444 71",
+    "location": "USAG Italy"
+  },
+  {
+    "prefix": 637,
+    "number": "+39 0444 61",
+    "location": "USAG Italy"
+  },
+  {
+    "prefix": 672,
+    "number": "+90 312 422",
+    "location": "Incirlik"
+  },
+  {
+    "prefix": 676,
+    "number": "+90 322 316",
+    "location": "Incirlik"
+  },
+  {
+    "prefix": 722,
+    "number": "+34 95 584",
+    "location": "Moron"
+  },
+  {
+    "prefix": 727,
+    "number": "+34 956 82",
+    "location": "Naval Station Rota"
+  }
+]

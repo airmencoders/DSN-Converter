@@ -1679,17 +1679,17 @@ Our team will review your submission and update our database as soon as possible
             <objects>
                 <viewController id="IX7-9h-sKh" customClass="InAppViewController" customModule="DSN_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mAI-fZ-hRj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3w1-mt-h6i" customClass="DisagnableSignin" customModule="DSN_Converter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="221" width="414" height="465"/>
+                                <rect key="frame" x="0.0" y="221" width="414" height="445"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.029999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZkZ-at-HXh">
-                                        <rect key="frame" x="0.0" y="209" width="414" height="256"/>
+                                        <rect key="frame" x="0.0" y="189" width="414" height="256"/>
                                     </imageView>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3W-ap-r1R">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="189"/>
                                         <color key="barTintColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <items>
                                             <navigationItem title="DSN Converter - Europe" id="fLQ-Wn-PVg">
@@ -1702,7 +1702,7 @@ Our team will review your submission and update our database as soon as possible
                                         </items>
                                     </navigationBar>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4St-Dg-bxF" customClass="ButtonModification" customModule="DSN_Converter" customModuleProvider="target">
-                                        <rect key="frame" x="129.66666666666666" y="348" width="154.99999999999997" height="43"/>
+                                        <rect key="frame" x="129.66666666666666" y="328" width="154.99999999999997" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="UeV-1S-J7n"/>
                                             <constraint firstAttribute="width" constant="155" id="yU8-c3-2zY"/>
@@ -1727,14 +1727,14 @@ Our team will review your submission and update our database as soon as possible
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hs6-3z-RNu">
-                                        <rect key="frame" x="22" y="215" width="370" height="52"/>
+                                        <rect key="frame" x="22" y="195" width="370" height="52"/>
                                         <string key="text">                       Upgrade Package:  1- No more Ads. 2- Get Unlimited DSN Lookup. 3- Ability to save the commercial DSN in your Contacts. 4- Ability to save your Favorite lookups. 5- Ability to share your lookups.</string>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocm-rH-LL9" customClass="ButtonModification" customModule="DSN_Converter" customModuleProvider="target">
-                                        <rect key="frame" x="129.66666666666666" y="399" width="154.99999999999997" height="46"/>
+                                        <rect key="frame" x="129.66666666666666" y="379" width="154.99999999999997" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="eJY-ni-Qpn"/>
                                         </constraints>
@@ -1766,7 +1766,7 @@ Our team will review your submission and update our database as soon as possible
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Packages:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdy-El-rAt">
-                                        <rect key="frame" x="38" y="275" width="142" height="12"/>
+                                        <rect key="frame" x="38" y="255" width="142" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="142" id="YSi-o9-eBC"/>
                                             <constraint firstAttribute="height" constant="12" id="rLz-h6-kFG"/>
@@ -1851,7 +1851,7 @@ Our team will review your submission and update our database as soon as possible
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5P-r3-HHE" customClass="DisagnableSignin" customModule="DSN_Converter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="224" width="414" height="462"/>
+                                <rect key="frame" x="0.0" y="224" width="375" height="462"/>
                                 <subviews>
                                     <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.040000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aircraft-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="z9y-yH-arR">
                                         <rect key="frame" x="0.0" y="44" width="375" height="418"/>
@@ -2517,9 +2517,9 @@ Our team will review your submission and update our database as soon as possible
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="SI0-3E-5kp"/>
+        <segue reference="gTo-vl-4FK"/>
         <segue reference="QdA-NA-EMF"/>
-        <segue reference="eli-IL-UFh"/>
+        <segue reference="Yx5-fP-SCd"/>
         <segue reference="hRy-Hq-Ldm"/>
     </inferredMetricsTieBreakers>
     <resources>
