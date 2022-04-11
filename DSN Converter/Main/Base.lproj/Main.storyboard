@@ -1092,7 +1092,7 @@ Our team will review your submission and update our database as soon as possible
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
+                                        <color key="highlightedColor" systemColor="labelColor"/>
                                     </label>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHK-Go-Cye">
                                         <rect key="frame" x="0.0" y="0.0" width="339" height="44"/>
@@ -1120,7 +1120,6 @@ Our team will review your submission and update our database as soon as possible
                                             <constraint firstAttribute="width" constant="242" id="OE1-MO-23j"/>
                                             <constraint firstAttribute="height" constant="30" id="idG-Gg-pKj"/>
                                         </constraints>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                     </textField>
@@ -1132,7 +1131,7 @@ Our team will review your submission and update our database as soon as possible
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Save">
-                                            <color key="titleColor" red="0.66666668653488159" green="0.046499069442651461" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1940,7 +1939,7 @@ Our team will review your submission and update our database as soon as possible
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="Report DSN">
-                                                    <color key="titleColor" red="0.66666668650000005" green="0.046499069439999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" systemColor="systemBlueColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

@@ -26,7 +26,7 @@ class PhoneCallViewController:
     var dsnRecentDatabase: [NSManagedObject] = []
     var managedObjectContext : NSManagedObjectContext?
     var phoneOutput = ""
-    var phoneOutPutNoLbl = ""
+    var callCommericalNumber = ""
     var whatDateisit = ""
     var whatTimeisit = ""
     
@@ -63,25 +63,15 @@ class PhoneCallViewController:
             let phoneNumber = inputComponets [1]
             //Call Function ReadDataJSON (Passing areaCode(DSN Prefix) and phoneNumber(DSN Postfix)
             ReadDataJSON(DsnPrefix: areaCode, DsnPostfix: phoneNumber)
-            
         }
-        
-        
-        
-        
     }
-    
     func ReadDataJSON(DsnPrefix:String, DsnPostfix:String) {
-        
         guard let sourceURL = Bundle.main.url(forResource: "DSNList", withExtension: "json") else {fatalError("File Not Found")}
         guard let DSNDecoderData = try? Data(contentsOf: sourceURL) else {fatalError("DSN Decode Error")}
         let decoder = JSONDecoder()
         guard let DSNJSONArray = try? decoder.decode([DSNData].self, from: DSNDecoderData) else {fatalError("Problem with Dedoding DSN ")}
         //For Loop
         for dsn in DSNJSONArray {
-            print(dsn.prefix)
-            print(dsn.number)
-            print(dsn.location)
             // If the DsnPrefix matches any of the JSON DSN then display the CallView
             if String(dsn.prefix) == DsnPrefix {
                 print("DsnPrefix\(String(dsn.prefix))")
@@ -90,6 +80,7 @@ class PhoneCallViewController:
                 //Display Labels
                 commLbl.text = commercialNumber
                 LocationLbl.text = baseLocation
+                DsnLocation = baseLocation
                 dsnLbl.text = getDsnNumber
                 dnsCommercialGlobal = commercialNumber
                 dsnPhoneGlobal = getDsnNumber
@@ -106,39 +97,22 @@ class PhoneCallViewController:
         
     }
     @IBAction func MakeACall(_ sender: Any) {
-        
-        
         //Get the time and Date
         //Date
-        
         let dateDate = Date()
         let formatter = DateFormatter()
-        
         formatter.dateFormat = "dd-MM-YYYY"
-        
         let dateResults = formatter.string(from: dateDate)
         whatDateisit = dateResults
-        
-        
         //Time
-        
         let dateDateTime = Date()
         let formatterTime = DateFormatter()
-        
         formatterTime.dateFormat = "HH:mm:ss"
         let timeResults = formatterTime.string(from: dateDateTime)
         whatTimeisit = timeResults
-        
-        
-        
-        
-        
+        //Remove all Spaces in the String
+        callCommericalNumber = dnsCommercialGlobal.replacingOccurrences(of: " ", with: "")
         //Make the Call
-        
-        let callCommericalNumber = dnsCommercialGlobal.replacingOccurrences(of: " ", with: "")
-        
-        print("NoSpaces: \(callCommericalNumber)")
-        
         if let url = URL(string: "tel://\(callCommericalNumber ))"), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10, *) {
                 UIApplication.shared.open(url)
@@ -146,66 +120,43 @@ class PhoneCallViewController:
                 UIApplication.shared.openURL(url)
             }
         }
-        
+        //Save Call CoreData to Display it in the RECENT Tab.
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
-        
         let managedContext = appDelegate.persistentContainer.viewContext
-        
         let entity = NSEntityDescription.entity(forEntityName: "Recent",
                                                 in: managedContext)!
-        
         let person = NSManagedObject(entity: entity,
                                      insertInto: managedContext)
-        person.setValue(phoneOutPutNoLbl, forKey: "commercialPhoneNoLbl")
-        person.setValue(phoneOutput, forKeyPath: "commercialPhone")
+        person.setValue(callCommericalNumber, forKey: "commercialPhoneNoLbl")
+        person.setValue(dnsCommercialGlobal, forKeyPath: "commercialPhone")
         person.setValue(getDsnNumber, forKeyPath: "dsnPhone")
         person.setValue(DsnLocation, forKeyPath: "location")
         person.setValue(whatDateisit, forKeyPath: "dateofCall")
         person.setValue(whatTimeisit, forKeyPath: "timeofCall")
         //  person.setValue(nameofFav, forKeyPath: "nameFav")
-        
         do {
             try managedContext.save()
             dsnRecentDatabase.append(person)
-            
-            
-            
-            
             // self.dismiss(animated: true, completion: nil)
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
-        
-        
-        
-        
-        
     }
-    
+    //Save to Favorite ( Within the App)
     @IBAction func Favorite(_ sender: Any) {
-        
-        //    dismiss(animated: true, completion: nil)
-        dnsCommercialGlobal = phoneOutput
-        dnsCommercialGlobalNoLbl = phoneOutPutNoLbl
+        dnsCommercialGlobalNoLbl = dnsCommercialGlobal.replacingOccurrences(of: " ", with: "")
         dsnPhoneGlobal = getDsnNumber
         dsnLocationGlobal = DsnLocation
         dsnDateGlobal = whatDateisit
         dsnTimeGlobal = whatTimeisit
         performSegue(withIdentifier: "SaveFav", sender: nil)
-        
-        
-        
     }
-    
-    
     @IBAction func SaveContacts(_ sender: Any) {
-        
         // Open and Save Contacts.
         let contact = CNMutableContact()
-        let homePhone = CNLabeledValue(label: "Commercial DSN", value: CNPhoneNumber(stringValue :"\(self.phoneOutput)"))
-        
+        let homePhone = CNLabeledValue(label: "Commercial DSN", value: CNPhoneNumber(stringValue :"\(dnsCommercialGlobal)"))
         contact.phoneNumbers = [homePhone]
         contact.note = "Location: \(self.DsnLocation)\nThis commercial DSN was provided to you by DSN Converter."
         //contact.imageData = data // Set image data here
