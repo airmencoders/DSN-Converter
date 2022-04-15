@@ -21,7 +21,9 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     var googleDSNvar : String!
     var googleLocationvar : String!
  
-
+    @IBOutlet weak var errorPrefixLbl: UILabel!
+    @IBOutlet weak var errorCommericalLbl: UILabel!
+    @IBOutlet weak var errorLocationLbl: UILabel!
     
     @IBOutlet weak var commentText: DesignableTextField!
     
@@ -40,35 +42,17 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-//        commTxt.text = dnsCommercialGlobal
-//        dsnTxt.text = dsnPhoneGlobal
-//        locTxt.text = dsnLocationGlobal
-        
-//
         commentText.delegate = self
     }
-    
-
-   
-
     @IBAction func Exit(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
     }
     @IBAction func SendReport(_ sender: Any) {
-        
-        print("Press")
-        
         WriteToGoogle ()
-        
-        
     }
     
     func setupOnlineLogs(formLink: String,nameField: String,emailField: String, commentsField: String, commercialField: String, dsnField: String, locationField: String ) {
-        
         googleFormLink = formLink
         googleName = nameField
         googleEmail = emailField
@@ -76,11 +60,49 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         googleCommercial = commercialField
         googleDSNvar = dsnField
         googleLocationvar = locationField
-        
     }
-    
-    
     func WriteToGoogle () {
+        
+//        if dsnTxt.text == "" || commentText.text == "" || locTxt.text == "" {
+//            let leftView = UIImageView(image: #imageLiteral(resourceName: "phone-call-3") )
+//            let banner = NotificationBanner(title: "DSN Converter", subtitle: "Make sure all fields are completed.", leftView: leftView, style: .danger)
+//            banner.show()
+//            errorPrefixLbl.isHidden = false
+//            errorPrefixLbl.text = "Enter a valid Prefix"
+//            errorCommericalLbl.isHidden = false
+//            errorCommericalLbl.text = "Enter a valid conversion"
+//            errorLocationLbl.isHidden = false
+//            errorLocationLbl.text = "Enter a valid location"
+//
+//
+//        }else
+        if dsnTxt.text == "" {
+            let leftView = UIImageView(image: #imageLiteral(resourceName: "Contacts") )
+            let banner = NotificationBanner(title: "DSN Converter", subtitle: "Please enter a valid Prefix (Ex: 480)", leftView: leftView, style: .danger)
+            banner.show()
+            errorPrefixLbl.isHidden = false
+            
+            errorPrefixLbl.text = "Enter a valid Prefix"
+        } else if commentText.text == "" {
+            let leftView = UIImageView(image: #imageLiteral(resourceName: "Contacts") )
+            let banner = NotificationBanner(title: "DSN Converter", subtitle: "Please enter a valid Conversion (Ex: 06371 47xxxx).", leftView: leftView, style: .danger)
+            banner.show()
+            errorCommericalLbl.isHidden = false
+            errorCommericalLbl.text = "Enter a valid conversion"
+        }else if locTxt.text == "" {
+            
+            let leftView = UIImageView(image: #imageLiteral(resourceName: "Contacts") )
+            let banner = NotificationBanner(title: "DSN Converter", subtitle: "Please enter a valid location (Ex: Ramstein AB).", leftView: leftView, style: .danger)
+            banner.show()
+            errorLocationLbl.isHidden = false
+            errorLocationLbl.text = "Enter a valid location"
+            
+            
+        }else {
+        
+            errorPrefixLbl.isHidden = false
+            errorCommericalLbl.isHidden = false
+            errorLocationLbl.isHidden = false
         setupOnlineLogs(formLink: "https://docs.google.com/forms/d/e/1FAIpQLSccRuoqnXK6EKfLSsUYHrQnN1OGsJTZ9LLuIClCrQ4pOgxQRg/formResponse", nameField: googleNameids ,emailField: googleEmailids,
                         commentsField:  googleCommentsids , commercialField: googleCommercialids , dsnField: googleDSNids, locationField: googleLocationids)
         
@@ -91,13 +113,6 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         postData += "&" + googleCommercial + "=" + "\(commTxt.text!)"
         postData += "&" + googleDSNvar + "=" + "\(dsnTxt.text!)"
         postData += "&" + googleLocationvar + "=" + "\(locTxt.text!)"
-        
-        
-        print(googleCommercial)
-        //print(googleLocation)
-        print(googleComments)
-        //postData += "&" + googleDSN + "=" + "\(dnsCommercialGlobal)"
-      //  postData += "&" + googleLocation + "=" + "\(dnsCommercialGlobal)"
         
         
         var request = URLRequest(url: url!)
@@ -121,6 +136,7 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         
         
         dismiss(animated: true, completion: nil)
+        }
         
     }
     
