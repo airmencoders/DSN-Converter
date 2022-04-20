@@ -51,9 +51,11 @@ open class NotificationBannerQueue: NSObject {
         -parameter queuePosition: The position to show the notification banner. If the position is .front, the
         banner will be displayed immediately
     */
-    func addBanner(_ banner: BaseNotificationBanner,
-                   bannerPosition: BannerPosition,
-                   queuePosition: QueuePosition) {
+    func addBanner(
+        _ banner: BaseNotificationBanner,
+        bannerPosition: BannerPosition,
+        queuePosition: QueuePosition
+    ) {
 
         if queuePosition == .back {
             banners.append(banner)
@@ -104,7 +106,7 @@ open class NotificationBannerQueue: NSObject {
             if banner.isSuspended {
                 banner.resume()
             } else {
-                banner.show(placeOnQueue: false)
+                banner.show(placeOnQueue: false, bannerPosition: banner.bannerPosition)
             }
 
             callback(false)

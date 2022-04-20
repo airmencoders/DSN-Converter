@@ -1,1108 +1,1171 @@
 [
    {
-      "prefix":224,
-      "number":"+47 5195",
-      "location":"JAATAA",
-      "country":"NO",
-      "command":""
-   },
-   {
       "prefix":226,
       "number":"+44 1638 52 ",
       "location":"RAF LAKENHEATH",
       "country":"UK",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":235,
       "number":"+44 1895 61",
       "location":"BLENHEIM CRESCENT",
       "country":"UK",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":236,
       "number":"+44 1280 70",
       "location":"RAF CROUGHTON",
       "country":"UK",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":238,
       "number":"+44 1638 54 ",
       "location":"RAF MILDENHALL",
       "country":"UK",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":247,
       "number":"+44 1285 71 ",
       "location":"RAF FAIRFORD",
       "country":"UK",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":268,
+      "number":"+44 1480 84",
+      "location":"RAF ALCONBURY/MOLESWORTH",
+      "country":"UK",
+      "command":"EUCOM"
    },
    {
       "prefix":250,
       "number":"+44 1420 40",
       "location":"OAKHANGER",
       "country":"UK",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":262,
       "number":"+44 1423 77",
       "location":"MENWITH HILL",
       "country":"UK",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":266,
       "number":"+30 282102",
       "location":"NAS SOUDA BAY",
       "country":"GR",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":336,
-      "number":"+49 611 816",
-      "location":"AMELIA ERHARDT",
+      "number":"+49 6118 16",
+      "location":"WIESBADEN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":337,
-      "number":"+49 611 705",
-      "location":"WIESBADEN CLAY KASERNE",
+      "number":"+49 6117 05",
+      "location":"WIESBADEN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":338,
-      "number":"+49 611 380",
-      "location":"WIESBADEN OFFICE TOWERS",
+      "number":"+49 6113 80",
+      "location":"WIESBADEN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":346,
       "number":"+49 6151 397",
       "location":"WIESBADEN PBX",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":353,
       "number":"+49 9721 96",
       "location":"CONN BARRACKS, SCHWEINFURT",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":354,
       "number":"+49 9721 96",
       "location":"SCHWEINFURT",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":357,
-      "number":"+31 46 443",
+      "number":"+31 046 443",
       "location":"SHINNEN HI-PATH",
       "country":"NL",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":358,
       "number":"+31 1163 ",
       "location":"KLEINE BROGEL, CHIEVRES",
       "country":"NL",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":359,
-      "number":"+31 41 327",
+      "number":"+31 413 33",
       "location":"VOKEL",
       "country":"NL",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":360,
-      "number":"+31 46 443",
+      "number":"+31 046 443",
       "location":"SCHINNEN",
       "country":"NL",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":361,
-      "number":"+32 68 27",
+      "number":"+32 06827",
       "location":"CHIEVRES",
       "country":"BE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":362,
       "number":"+31 10 459",
       "location":"ROTTERDAM",
       "country":"NL",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":363,
       "number":"+49 6565 61",
       "location":"SPANGDAHLEM VOIP",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":364,
+      "number":"+31 45 526",
+      "location":"CHIEVRES",
+      "country":"BE",
+      "command":"EUCOM"
    },
    {
       "prefix":365,
       "number":"+32 2 707",
-      "location":"NATO SUPPORT ELEMENT (RSU), BRUSSELS",
+      "location":" BRUSSELS",
       "country":"BE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":366,
-      "number":"+32 65 32",
-      "location":"SHAPE EAC, BRUSSELS",
+      "number":"+32 06532",
+      "location":"BRUSSELS",
       "country":"BE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":367,
       "number":"+32 65 32",
-      "location":"REDSWITCH, BRUSSELS",
+      "location":"BRUSSELS",
       "country":"BE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":368,
-      "number":"+32 2 717",
-      "location":"BRUSSELS NATO SUPPORT ELEMENT (NSA) SCHOOL",
+      "number":"+32 02717",
+      "location":"BRUSSELS",
       "country":"BE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":369,
       "number":"+32 2 707",
-      "location":"US NATO MITEL SWITCH, BRUSSELS",
+      "location":"BRUSSELS",
       "country":"BE",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":378,
+      "number":"+49 7274 58",
+      "location":"GERMERSHEIN",
+      "country":"GE",
+      "command":"EUCOM"
    },
    {
       "prefix":380,
       "number":"+49 621 730",
-      "location":"FUNARI BARRACKS, MANNHEIM ",
+      "location":"MANNHEIM ",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":382,
       "number":"+49 621 779",
-      "location":"COLEMAN BARRACKS, MANNHEIM ",
+      "location":"MANNHEIM ",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":420,
-      "number":"+49 711 819",
-      "location":"ROBINSON BARRACKS, STUTTGART ",
+      "number":"+49 7118 19",
+      "location":"STUTTGART ",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":421,
-      "number":"+49 711 729",
-      "location":"KELLEY BARRACKS, MOEHRINGEN",
+      "number":"+49 7117 29",
+      "location":"MOEHRINGEN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":423,
-      "number":"+32 65 44",
+      "number":"+32 06544",
       "location":"SHAPE NATO",
       "country":"BE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":430,
-      "number":"+49 711 680",
-      "location":"PATCH BARRACKS, VAIHINGEN",
+      "number":"+49 7116 80",
+      "location":"VAIHINGEN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":431,
       "number":"+49 7031 15",
-      "location":"PANZER KASERNE, BOEBLINGEN",
+      "location":"BOEBLINGEN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":432,
       "number":"+49 711 680",
-      "location":"RED SWITCH",
+      "location":"STUTTGART ",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":433,
       "number":"+49 711 680",
       "location":"EUCOM PBX",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":434,
       "number":"+49 711 686 39",
-      "location":"PATCH BARRACKS DISA PBX",
+      "location":"PATCH BARRACKS",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":440,
       "number":"+49 8821 750",
       "location":"GARMISH",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":452,
       "number":"+49 6565 61",
       "location":"SPANGDAHLEM AB",
       "country":"GE",
-      "command":""
-   },
-   {
-      "prefix":452,
-      "number":"+49 6561 61",
-      "location":"BITBURG REMOTE",
-      "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":456,
       "number":"+49 267 891  ",
       "location":"BUECHEL",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":465,
       "number":"+49 9472 83",
-      "location":"CAMP ALBERTSHOF, HOHENFELS",
+      "location":"HOHENFELS",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":466,
       "number":"+49 9472 83",
       "location":"HOHENFELS",
       "country":"GE",
-      "command":""
-   },
-   {
-      "prefix":467,
-      "number":"+49 9802 83",
-      "location":"KATTERBACH",
-      "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":467,
       "number":"+49 9841 83",
-      "location":"ILLESHEIM",
+      "location":"KATTERBACH",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":468,
-      "number":"+49 981 183",
-      "location":"BARTON BARRACKS, ANSBACH",
+      "number":"+49 9811 83",
+      "location":"ANSBACH",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":469,
       "number":"+49 951 300",
-      "location":"WARNER BARRACKS, BAMBERG",
+      "location":" BAMBERG",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":472,
       "number":"+49 9645",
-      "location":"NETZABERG ELEM. SCHOOL, GRAFENWOEHR",
+      "location":"GRAFENWOEHR",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":473,
       "number":"+49 9802 83",
       "location":"OBERDACHSTAETTEN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":474,
+      "number":"+49 9641 454",
+      "location":"GRAFENWOEHR",
+      "country":"GE",
+      "command":"EUCOM"
    },
    {
       "prefix":475,
       "number":"+49 9641 83",
       "location":"GRAFENWOEHR",
       "country":"GE",
-      "command":""
-   },
-   {
-      "prefix":475,
-      "number":"+49 9641 83",
-      "location":"CAMP TUNISIA",
-      "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":476,
       "number":"+49 9662 83",
       "location":"VILSECK",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":478,
-      "number":"+49 6371 47",
+      "number":"+49 6371 405",
       "location":"RAMSTEIN AB",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":479,
+      "number":"+49 6371 46",
+      "location":"RAMSTEIN AB",
+      "country":"GE",
+      "command":"EUCOM"
    },
    {
       "prefix":480,
       "number":"+49 6371 47",
       "location":"RAMSTEIN AB",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":481,
       "number":"+49 6372 842",
       "location":"MIESAU",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":483,
       "number":"+49 631 411",
-      "location":"KLEBER KASERNE, KAISERSLAUTERN",
+      "location":"KLEBER KASERNE",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":484,
       "number":"+49 631 413",
-      "location":"PANZER KASERNE, KAISERSLAUTERN",
+      "location":"PANZER KASERNE",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":485,
-      "number":"+49 6783 6",
+      "number":"+49 678 36",
       "location":"BAUMHOLDER",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":486,
       "number":"+49 6371 86",
-      "location":"US ARMY HOSPITAL, LANDSTHUL",
+      "location":"LANDSTHUL (LRMC)",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":488,
+      "number":"+49 6371 92",
+      "location":"LANDSTHUL (LRMC)",
+      "country":"GE",
+      "command":"EUCOM"
    },
    {
       "prefix":489,
       "number":"+49 631 536",
-      "location":"KAPAUN REMOTE",
+      "location":"KAPAUN AS",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":490,
       "number":"+49 6371 86",
-      "location":"LANDSTHUL CALL MANAGER",
+      "location":"LANDSTHUL",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":491,
       "number":"+49 631 907",
-      "location":"LANDSTHUL BILLETTING",
+      "location":"LANDSTHUL ",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":493,
       "number":"+49 631 3406",
-      "location":"RHEIN ORDNANCE BARRACKS, KAISERSLATERN",
+      "location":"KAISERSLATERN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":495,
       "number":"+49 6331 86",
       "location":"PIRMASENS",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":496,
       "number":"+49 6302 67",
-      "location":"SEMBACH AB (RSU)",
+      "location":"SEMBACH AB",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":520,
+      "number":"+49 9472 83",
+      "location":"GRAFENWOEHR",
+      "country":"GE",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":522,
+      "number":"+49 9472 708",
+      "location":"GRAFENWOEHR",
+      "country":"GE",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":526,
+      "number":"+49 9641 70 526",
+      "location":"GRAFENWOEHR",
+      "country":"GE",
+      "command":"EUCOM"
    },
    {
       "prefix":529,
-      "number":"+49 711 729",
-      "location":"ECHTERDINGEN ARMY AIRFIELD",
+      "number":"+49 711 550 26",
+      "location":"STUTTGART ",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":531,
+      "number":"+49 611 143 531",
+      "location":"BAUMHOLDER",
+      "country":"GE",
+      "command":"EUCOM"
    },
    {
       "prefix":535,
       "number":"+351 295 57 ",
       "location":"LAJES FIELD",
       "country":"AR",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":537,
+      "number":"+49 6111 43 537",
+      "location":"WIESBADEN",
+      "country":"",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":541,
+      "number":"+49 6111 43 541",
+      "location":"KAISERSLATERN",
+      "country":"",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":542,
+      "number":"+49 6111 43 542",
+      "location":"KAISERSLATERN",
+      "country":"",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":544,
+      "number":"+49 6111 43 544",
+      "location":"SEMBACH",
+      "country":"",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":545,
+      "number":"+49 6111 43 545",
+      "location":"SEMBACH",
+      "country":"",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":546,
+      "number":"+49 6111 43 546",
+      "location":"WIESBADEN",
+      "country":"",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":548,
+      "number":"+49 6111 43 548",
+      "location":"WIESBADEN",
+      "country":"",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":549,
+      "number":"+49 6111 43 549",
+      "location":"SEMBACH",
+      "country":"",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":552,
+      "number":"+49 6111 43 552",
+      "location":"SEMBACH",
+      "country":"",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":569,
+      "number":"+49 9641 70 569",
+      "location":"GRAFENWOEHR",
+      "country":"",
+      "command":"EUCOM"
    },
    {
       "prefix":570,
-      "number":"+49 611 816",
-      "location":"AMELIA ERHARDT VOIP",
+      "number":"+49 6119 774",
+      "location":"WIESBADEN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":581,
+      "number":"+49 631 411",
+      "location":"KAISERSLAUTERN",
+      "country":"GE",
+      "command":"EUCOM"
    },
    {
       "prefix":583,
       "number":"+49 631 3615",
       "location":"KAISERSLAUTERN",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":590,
-      "number":"+49 6371 86",
-      "location":"LANDSTUHL VOIP",
+      "number":"+49 6371 9464",
+      "location":"LANDSTUHL (LRMC)",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
+   },
+   {
+      "prefix":591,
+      "number":"+49 611 143 591",
+      "location":"STUTTGART ",
+      "country":"GE",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":593,
+      "number":"+49 611 143 593",
+      "location":"STUTTGART ",
+      "country":"GE",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":597,
+      "number":"+32 06825",
+      "location":"CHIEVRES",
+      "country":"BE",
+      "command":"EUCOM"
+   },
+   {
+      "prefix":599,
+      "number":"+49 9641 70 599",
+      "location":"GRAFENWOEHR",
+      "country":"GE",
+      "command":"EUCOM"
    },
    {
       "prefix":624,
-      "number":"+39 095 86",
-      "location":"SIGONELLA HIPATH",
-      "country":"IT",
-      "command":""
-   },
-   {
-      "prefix":624,
-      "number":"+39 095 86",
+      "number":"+39 095 56",
       "location":"SIGONELLA",
       "country":"IT",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":626,
       "number":"+39 081 568",
-      "location":"CAPODICHINO NAS",
+      "location":"NAS GEATA",
       "country":"IT",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":628,
       "number":"+39 081 639",
       "location":"BAGNOLI",
       "country":"IT",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":629,
       "number":"+39 081 811",
-      "location":"GRICIGANO NAS",
+      "location":"NAS NAPLES",
       "country":"IT",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":632,
       "number":"+39 0434 30",
       "location":"AVIANO AB",
       "country":"IT",
-      "command":""
-   },
-   {
-      "prefix":632,
-      "number":"+39 0434 30",
-      "location":"AVIANO PBX",
-      "country":"IT",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":633,
       "number":"+39 050 54",
-      "location":"LEGHORN DEPOT, CAMP DARBY",
+      "location":"CAMP DARBY",
       "country":"IT",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":634,
       "number":"+39 0444 71",
       "location":"VICENZA",
       "country":"IT",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":637,
-      "number":"+39 0444 71",
-      "location":"DAL MOLIN, VINCENZA",
+      "number":"+39 0444 61",
+      "location":"VINCENZA",
       "country":"IT",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":672,
-      "number":"+90 312 284",
+      "number":"+90 312 422",
       "location":"ANKARA",
       "country":"TU",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":675,
       "number":"+90 232 462",
       "location":"IZMIR",
       "country":"TU",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":676,
       "number":"+90 322 316",
       "location":"INCIRLIK AB",
       "country":"TU",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":722,
       "number":"+34 955 84",
       "location":"MORON AB",
       "country":"SP",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":727,
       "number":"+34 956 82",
       "location":"NAS ROTA",
       "country":"SP",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":776,
       "number":"+49 9641 83",
       "location":"GRAFENWOEHR",
       "country":"GE",
-      "command":""
+      "command":"EUCOM"
    },
    {
       "prefix":781,
       "number":"+49 621 730 781",
       "location":"CAMP BONDSTEEL",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":220,
       "number":"+81 42 552 ",
       "location":"YOKOTA OPERATOR",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":222,
       "number":"+81 176 66  ",
       "location":"MISAWA ",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":224,
       "number":"+81 3 3224  ",
       "location":"TOKYO EMBASSY",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":225,
       "number":"+81 425 52  ",
       "location":"YOKOTA",
       "country":"JA",
-      "command":""
-   },
-   {
-      "prefix":226,
-      "number":"+81 176 66  ",
-      "location":"MISAWA",
-      "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":241,
       "number":"+81 46 816",
       "location":"YOKOSUKA",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":242,
       "number":"+81 45 281  ",
       "location":"NEGISHI",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":243,
       "number":"+81 46 816  ",
       "location":"YOKOSUKA",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":244,
       "number":"+81 46 816  ",
       "location":"YOKOSUKA",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":245,
       "number":"+81 46 816  ",
       "location":"YOKOSUKA",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":246,
       "number":"+81 46 816  ",
       "location":"IKEGO",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":249,
       "number":"+81 46 816  ",
       "location":"YOKOSUKA",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":252,
       "number":"+81 956 50  ",
       "location":"SASEBO",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":253,
       "number":"+81 827 79  ",
       "location":"IWAKUNI/S1RA/S2RA",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":263,
       "number":"+81 46 407  ",
       "location":"CAMP ZAMA",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":264,
       "number":"+81 46 763  ",
       "location":"ATSUGI ",
       "country":"JA",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":320,
       "number":"+671 320  ",
       "location":"FINEGAYAN BAY",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":321,
       "number":"+671 321  ",
       "location":"FINEGAYAN BAY",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":322,
       "number":"+671 322  ",
       "location":"FGB OPERATOR NAVCOM",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":332,
       "number":"+671 332  ",
       "location":"GUAM",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":333,
       "number":"+671 333  ",
       "location":"OROTE",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":339,
       "number":"+671 339  ",
       "location":"OROTE",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":343,
       "number":"+671 343  ",
       "location":"POLARIS POINT",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":344,
       "number":"+671 344  ",
       "location":"BARRIGADA",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":348,
       "number":"+671 348  ",
       "location":".",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":349,
       "number":"+671 349  ",
       "location":"NIMITZ HILL",
       "country":"GU",
-      "command":""
-   },
-   {
-      "prefix":353,
-      "number":"+671 353  ",
-      "location":"FINEGAYAN BAY",
-      "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":355,
       "number":"+671 355  ",
       "location":"FINEGAYAN BAY",
       "country":"GU",
-      "command":""
-   },
-   {
-      "prefix":362,
-      "number":"+671 362  ",
-      "location":"ANDERSEN",
-      "country":"GU",
-      "command":""
-   },
-   {
-      "prefix":366,
-      "number":"+671 366  ",
-      "location":"ANDERSEN",
-      "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":370,
       "number":"+246 370  ",
       "location":"DIEGO GARCIA",
       "country":"GU",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":620,
       "number":"+81 98 970  ",
       "location":"CAMP COURTNEY",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":621,
       "number":"+81 6117 21  ",
       "location":"CAMP COURTNEY",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":622,
       "number":"+81 98 954  ",
       "location":"CAMP COURTNEY",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":623,
       "number":"+81 98 969  ",
       "location":"CAMP HANSEN",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":625,
       "number":"+81 6117 25  ",
       "location":"CAMP SCHWAB",
       "country":"OKI",
-      "command":""
-   },
-   {
-      "prefix":629,
-      "number":"+81 98 970  ",
-      "location":"CAMP COURTNEY",
-      "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":630,
       "number":"+81 98 960  ",
       "location":"KADENA",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":631,
       "number":"+81 6117 31  ",
       "location":"KADENA",
       "country":"OKI",
-      "command":""
-   },
-   {
-      "prefix":632,
-      "number":"+81 98 962  ",
-      "location":"KADENA",
-      "country":"OKI",
-      "command":""
-   },
-   {
-      "prefix":633,
-      "number":"+81 98 959  ",
-      "location":"KADENA",
-      "country":"OKI",
-      "command":""
-   },
-   {
-      "prefix":634,
-      "number":"+81 98 961  ",
-      "location":"KADENA",
-      "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":636,
       "number":"+81 6117 36  ",
       "location":"FUTENMA MCAS",
       "country":"OKI",
-      "command":""
-   },
-   {
-      "prefix":637,
-      "number":"+81 98 970  ",
-      "location":"CAMP KINSER",
-      "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":638,
       "number":"+81 6117 38  ",
       "location":"FORT BUCKNER",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":639,
       "number":"+81 6117 39  ",
       "location":"FORT BUCKNER",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":640,
       "number":"+81 6117 40  ",
       "location":"FORT BUCKNER",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":641,
       "number":"+81 6117 41  ",
       "location":"FORT BUCKNER",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":642,
       "number":"+81 98 954  ",
       "location":"WHITE BEACH",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":643,
       "number":"+81 98 970  ",
       "location":"CAMP LESTER",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":644,
       "number":"+81 6117 44  ",
       "location":"TORII STATION",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":645,
       "number":"+81 98 970  ",
       "location":"CAMP FOSTER",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":646,
       "number":"+81 98 971  ",
       "location":"CAMP FOSTER",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":647,
       "number":"+81 6117 47  ",
       "location":"CAMP FOSTER",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":648,
       "number":"+81 6117 48  ",
       "location":"NAHA PBX",
       "country":"OKI",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":721,
       "number":"+82 2 2270  ",
       "location":"YONGSAN MAIN",
       "country":"KO",
-      "command":""
-   },
-   {
-      "prefix":722,
-      "number":"+82 2 7912  ",
-      "location":"YONGSAN MAIN",
-      "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":723,
       "number":"+82 2 7913  ",
       "location":"YONGSAN MAIN",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":724,
       "number":"+82 2 7914  ",
       "location":"YONGSAN MAIN",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":725,
       "number":"+82 2 7915  ",
       "location":"YONGSAN MAIN",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":734,
       "number":"+82 31 950  ",
       "location":"CAMP RED CLOUD",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":736,
       "number":"+82 2 7916  ",
       "location":"YONGSAN SOUTH",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":737,
       "number":"+82 2 7917  ",
       "location":"YONGSAN SOUTH",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":738,
       "number":"+82 2 7918  ",
       "location":"YONGSAN MAIN",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":754,
       "number":"+82 31 619  ",
       "location":"CAMP HUMPHREYS 2",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":766,
       "number":"+82 53 980  ",
       "location":"TAEGU AB",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":777,
       "number":"+82 31 669  ",
       "location":"OSAN",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":782,
       "number":"+82 63 470  ",
       "location":"KUNSAN/RST0",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":784,
       "number":"+82 31 661  ",
       "location":"OSAN",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":786,
       "number":"+82 31 940  ",
       "location":"KWANGJU",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    },
    {
       "prefix":788,
       "number":"+82 31 220  ",
       "location":"SUWON",
       "country":"KO",
-      "command":""
+      "command":"USINDOPACOM"
    }
 ]
