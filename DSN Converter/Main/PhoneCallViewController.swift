@@ -127,15 +127,9 @@ class PhoneCallViewController:
                 self.present(activyVC,animated: true,completion: nil)
             }
         } else {
-            // Fallback on earlier versions
+            // Fallback on earlier versi
+            
         }
-        
-//      floaty.addItem("Share", icon: UIImage(named: "icMap")) { item in
-//        let alert = UIAlertController(title: "Hey", message: "I'm hungry...", preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "Me too", style: .default, handler: nil))
-//        self.present(alert, animated: true, completion: nil)
-//      }
-//      floaty.addItem(item: item)
       floaty.paddingX = self.view.frame.width/30 - floaty.frame.width/30
       floaty.paddingY = self.view.frame.height/15 - floaty.frame.height/15
       floaty.fabDelegate = self
@@ -173,8 +167,10 @@ class PhoneCallViewController:
             commLbl.text = "Not Found"
             dsnLbl.text = getDsnNumber
             LocationLbl.text = "Not Found"
+            UCCLbl.text = "Not Found"
             DsnNotFound.isHidden = false
             CallView.isHidden = true
+            floaty.isHidden = true
         }
         
     }
