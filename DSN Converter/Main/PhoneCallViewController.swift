@@ -22,6 +22,9 @@ class PhoneCallViewController:
     @IBOutlet weak var DsnNotFound: UIView!
     @IBOutlet weak var callBtn: ButtonModification!
     @IBOutlet weak var CallView: UIView!
+    @IBOutlet weak var CallViewStack: UIStackView!
+    
+    
     var getDsnNumber = ""
     var seconds = 100
     var dsnRecentDatabase: [NSManagedObject] = []
@@ -45,25 +48,26 @@ class PhoneCallViewController:
     @IBOutlet weak var reportaCorrection: UIButton!
     @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var UCCLbl: UILabel!
-    
+    @IBOutlet weak var countryLbl: UILabel!
     //Decodable Struct - JSON
     struct DSNData: Decodable {
         let prefix:Int
         let number: String
         let location: String
+        let country: String
         let command: String
     }
     //ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        layoutFAB()
+       
 //        floaty.addDragging()
         
         
         getDsnNumber =  dsnPhoneGlobal
         //Devides the Area code with "-" from the rest of the number
         if getDsnNumber.range(of: "-") != nil {
-            CallView.isHidden = false
+            CallViewStack.isHidden = false
             DsnNotFound.isHidden = true
             reportaCorrection.isHidden = false
             //Splits DSN in Prefix (480) or Postfix(XXXX)
@@ -72,109 +76,26 @@ class PhoneCallViewController:
             let phoneNumber = inputComponets [1]
             //Call Function ReadDataJSON (Passing areaCode(DSN Prefix) and phoneNumber(DSN Postfix)
             ReadDataJSON(DsnPrefix: areaCode, DsnPostfix: phoneNumber)
-     
+            //Display Flotting Button in UI
+            layoutFAB()
         
         
         }
     }
-    func layoutFAB() {
-      let item = FloatyItem()
-      item.hasShadow = false
-      item.buttonColor = UIColor.red
-      item.circleShadowColor = UIColor.red
-      item.titleShadowColor = UIColor.blue
-      item.titleLabelPosition = .right
-//      item.title = "titlePosition right"
-      item.handler = { item in
-        
-      }
-      
-      floaty.hasShadow = false
-        if #available(iOS 13.0, *) {
-            floaty.addItem("Add to Favorite", icon: UIImage(systemName: "star", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) { item in
-                dnsCommercialGlobalNoLbl = dnsCommercialGlobal.replacingOccurrences(of: " ", with: "")
-                dsnPhoneGlobal = self.getDsnNumber
-                dsnLocationGlobal = self.DsnLocation
-                dsnDateGlobal = self.whatDateisit
-                dsnTimeGlobal = self.whatTimeisit
-                self.performSegue(withIdentifier: "SaveFav", sender: nil)
-                
-            }
-        } else {
-            // Fallback on earlier versions
-        }
-        if #available(iOS 13.0, *) {
-            floaty.addItem("Add to Contacts", icon: UIImage(systemName: "person.crop.circle", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) {item in
-                // Open and Save Contacts.
-                let contact = CNMutableContact()
-                let homePhone = CNLabeledValue(label: "Commercial DSN", value: CNPhoneNumber(stringValue :"\(dnsCommercialGlobal)"))
-                contact.phoneNumbers = [homePhone]
-                contact.note = "Location: \(self.DsnLocation)\nThis commercial DSN was provided to you by DSN Converter."
-                //contact.imageData = data // Set image data here
-                let vc = CNContactViewController(forNewContact: contact)
-                vc.delegate = self
-                let nav = UINavigationController(rootViewController: vc)
-                self.present(nav, animated: true, completion: nil)
-            }
-        } else {
-            // Fallback on earlier versions
-        }
-        if #available(iOS 13.0, *) {
-            floaty.addItem("Share", icon: UIImage(systemName: "square.and.arrow.up", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) {item in
-                //Share
-                let Text = "Commerical: \(self.phoneOutput)\n DSN: \(self.getDsnNumber)\n Location: \(self.DsnLocation) \nThis commerical DSN was provided to you by DSN Converter.\n Download it free on the App Store."
-                let activyVC = UIActivityViewController(activityItems:[Text], applicationActivities: nil)
-                self.present(activyVC,animated: true,completion: nil)
-            }
-        } else {
-            // Fallback on earlier versi
-            
-        }
-      floaty.paddingX = self.view.frame.width/30 - floaty.frame.width/30
-      floaty.paddingY = self.view.frame.height/15 - floaty.frame.height/15
-      floaty.fabDelegate = self
-      
-      self.view.addSubview(floaty)
-      
-    }
-    
-    
-    func ReadDataJSON(DsnPrefix:String, DsnPostfix:String) {
-        guard let sourceURL = Bundle.main.url(forResource: "DSNList", withExtension: "json") else {fatalError("File Not Found")}
-        guard let DSNDecoderData = try? Data(contentsOf: sourceURL) else {fatalError("DSN Decode Error")}
-        let decoder = JSONDecoder()
-        guard let DSNJSONArray = try? decoder.decode([DSNData].self, from: DSNDecoderData) else {fatalError("Problem with Dedoding DSN ")}
-        //For Loop
-        for dsn in DSNJSONArray {
-            // If the DsnPrefix matches any of the JSON DSN then display the CallView
-            if String(dsn.prefix) == DsnPrefix {
-                print("DsnPrefix\(String(dsn.prefix))")
-                let commercialNumber = dsn.number + DsnPostfix
-                let baseLocation = dsn.location
-                let unifiedCommand = dsn.command
-                //Display Labels
-                commLbl.text = commercialNumber
-                LocationLbl.text = baseLocation
-                DsnLocation = baseLocation
-                dsnLbl.text = getDsnNumber
-                dnsCommercialGlobal = commercialNumber
-                dsnPhoneGlobal = getDsnNumber
-                UCCLbl.text = unifiedCommand
-            }
-        }
-        // If DSN is not in JSON File - User will have the ability to submit a request.
-        if commLbl.text == "CommLbl" {
-            commLbl.text = "Not Found"
-            dsnLbl.text = getDsnNumber
-            LocationLbl.text = "Not Found"
-            UCCLbl.text = "Not Found"
-            DsnNotFound.isHidden = false
-            CallView.isHidden = true
-            floaty.isHidden = true
-        }
-        
-    }
+
     @IBAction func MakeACall(_ sender: Any) {
+       Call()
+    }
+    
+    @IBAction func Close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+}
+// All Function are below
+extension PhoneCallViewController {
+    
+    func Call() {
         //Get the time and Date
         //Date
         let dateDate = Date()
@@ -222,32 +143,6 @@ class PhoneCallViewController:
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
-//    //Save to Favorite ( Within the App)
-//    @IBAction func Favorite(_ sender: Any) {
-//        dnsCommercialGlobalNoLbl = dnsCommercialGlobal.replacingOccurrences(of: " ", with: "")
-//        dsnPhoneGlobal = getDsnNumber
-//        dsnLocationGlobal = DsnLocation
-//        dsnDateGlobal = whatDateisit
-//        dsnTimeGlobal = whatTimeisit
-//        performSegue(withIdentifier: "SaveFav", sender: nil)
-//    }
-//    @IBAction func SaveContacts(_ sender: Any) {
-//        // Open and Save Contacts.
-//        let contact = CNMutableContact()
-//        let homePhone = CNLabeledValue(label: "Commercial DSN", value: CNPhoneNumber(stringValue :"\(dnsCommercialGlobal)"))
-//        contact.phoneNumbers = [homePhone]
-//        contact.note = "Location: \(self.DsnLocation)\nThis commercial DSN was provided to you by DSN Converter."
-//        //contact.imageData = data // Set image data here
-//        let vc = CNContactViewController(forNewContact: contact)
-//        vc.delegate = self
-//        let nav = UINavigationController(rootViewController: vc)
-//        self.present(nav, animated: true, completion: nil)
-//
-//    }
-    
-    
-    
-    func contactViewController(_ viewController: CNContactViewController, didCompleteWith contact: CNContact?) { self.dismiss(animated: true, completion: nil) }
     
     
     @objc func tick() {
@@ -265,36 +160,121 @@ class PhoneCallViewController:
         
     }
     
-    @IBAction func Close(_ sender: Any) {
+    func ReadDataJSON(DsnPrefix:String, DsnPostfix:String) {
+        guard let sourceURL = Bundle.main.url(forResource: "DSNList", withExtension: "json") else {fatalError("File Not Found")}
+        guard let DSNDecoderData = try? Data(contentsOf: sourceURL) else {fatalError("DSN Decode Error")}
+        let decoder = JSONDecoder()
+        guard let DSNJSONArray = try? decoder.decode([DSNData].self, from: DSNDecoderData) else {fatalError("Problem with Dedoding DSN ")}
+        //For Loop
+        for dsn in DSNJSONArray {
+            // If the DsnPrefix matches any of the JSON DSN then display the CallView
+            if String(dsn.prefix) == DsnPrefix {
+                print("DsnPrefix\(String(dsn.prefix))")
+                let commercialNumber = dsn.number + DsnPostfix
+                let baseLocation = dsn.location
+                let unifiedCommand = dsn.command
+                let country = dsn.country
+                //Display Labels
+                commLbl.text = commercialNumber
+                LocationLbl.text = baseLocation
+                UCCLbl.text = unifiedCommand
+                dsnLbl.text = getDsnNumber
+                countryLbl.text = country
+                dnsCommercialGlobal = commercialNumber
+                dsnPhoneGlobal = getDsnNumber
+                DsnLocation = baseLocation
+            }
+        }
+        // If DSN is not in JSON File - User will have the ability to submit a request.
+        if commLbl.text == "CommLbl" {
+            commLbl.text = "Not Found"
+            dsnLbl.text = getDsnNumber
+            LocationLbl.text = "Not Found"
+            UCCLbl.text = "Not Found"
+            countryLbl.text = "Not Found"
+            DsnNotFound.isHidden = false
+            CallViewStack.isHidden = true
+            floaty.isHidden = true
+        }
         
-        dismiss(animated: true, completion: nil)
     }
     
-//    @IBAction func ShareBtn(_ sender: Any) {
-//
-//        //Share
-//
-//
-//
-//
-//        let Text = "Commerical: \(phoneOutput)\n DSN: \(getDsnNumber)\n Location: \(DsnLocation) \nThis commerical DSN was provided to you by DSN Converter.\n Download it free on the App Store."
-//        // let ActualNumber = "\(self.departmentsPhone[indexPath.row])"
-//        let activyVC = UIActivityViewController(activityItems:[Text], applicationActivities: nil)
-//
-//        self.present(activyVC,animated: true,completion: nil)
-//
-//
-//
-//
-//    }
-//
-    
-}
-extension PhoneCallViewController {
-    
-    
-    
-    
+    func layoutFAB() {
+      let item = FloatyItem()
+      item.hasShadow = false
+      item.buttonColor = UIColor.red
+      item.circleShadowColor = UIColor.red
+      item.titleShadowColor = UIColor.blue
+      item.titleLabelPosition = .right
+//      item.title = "titlePosition right"
+      item.handler = { item in
+        
+      }
+      
+      floaty.hasShadow = false
+        if #available(iOS 13.0, *) {
+            floaty.addItem("Call \(getDsnNumber)", icon: UIImage(systemName: "phone", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) { item in
+                self.Call()
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 13.0, *) {
+            floaty.addItem("Add to Favorite", icon: UIImage(systemName: "star", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) { item in
+                dnsCommercialGlobalNoLbl = dnsCommercialGlobal.replacingOccurrences(of: " ", with: "")
+                dsnPhoneGlobal = self.getDsnNumber
+                dsnLocationGlobal = self.DsnLocation
+                dsnDateGlobal = self.whatDateisit
+                dsnTimeGlobal = self.whatTimeisit
+                self.performSegue(withIdentifier: "SaveFav", sender: nil)
+      
+                
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 13.0, *) {
+            floaty.addItem("Add to Contacts", icon: UIImage(systemName: "person.crop.circle", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) {item in
+                // Open and Save Contacts.
+                let contact = CNMutableContact()
+                let homePhone = CNLabeledValue(label: "Commercial DSN", value: CNPhoneNumber(stringValue :"\(dnsCommercialGlobal)"))
+                contact.phoneNumbers = [homePhone]
+                contact.note = "Location: \(self.DsnLocation)\nThis commercial DSN was provided to you by DSN Converter."
+                //contact.imageData = data // Set image data here
+                let vc = CNContactViewController(forNewContact: contact)
+                vc.delegate = self
+                let nav = UINavigationController(rootViewController: vc)
+                self.present(nav, animated: true, completion: nil)
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 13.0, *) {
+            floaty.addItem("DSN Correction", icon: UIImage(systemName: "iphone.homebutton.slash", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) { item in
+                self.performSegue(withIdentifier: "ReportDSN", sender: nil)
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 13.0, *) {
+            floaty.addItem("Share", icon: UIImage(systemName: "square.and.arrow.up", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) {item in
+                //Share
+                let Text = "Commerical: \(self.phoneOutput)\n DSN: \(self.getDsnNumber)\n Location: \(self.DsnLocation) \nThis commerical DSN was provided to you by DSN Converter.\n Download it free on the App Store."
+                let activyVC = UIActivityViewController(activityItems:[Text], applicationActivities: nil)
+                self.present(activyVC,animated: true,completion: nil)
+            }
+        } else {
+            // Fallback on earlier versi
+            
+        }
+     
+      floaty.paddingX = self.view.frame.width/30 - floaty.frame.width/30
+//      floaty.paddingY = self.view.frame.height/15 - floaty.frame.height/15
+      floaty.fabDelegate = self
+      
+      self.view.addSubview(floaty)
+      
+    }
     
     
 }
