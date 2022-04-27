@@ -16,9 +16,16 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
     
       @IBOutlet weak var SupportedLocation: UITableView!
   
- 
+    struct DSNData: Decodable {
+        let prefix:Int
+        let number: String
+        let location: String
+        let country: String
+        let command: String
+    }
         
-            
+            var EUCOM = [DSNData]()
+    
             var AFdsnNumber: [String] = ["480","479","478","489","452","632","226","268","236","238","676","672","722","535","359"]
             var AFlocations :[String] = ["Ramstein AB","Ramstein AB","Ramstein AB","Vogelweh","Spangdahlem AB","Aviano AB","RAF Lakenheath","RAF Alconbury/Molesworth","RAF Croughton","RAF Mildenhall","Incirlik AB","Incirlik AB","Moron AB","Lajes Field","Volkel AB"]
             var AFcountryArray :[String] = ["Germany","Germany","Germany","Germany","Germany","Italy","United Kindom","United Kindom","United Kindom","United Kindom","Turkey","Turkey","Spain","Portugal","Netherlands"]
@@ -39,7 +46,7 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        ReadDataJSON()
         
         if let value = UserDefaults.standard.value(forKey: "dsnService"){
             
@@ -47,19 +54,19 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
                 
                 backgroundImg.image = UIImage(named:"aircraft.png")
                 self.view.backgroundColor = #colorLiteral(red: 0.1045187339, green: 0.2495509088, blue: 0.4657436013, alpha: 1)
-                ChoicesSegs.selectedSegmentIndex = 0
+                //ChoicesSegs.selectedSegmentIndex = 0
                 
                 
             }else if 1 == value as! Int{
                 self.view.backgroundColor = #colorLiteral(red: 0.1572559077, green: 0.4129788669, blue: 0.1819413052, alpha: 1)
                 backgroundImg.image = UIImage(named:"jeep.png")
-                ChoicesSegs.selectedSegmentIndex = 1
+             //   ChoicesSegs.selectedSegmentIndex = 1
                 
             }else if 2 == value as! Int{
                 
                 self.view.backgroundColor = #colorLiteral(red: 0.1620297223, green: 0.4949354393, blue: 0.7333416692, alpha: 1)
                 backgroundImg.image = UIImage(named:"submarine.png")
-                ChoicesSegs.selectedSegmentIndex = 2
+            //    ChoicesSegs.selectedSegmentIndex = 2
             }
             
         }
@@ -72,7 +79,31 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
         
     }
     
-    
+    func ReadDataJSON() {
+        guard let sourceURL = Bundle.main.url(forResource: "DSNList", withExtension: "json") else {fatalError("File Not Found")}
+        guard let DSNDecoderData = try? Data(contentsOf: sourceURL) else {fatalError("DSN Decode Error")}
+        let decoder = JSONDecoder()
+        do{
+        EUCOM = try decoder.decode([DSNData].self, from: DSNDecoderData)
+        
+        } catch{
+                print("Error")
+            }//For Loop
+//        for dsn in DSNJSONArray {
+//            // If the DsnPrefix matches any of the JSON DSN then display the CallView
+//
+//                print("DsnPrefix\(String(dsn.prefix))")
+//                let commercialNumber = dsn.number
+//                let baseLocation = dsn.location
+//                let unifiedCommand = dsn.command
+//                let country = dsn.country
+//
+//                print(commercialNumber)
+//
+//        }
+        SupportedLocation.reloadData()
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -80,7 +111,8 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
         
         switch ChoicesSegs.selectedSegmentIndex {
         case 0:
-            return AFlocations.count
+            
+            return EUCOM.count
         case 1:
             return ARlocations.count
         case 2 :
@@ -101,9 +133,9 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
                 
                 switch ChoicesSegs.selectedSegmentIndex {
                 case 0:
-                    cell.locationLbl.text = AFlocations[indexPath.row]
-                    cell.dsnNumber.text = AFdsnNumber[indexPath.row]
-                    cell.countryLbl.text = AFcountryArray[indexPath.row]
+                    cell.locationLbl.text = EUCOM[indexPath.row].location
+                    cell.dsnNumber.text = String (EUCOM[indexPath.row].prefix)
+                    cell.countryLbl.text = EUCOM[indexPath.row].country
                   //  cell.serviceLbl.text = AFserviceArray[indexPath.row]
                 case 1:
                     

@@ -1061,14 +1061,14 @@ Our team will review your submission and update our database as soon as possible
                                 </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dJh-FI-yka">
-                                <rect key="frame" x="19" y="103" width="374" height="29"/>
+                                <rect key="frame" x="19" y="144" width="374" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="p42-Qe-Jp7"/>
+                                    <constraint firstAttribute="height" constant="31" id="p42-Qe-Jp7"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="U.S Air Force"/>
-                                    <segment title="U.S Army"/>
-                                    <segment title="U.S Navy"/>
+                                    <segment title="EUCOM"/>
+                                    <segment title="USINDOPACOM"/>
+                                    <segment title="CONUS"/>
                                 </segments>
                                 <color key="tintColor" red="0.94183128240000002" green="0.94183128240000002" blue="0.94183128240000002" alpha="0.89252310739999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -1085,7 +1085,7 @@ Our team will review your submission and update our database as soon as possible
                             <constraint firstItem="2fw-i4-bhb" firstAttribute="bottom" secondItem="zg2-dw-Mzl" secondAttribute="bottom" id="IBS-mO-f6a"/>
                             <constraint firstItem="sng-hI-fP4" firstAttribute="leading" secondItem="5yL-uD-e1r" secondAttribute="leadingMargin" id="Koe-zT-s5m"/>
                             <constraint firstItem="tal-v0-AcY" firstAttribute="bottom" secondItem="2fw-i4-bhb" secondAttribute="bottom" id="N6A-bj-5Rd"/>
-                            <constraint firstItem="dJh-FI-yka" firstAttribute="top" secondItem="sng-hI-fP4" secondAttribute="bottom" constant="17" id="OVB-2u-cnN"/>
+                            <constraint firstItem="dJh-FI-yka" firstAttribute="top" secondItem="sng-hI-fP4" secondAttribute="bottom" constant="14" id="OVB-2u-cnN"/>
                             <constraint firstItem="tal-v0-AcY" firstAttribute="centerX" secondItem="5yL-uD-e1r" secondAttribute="centerX" id="VdX-Er-Jpy"/>
                             <constraint firstItem="sng-hI-fP4" firstAttribute="top" secondItem="zg2-dw-Mzl" secondAttribute="top" constant="56" id="ZRO-k4-aVL"/>
                             <constraint firstItem="2fw-i4-bhb" firstAttribute="leading" secondItem="zg2-dw-Mzl" secondAttribute="leading" id="ZWh-aE-ewj"/>

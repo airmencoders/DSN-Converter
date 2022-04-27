@@ -24,6 +24,22 @@ class PhoneCallViewController:
     @IBOutlet weak var CallView: UIView!
     @IBOutlet weak var CallViewStack: UIStackView!
     
+    //Statitics Variables
+    
+    var googleFormsLink: String = ""
+    var googleDate:String = ""
+    var googlePrefix:String = ""
+    var googleLocation:String = ""
+    var googleCountry:String = ""
+    var googleUCC:String = ""
+    
+    // Ids
+    
+    var googleDateID = "entry.1938942754"
+    var googlePrefixID = "entry.307678791"
+    var googleLocationID = "entry.1708323532"
+    var googleCountryID = "entry.971695373"
+    var googleUCCID = "entry.300620858"
     
     var getDsnNumber = ""
     var seconds = 100
@@ -33,7 +49,9 @@ class PhoneCallViewController:
     var callCommericalNumber = ""
     var whatDateisit = ""
     var whatTimeisit = ""
-    
+    var areaCodeValue = ""
+    var countryValue = ""
+    var uccValue = ""
     @IBOutlet weak var SubmitBtn: ButtonModification!
     // var getDsnNumber = ""
     var DsnLocation = ""
@@ -62,7 +80,7 @@ class PhoneCallViewController:
         super.viewDidLoad()
        
 //        floaty.addDragging()
-        
+    
         
         getDsnNumber =  dsnPhoneGlobal
         //Devides the Area code with "-" from the rest of the number
@@ -73,12 +91,16 @@ class PhoneCallViewController:
             //Splits DSN in Prefix (480) or Postfix(XXXX)
             let inputComponets = getDsnNumber.split {$0 == "-"}.map { (x) -> String in return String(x)}
             let areaCode = inputComponets [0]
+            areaCodeValue = areaCode
             let phoneNumber = inputComponets [1]
             //Call Function ReadDataJSON (Passing areaCode(DSN Prefix) and phoneNumber(DSN Postfix)
             ReadDataJSON(DsnPrefix: areaCode, DsnPostfix: phoneNumber)
             //Display Flotting Button in UI
             layoutFAB()
-        
+            //
+            GetDateAndTime()
+            //
+            WriteStatistics()
         
         }
     }
@@ -96,19 +118,8 @@ class PhoneCallViewController:
 extension PhoneCallViewController {
     
     func Call() {
-        //Get the time and Date
-        //Date
-        let dateDate = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd-MM-YYYY"
-        let dateResults = formatter.string(from: dateDate)
-        whatDateisit = dateResults
-        //Time
-        let dateDateTime = Date()
-        let formatterTime = DateFormatter()
-        formatterTime.dateFormat = "HH:mm:ss"
-        let timeResults = formatterTime.string(from: dateDateTime)
-        whatTimeisit = timeResults
+        GetDateAndTime()
+        
         //Remove all Spaces in the String
         callCommericalNumber = dnsCommercialGlobal.replacingOccurrences(of: " ", with: "")
         //Make the Call
@@ -183,6 +194,8 @@ extension PhoneCallViewController {
                 dnsCommercialGlobal = commercialNumber
                 dsnPhoneGlobal = getDsnNumber
                 DsnLocation = baseLocation
+                countryValue = country
+                uccValue = unifiedCommand
             }
         }
         // If DSN is not in JSON File - User will have the ability to submit a request.
@@ -275,6 +288,62 @@ extension PhoneCallViewController {
       self.view.addSubview(floaty)
       
     }
+    func GetDateAndTime() {
+        //Get the time and Date
+        //Date
+        let dateDate = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-YYYY"
+        let dateResults = formatter.string(from: dateDate)
+        whatDateisit = dateResults
+        //Time
+        let dateDateTime = Date()
+        let formatterTime = DateFormatter()
+        formatterTime.dateFormat = "HH:mm:ss"
+        let timeResults = formatterTime.string(from: dateDateTime)
+        whatTimeisit = timeResults
+    }
     
+    func setupOnlineLogs(formLink: String,dateField: String,prefixField: String, locationField: String, countryField: String, uccField: String ) {
+        googleFormsLink = formLink
+        googleDate = dateField
+        googlePrefix = prefixField
+        googleLocation = locationField
+        googleCountry = countryField
+        googleUCC = uccField
+   
+    }
+    
+    func WriteStatistics() {
+        setupOnlineLogs(formLink: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfw1t36OkiCL98BM1KHeuCAMGE-87kCVGpPmfGj-1nJAt2REQ/formResponse", dateField: googleDateID ,prefixField: googlePrefixID,
+                        locationField:  googleLocationID , countryField: googleCountryID , uccField: googleUCCID)
+        
+        
+        let url = URL(string: googleFormsLink)
+        
+        var postData = googleDate + "=" + "\(whatDateisit)"
+        postData += "&" + googlePrefix + "=" + "\(areaCodeValue)"
+        postData += "&" + googleLocation + "=" + "\(DsnLocation)"
+        postData += "&" + googleCountry + "=" + "\(countryValue)"
+        postData += "&" + googleUCC + "=" + "\(uccValue)"
+        
+        
+        
+        var request = URLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        request.httpBody = postData.data(using: String.Encoding.utf8)
+        
+        #if os(OSX)
+        if kCFCoreFoundationVersionNumber > kCFCoreFoundationVersionNumber10_10 {
+            Foundation.URLSession.shared.dataTask(with: request).resume()
+        } else {
+            NSURLConnection(request: request, delegate: nil)?.start()
+        }
+        #elseif os(iOS)
+        URLSession.shared.dataTask(with: request).resume()
+        #endif
+        
+    }
     
 }
