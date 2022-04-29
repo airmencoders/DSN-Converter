@@ -97,10 +97,6 @@ class PhoneCallViewController:
             ReadDataJSON(DsnPrefix: areaCode, DsnPostfix: phoneNumber)
             //Display Flotting Button in UI
             layoutFAB()
-            //
-            GetDateAndTime()
-            //
-            WriteStatistics()
         
         }
     }
@@ -113,7 +109,18 @@ class PhoneCallViewController:
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func AlertMessage(_ sender: Any) {
+        let alertVC = PMAlertController(title: "DSN Converter ", description: "This is an Unsecured Line!\n Be aware that DSN Converter uses your commercial cell service to make phone calls. DO NOT to discuss any sensative or classified information when using this app.", image: UIImage(named: "img.png"), style: .alert)
+        alertVC.addAction(PMAlertAction(title: "Understood", style: .cancel, action: { () -> Void in
+        }))
+        self.present(alertVC, animated: true, completion: nil)
+        
+    }
 }
+
+
+
+
 // All Function are below
 extension PhoneCallViewController {
     
@@ -314,36 +321,6 @@ extension PhoneCallViewController {
    
     }
     
-    func WriteStatistics() {
-        setupOnlineLogs(formLink: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfw1t36OkiCL98BM1KHeuCAMGE-87kCVGpPmfGj-1nJAt2REQ/formResponse", dateField: googleDateID ,prefixField: googlePrefixID,
-                        locationField:  googleLocationID , countryField: googleCountryID , uccField: googleUCCID)
-        
-        
-        let url = URL(string: googleFormsLink)
-        
-        var postData = googleDate + "=" + "\(whatDateisit)"
-        postData += "&" + googlePrefix + "=" + "\(areaCodeValue)"
-        postData += "&" + googleLocation + "=" + "\(DsnLocation)"
-        postData += "&" + googleCountry + "=" + "\(countryValue)"
-        postData += "&" + googleUCC + "=" + "\(uccValue)"
-        
-        
-        
-        var request = URLRequest(url: url!)
-        request.httpMethod = "POST"
-        request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
-        request.httpBody = postData.data(using: String.Encoding.utf8)
-        
-        #if os(OSX)
-        if kCFCoreFoundationVersionNumber > kCFCoreFoundationVersionNumber10_10 {
-            Foundation.URLSession.shared.dataTask(with: request).resume()
-        } else {
-            NSURLConnection(request: request, delegate: nil)?.start()
-        }
-        #elseif os(iOS)
-        URLSession.shared.dataTask(with: request).resume()
-        #endif
-        
-    }
+    
     
 }

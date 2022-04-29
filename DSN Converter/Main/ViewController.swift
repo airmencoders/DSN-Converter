@@ -99,18 +99,9 @@ class ViewController: UIViewController,CNContactViewControllerDelegate{
             
             if self.getDsnNumber.count != 8 {
                 print("ERRORRRR")
-                
                 let alertVC = PMAlertController(title: "DSN Converter ", description: "The provided DSN: \(self.getDsnNumber) is incorrect.\n Please make sure you are using the correct format.\n E.g: 4801234 ", image: UIImage(named: "img.png"), style: .alert)
-                
-                
                 alertVC.addAction(PMAlertAction(title: "Dismiss", style: .cancel, action: { () -> Void in
-                    
-                    
-                    
                 }))
-                
-                
-                
                 self.present(alertVC, animated: true, completion: nil)
                 
             }else {
