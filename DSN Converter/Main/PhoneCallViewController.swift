@@ -118,9 +118,6 @@ class PhoneCallViewController:
     }
 }
 
-
-
-
 // All Function are below
 extension PhoneCallViewController {
     
@@ -310,17 +307,4 @@ extension PhoneCallViewController {
         let timeResults = formatterTime.string(from: dateDateTime)
         whatTimeisit = timeResults
     }
-    
-    func setupOnlineLogs(formLink: String,dateField: String,prefixField: String, locationField: String, countryField: String, uccField: String ) {
-        googleFormsLink = formLink
-        googleDate = dateField
-        googlePrefix = prefixField
-        googleLocation = locationField
-        googleCountry = countryField
-        googleUCC = uccField
-   
-    }
-    
-    
-    
 }

@@ -18,31 +18,36 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     var googleEmail :String!
     var googleComments : String!
     var googleCommercial : String!
-    var googleDSNvar : String!
+    var googleDSN : String!
     var googleLocationvar : String!
  
     @IBOutlet weak var errorPrefixLbl: UILabel!
     @IBOutlet weak var errorCommericalLbl: UILabel!
     @IBOutlet weak var errorLocationLbl: UILabel!
     
-    @IBOutlet weak var commentText: DesignableTextField!
+    
     
     // Ids
-    var googleNameids = "entry_1679637001"
-    var googleEmailids = "entry_1756892779"
-    var googleCommentsids = "entry_818610863"
-    var googleCommercialids = "entry_484636668"
-    var googleDSNids = "entry_428445608"
-    var googleLocationids = "entry_1056081706"
+    var googleDSNids = "entry.1211320378"
+    var googleCommercialids = "entry.972115246"
+    var googleLocationids = "entry.999748559"
+    var googleNameids = "entry.559878369"
+    var googleEmailids = "entry.742138175"
+    var googleCommentsids = "entry.360868702"
+
+
+
     
     @IBOutlet weak var commTxt: UITextField!
     @IBOutlet weak var dsnTxt: UITextField!
     @IBOutlet weak var locTxt: UITextField!
- 
-    
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var commentText: DesignableTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         commentText.delegate = self
+        commTxt.delegate = self
     }
     @IBAction func Exit(_ sender: Any) {
         
@@ -54,12 +59,15 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     
     func setupOnlineLogs(formLink: String,nameField: String,emailField: String, commentsField: String, commercialField: String, dsnField: String, locationField: String ) {
         googleFormLink = formLink
+        googleDSN = dsnField
+        googleCommercial = commercialField
+        googleLocationvar = locationField
         googleName = nameField
         googleEmail = emailField
         googleComments = commentsField
-        googleCommercial = commercialField
-        googleDSNvar = dsnField
-        googleLocationvar = locationField
+       
+     
+       
     }
     func WriteToGoogle () {
         
@@ -83,7 +91,7 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
             errorPrefixLbl.isHidden = false
             
             errorPrefixLbl.text = "Enter a valid Prefix"
-        } else if commentText.text == "" {
+        } else if commTxt.text == "" {
             let leftView = UIImageView(image: #imageLiteral(resourceName: "Contacts") )
             let banner = NotificationBanner(title: "DSN Converter", subtitle: "Please enter a valid Conversion (Ex: 06371 47xxxx).", leftView: leftView, style: .danger)
             banner.show()
@@ -103,16 +111,27 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
             errorPrefixLbl.isHidden = false
             errorCommericalLbl.isHidden = false
             errorLocationLbl.isHidden = false
-        setupOnlineLogs(formLink: "https://docs.google.com/forms/d/e/1FAIpQLSccRuoqnXK6EKfLSsUYHrQnN1OGsJTZ9LLuIClCrQ4pOgxQRg/formResponse", nameField: googleNameids ,emailField: googleEmailids,
-                        commentsField:  googleCommentsids , commercialField: googleCommercialids , dsnField: googleDSNids, locationField: googleLocationids)
+        setupOnlineLogs(formLink: "https://docs.google.com/forms/d/e/1FAIpQLSciTZOi17dVqPMHf1i1THYva7LnHyUmU9BWHMOWFo62cpQjzQ/formResponse",
+                        nameField: googleNameids,
+                        emailField: googleEmailids,
+                        commentsField: googleCommentsids,
+                        commercialField: googleCommercialids,
+                        dsnField: googleDSNids,
+                        locationField: googleLocationids)
         
         
         let url = URL(string: googleFormLink)
-        
-        var postData = googleComments + "=" + "\(commentText.text!)"
+            print("DSN:\(googleComments!)")
+        var  postData =  googleDSN + "=" + "\(dsnTxt.text!)"
         postData += "&" + googleCommercial + "=" + "\(commTxt.text!)"
-        postData += "&" + googleDSNvar + "=" + "\(dsnTxt.text!)"
         postData += "&" + googleLocationvar + "=" + "\(locTxt.text!)"
+        postData += "&" + googleName + "=" + "\(nameText.text!)"
+        postData += "&" + googleEmail + "=" + "\(emailTxt.text!)"
+        postData += "&" + googleComments + "=" + "\(commentText.text!)"
+      
+      
+       
+            
         
         
         var request = URLRequest(url: url!)
