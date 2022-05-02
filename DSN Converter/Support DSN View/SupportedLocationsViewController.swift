@@ -14,7 +14,8 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
     
     @IBOutlet weak var backgroundImg: UIImageView!
     
-      @IBOutlet weak var SupportedLocation: UITableView!
+    @IBOutlet weak var SignUpBtn: ButtonModification!
+    @IBOutlet weak var SupportedLocation: UITableView!
   
     @IBOutlet weak var NoDataYet: UILabel!
     @IBOutlet weak var ParagrahText: UITextView!
@@ -37,6 +38,7 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
         super.viewDidLoad()
         NoDataYet.isHidden = true
         ParagrahText.isHidden = true
+        SignUpBtn.isHidden = true
         ReadDataJSON()
         if let value = UserDefaults.standard.value(forKey: "dsnService"){
             if  0 == value as! Int {
@@ -73,12 +75,14 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
         case 0:
             NoDataYet.isHidden = true
             ParagrahText.isHidden = true
+            SignUpBtn.isHidden = true
             return EUCOM.count
         
         case 1:
             NoDataYet.isHidden = false
             ParagrahText.isHidden = false
-            NoDataYet.text = "INDOPACOM Support"
+            SignUpBtn.isHidden = false
+            NoDataYet.text = "Coming Soon"
        
         default:
             break
@@ -107,17 +111,9 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
                     
                 default:
                     break
-                    
+
                 }
-                
                  return cell
-            
-    
-         
-                //cell.AfiPicImg.image = SideImage[indexPath.row]
-              //  cell.textLabel?.text = Locations[indexPath.row]
-                
-                
             }
             
             return UITableViewCell()
@@ -132,7 +128,9 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
     }
 
   
-   
+    @IBAction func SignUpBtn(_ sender: Any) {
+    }
+    
     
 
     /*

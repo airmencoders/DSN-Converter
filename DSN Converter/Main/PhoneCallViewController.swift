@@ -19,7 +19,9 @@ class PhoneCallViewController:
     @IBOutlet weak var favBtn: ButtonModification!
     @IBOutlet weak var contactBtn: ButtonModification!
     @IBOutlet weak var sharebtn: ButtonModification!
+
     @IBOutlet weak var DsnNotFound: UIView!
+    
     @IBOutlet weak var callBtn: ButtonModification!
     @IBOutlet weak var CallView: UIView!
     @IBOutlet weak var CallViewStack: UIStackView!
@@ -297,7 +299,7 @@ extension PhoneCallViewController {
         //Date
         let dateDate = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd-MM-YYYY"
+        formatter.dateFormat = "dd-MMM-YYYY"
         let dateResults = formatter.string(from: dateDate)
         whatDateisit = dateResults
         //Time

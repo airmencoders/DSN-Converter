@@ -11,7 +11,7 @@ import NotificationBannerSwift
 
 
 class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate  {
-
+    
     // Google Forms Variables
     var googleFormLink:String!
     var googleName :String!
@@ -20,7 +20,7 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     var googleCommercial : String!
     var googleDSN : String!
     var googleLocationvar : String!
- 
+    
     @IBOutlet weak var errorPrefixLbl: UILabel!
     @IBOutlet weak var errorCommericalLbl: UILabel!
     @IBOutlet weak var errorLocationLbl: UILabel!
@@ -34,9 +34,9 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     var googleNameids = "entry.559878369"
     var googleEmailids = "entry.742138175"
     var googleCommentsids = "entry.360868702"
-
-
-
+    
+    
+    
     
     @IBOutlet weak var commTxt: UITextField!
     @IBOutlet weak var dsnTxt: UITextField!
@@ -48,6 +48,11 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         super.viewDidLoad()
         commentText.delegate = self
         commTxt.delegate = self
+        locTxt.delegate = self
+        nameText.delegate = self
+        emailTxt.delegate = self
+        
+        
     }
     @IBAction func Exit(_ sender: Any) {
         
@@ -65,25 +70,9 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         googleName = nameField
         googleEmail = emailField
         googleComments = commentsField
-       
-     
-       
     }
-    func WriteToGoogle () {
-        
-//        if dsnTxt.text == "" || commentText.text == "" || locTxt.text == "" {
-//            let leftView = UIImageView(image: #imageLiteral(resourceName: "phone-call-3") )
-//            let banner = NotificationBanner(title: "DSN Converter", subtitle: "Make sure all fields are completed.", leftView: leftView, style: .danger)
-//            banner.show()
-//            errorPrefixLbl.isHidden = false
-//            errorPrefixLbl.text = "Enter a valid Prefix"
-//            errorCommericalLbl.isHidden = false
-//            errorCommericalLbl.text = "Enter a valid conversion"
-//            errorLocationLbl.isHidden = false
-//            errorLocationLbl.text = "Enter a valid location"
-//
-//
-//        }else
+    
+    @IBAction func dsnPrefixTxt(_ sender: Any) {
         if dsnTxt.text == "" {
             let leftView = UIImageView(image: #imageLiteral(resourceName: "Contacts") )
             let banner = NotificationBanner(title: "DSN Converter", subtitle: "Please enter a valid Prefix (Ex: 480)", leftView: leftView, style: .danger)
@@ -91,72 +80,102 @@ class ReportViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
             errorPrefixLbl.isHidden = false
             
             errorPrefixLbl.text = "Enter a valid Prefix"
-        } else if commTxt.text == "" {
+        }else {
+            errorPrefixLbl.isHidden = true
+        }
+    }
+    @IBAction func CommericalTxt(_ sender: Any) {
+        if commTxt.text == "" {
             let leftView = UIImageView(image: #imageLiteral(resourceName: "Contacts") )
             let banner = NotificationBanner(title: "DSN Converter", subtitle: "Please enter a valid Conversion (Ex: 06371 47xxxx).", leftView: leftView, style: .danger)
             banner.show()
             errorCommericalLbl.isHidden = false
             errorCommericalLbl.text = "Enter a valid conversion"
-        }else if locTxt.text == "" {
+        }else {
+            errorCommericalLbl.isHidden = true
+        }
+    }
+    @IBAction func LocationTxt(_ sender: Any) {
+        if locTxt.text == "" {
             
             let leftView = UIImageView(image: #imageLiteral(resourceName: "Contacts") )
             let banner = NotificationBanner(title: "DSN Converter", subtitle: "Please enter a valid location (Ex: Ramstein AB).", leftView: leftView, style: .danger)
             banner.show()
             errorLocationLbl.isHidden = false
             errorLocationLbl.text = "Enter a valid location"
+        }else {
+            errorLocationLbl.isHidden = true
+        }
+    }
+    func WriteToGoogle () {
+        
+        if dsnTxt.text == "" || commentText.text == "" || locTxt.text == "" {
+            let leftView = UIImageView(image: #imageLiteral(resourceName: "phone-call-3") )
+            let banner = NotificationBanner(title: "DSN Converter", subtitle: "Make sure all fields are completed.", leftView: leftView, style: .danger)
+            banner.show()
+            errorPrefixLbl.isHidden = false
+            errorPrefixLbl.text = "Enter a valid Prefix"
+            errorCommericalLbl.isHidden = false
+            errorCommericalLbl.text = "Enter a valid conversion"
+            errorLocationLbl.isHidden = false
+            errorLocationLbl.text = "Enter a valid location"
             
             
         }else {
-        
+            
             errorPrefixLbl.isHidden = false
             errorCommericalLbl.isHidden = false
             errorLocationLbl.isHidden = false
-        setupOnlineLogs(formLink: "https://docs.google.com/forms/d/e/1FAIpQLSciTZOi17dVqPMHf1i1THYva7LnHyUmU9BWHMOWFo62cpQjzQ/formResponse",
-                        nameField: googleNameids,
-                        emailField: googleEmailids,
-                        commentsField: googleCommentsids,
-                        commercialField: googleCommercialids,
-                        dsnField: googleDSNids,
-                        locationField: googleLocationids)
-        
-        
-        let url = URL(string: googleFormLink)
-            print("DSN:\(googleComments!)")
-        var  postData =  googleDSN + "=" + "\(dsnTxt.text!)"
-        postData += "&" + googleCommercial + "=" + "\(commTxt.text!)"
-        postData += "&" + googleLocationvar + "=" + "\(locTxt.text!)"
-        postData += "&" + googleName + "=" + "\(nameText.text!)"
-        postData += "&" + googleEmail + "=" + "\(emailTxt.text!)"
-        postData += "&" + googleComments + "=" + "\(commentText.text!)"
-      
-      
-       
+            setupOnlineLogs(formLink: "https://docs.google.com/forms/d/e/1FAIpQLSciTZOi17dVqPMHf1i1THYva7LnHyUmU9BWHMOWFo62cpQjzQ/formResponse",
+                            nameField: googleNameids,
+                            emailField: googleEmailids,
+                            commentsField: googleCommentsids,
+                            commercialField: googleCommercialids,
+                            dsnField: googleDSNids,
+                            locationField: googleLocationids)
             
-        
-        
-        var request = URLRequest(url: url!)
-        request.httpMethod = "POST"
-        request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
-        request.httpBody = postData.data(using: String.Encoding.utf8)
-        
-        #if os(OSX)
-        if kCFCoreFoundationVersionNumber > kCFCoreFoundationVersionNumber10_10 {
-            Foundation.URLSession.shared.dataTask(with: request).resume()
-        } else {
-            NSURLConnection(request: request, delegate: nil)?.start()
+            
+            let url = URL(string: googleFormLink)
+            print("DSN:\(googleComments!)")
+            var  postData =  googleDSN + "=" + "\(dsnTxt.text!)"
+            postData += "&" + googleCommercial + "=" + "\(commTxt.text!)"
+            postData += "&" + googleLocationvar + "=" + "\(locTxt.text!)"
+            postData += "&" + googleName + "=" + "\(nameText.text!)"
+            postData += "&" + googleEmail + "=" + "\(emailTxt.text!)"
+            postData += "&" + googleComments + "=" + "\(commentText.text!)"
+            
+            
+            
+            
+            
+            
+            var request = URLRequest(url: url!)
+            request.httpMethod = "POST"
+            request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
+            request.httpBody = postData.data(using: String.Encoding.utf8)
+            
+#if os(OSX)
+            if kCFCoreFoundationVersionNumber > kCFCoreFoundationVersionNumber10_10 {
+                Foundation.URLSession.shared.dataTask(with: request).resume()
+            } else {
+                NSURLConnection(request: request, delegate: nil)?.start()
+            }
+#elseif os(iOS)
+            URLSession.shared.dataTask(with: request).resume()
+#endif
+            
+            let leftView = UIImageView(image: #imageLiteral(resourceName: "Contacts") )
+            let banner = NotificationBanner(title: "DSN Converter", subtitle: "Your correction has been submitted.", leftView: leftView, style: .success)
+            banner.show()
+            
+            
+            dismiss(animated: true, completion: nil)
         }
-        #elseif os(iOS)
-        URLSession.shared.dataTask(with: request).resume()
-        #endif
         
-        let leftView = UIImageView(image: #imageLiteral(resourceName: "Contacts") )
-        let banner = NotificationBanner(title: "DSN Converter", subtitle: "Your correction has been submitted.", leftView: leftView, style: .success)
-        banner.show()
-        
-        
-        dismiss(animated: true, completion: nil)
-        }
-        
+    }
+    @IBAction func DoneEditing(_ sender: Any) {
+        print("touched")
+        self.view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool

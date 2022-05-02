@@ -68,24 +68,15 @@ class RecentViewController: UIViewController,UITableViewDelegate,UITableViewData
         let context = appDelegate.persistentContainer.viewContext
         
         let requestProfile = NSFetchRequest<NSFetchRequestResult>(entityName: "Recent")
-        requestProfile.sortDescriptors = [NSSortDescriptor(key:"dateofCall",ascending:true)]
+        requestProfile.sortDescriptors = [NSSortDescriptor(key:"dateofCall",ascending:false)]
+        requestProfile.sortDescriptors = [NSSortDescriptor(key:"timeofCall",ascending:false)]
         requestProfile.returnsObjectsAsFaults = false
-        
-        
-        
         let requestData = NSFetchRequest<NSFetchRequestResult>(entityName: "Recent")
-        
         requestData.returnsObjectsAsFaults = false
-        
-        
         do {
-            
             let results = try context.fetch(requestProfile)
-            
             for result in results as! [NSManagedObject] {
-                
-             
-                
+          
             }
             
             
@@ -142,8 +133,7 @@ class RecentViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Recent")
         fetchRequest.sortDescriptors = [NSSortDescriptor(key:"timeofCall",ascending:false)]
-        
-        
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key:"timeofCall",ascending:false)]
         do {
             dsnRecentDatabase = try managedContext.fetch(fetchRequest)
         } catch let error as NSError {

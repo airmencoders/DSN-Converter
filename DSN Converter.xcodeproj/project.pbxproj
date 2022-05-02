@@ -883,7 +883,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
 				PRODUCT_NAME = "DSN Converter";
 				SWIFT_VERSION = 4.2;
@@ -904,7 +904,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
 				PRODUCT_NAME = "DSN Converter";
 				SWIFT_VERSION = 4.2;
