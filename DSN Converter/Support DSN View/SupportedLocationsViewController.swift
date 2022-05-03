@@ -97,11 +97,12 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             if let cell = SupportedLocation.dequeueReusableCell(withIdentifier: "SupportSegue",for: indexPath) as? SupportTableViewCell  {
                 
+                let dsnString = String(EUCOM[indexPath.row].prefix)
                 
                 switch ChoicesSegs.selectedSegmentIndex {
                 case 0:
                     cell.locationLbl.text = EUCOM[indexPath.row].location
-                    cell.dsnNumber.text = String (EUCOM[indexPath.row].prefix)
+                    cell.dsnNumber.text = "\(dsnString)-XXXX"
                     cell.countryLbl.text = EUCOM[indexPath.row].country
                     cell.convertionLbl.text = EUCOM[indexPath.row].number + " XXXX"
                 case 1: break

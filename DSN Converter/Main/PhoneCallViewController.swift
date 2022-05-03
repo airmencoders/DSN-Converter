@@ -264,6 +264,7 @@ extension PhoneCallViewController {
                 vc.delegate = self
                 let nav = UINavigationController(rootViewController: vc)
                 self.present(nav, animated: true, completion: nil)
+                
             }
         } else {
             // Fallback on earlier versions
