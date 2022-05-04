@@ -217,7 +217,6 @@ extension PhoneCallViewController {
         }
         
     }
-    
     func layoutFAB() {
       let item = FloatyItem()
       item.hasShadow = false
@@ -246,8 +245,6 @@ extension PhoneCallViewController {
                 dsnDateGlobal = self.whatDateisit
                 dsnTimeGlobal = self.whatTimeisit
                 self.performSegue(withIdentifier: "SaveFav", sender: nil)
-      
-                
             }
         } else {
             // Fallback on earlier versions
