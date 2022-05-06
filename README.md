@@ -1,7 +1,7 @@
 # DSN Converter
 ![UIandUnitTests](https://github.com/airmencoders/DSN-Converter/workflows/UIandUnitTests/badge.svg)
 
-<img src="DSNConverterMain.png" width="300"> <img src="DSNConverterMenu.png" width="300"> <img src="DSNConverterList.png" width="300">
+<img src="DSNConverterMain.png" width="200"> <img src="DSNConverterMenu.png" width="200"> <img src="DSNConverterList.png" width="200">
 
 
 A repo for an DOD wide DSN to commercial conversion app.
