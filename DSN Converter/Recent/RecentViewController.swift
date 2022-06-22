@@ -15,7 +15,7 @@ class RecentViewController: UIViewController,UITableViewDelegate,UITableViewData
    
     @IBOutlet weak var RecenttableView: UITableView!
     
-    @IBOutlet weak var backgroundImg: UIImageView!
+
     var dsnCommercialLocal = ""
   
     var dsnRecentDatabase: [NSManagedObject] = []

@@ -189,13 +189,6 @@
 			path = "DSN EuropeUITests";
 			sourceTree = "<group>";
 		};
-		9C0DCC4D21D757DB00109A07 /* Backgroud Img */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Backgroud Img";
-			sourceTree = "<group>";
-		};
 		9C328C9B219DEA5400A32C1C /* Contact */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,7 +248,6 @@
 				9C5E3554219623C800846683 /* Info.plist */,
 				9C5E354C219623C600846683 /* DSN_Converter.xcdatamodeld */,
 				F7E9CC1D241D5ABF003C59FB /* Multimedia   */,
-				9C0DCC4D21D757DB00109A07 /* Backgroud Img */,
 			);
 			path = "DSN Converter";
 			sourceTree = "<group>";
@@ -883,7 +875,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
 				PRODUCT_NAME = "DSN Converter";
 				SWIFT_VERSION = 4.2;
@@ -904,7 +896,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ForceMobileStudios.DSN-Converter";
 				PRODUCT_NAME = "DSN Converter";
 				SWIFT_VERSION = 4.2;

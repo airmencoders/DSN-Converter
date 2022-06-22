@@ -13,7 +13,7 @@ import PMAlertController
 class FavoriteViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
  
 
-    @IBOutlet weak var backgroundImg: UIImageView!
+
     @IBOutlet weak var emptyFavlbl: UILabel!
     @IBOutlet weak var favView: UIView!
     @IBOutlet weak var favContLbl: UILabel!

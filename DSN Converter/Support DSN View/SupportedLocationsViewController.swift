@@ -12,7 +12,7 @@ class SupportedLocationsViewController: UIViewController,UITableViewDelegate,UIT
     
     @IBOutlet weak var ChoicesSegs: UISegmentedControl!
     
-    @IBOutlet weak var backgroundImg: UIImageView!
+  
     
     @IBOutlet weak var SignUpBtn: ButtonModification!
     @IBOutlet weak var SupportedLocation: UITableView!

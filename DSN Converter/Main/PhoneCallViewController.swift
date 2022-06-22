@@ -66,7 +66,7 @@ class PhoneCallViewController:
     @IBOutlet weak var dsnLbl: UILabel!
     @IBOutlet weak var LocationLbl: UILabel!
     @IBOutlet weak var reportaCorrection: UIButton!
-    @IBOutlet weak var backgroundImg: UIImageView!
+   
     @IBOutlet weak var UCCLbl: UILabel!
     @IBOutlet weak var countryLbl: UILabel!
     //Decodable Struct - JSON
@@ -112,7 +112,7 @@ class PhoneCallViewController:
     }
     
     @IBAction func AlertMessage(_ sender: Any) {
-        let alertVC = PMAlertController(title: "DSN Converter ", description: "This is an Unsecured Line!\n Be aware that DSN Converter uses your commercial cell service to make phone calls. DO NOT to discuss any sensative or classified information when using this app.", image: UIImage(named: "img.png"), style: .alert)
+        let alertVC = PMAlertController(title: "DSN Converter ", description: "This is an Unsecured Line!\n Be aware that DSN Converter uses your commercial cell service to make phone calls. DO NOT discuss any sensative or classified information when using this app.", image: UIImage(named: "img.png"), style: .alert)
         alertVC.addAction(PMAlertAction(title: "Understood", style: .cancel, action: { () -> Void in
         }))
         self.present(alertVC, animated: true, completion: nil)
