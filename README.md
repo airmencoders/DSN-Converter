@@ -1,14 +1,24 @@
 # DSN Converter
 ![UIandUnitTests](https://github.com/airmencoders/DSN-Converter/workflows/UIandUnitTests/badge.svg)
 
+# UPDATES:
+We are in the process of developing the DSN Converter App in React Native, this would allow us to develep an iOS and Android version simultaneously.This repo will continue to recieve updates until the other project is complete. 
+For the React Native project <a href="https://github.com/airmencoders/DSN-Converter-App">click here.</a>
+
 <img src="DSNConverterMain.png" width="200"> <img src="DSNConverterMenu.png" width="200"> <img src="DSNConverterList.png" width="200">
+
 
 
 A repo for an DOD wide DSN to commercial conversion app.
 
 DSN phone numbers are part of our everyday life as military members. Sometimes not having access to the right conversion outside of the office can be very frustrating. With DSN Europe you can dial a DSN number right from your cell phone and our algorithm will make the necessary conversion to a commercial phone number.
 
+
+ 
+
+
 <a href="https://apps.apple.com/us/app/dsn-europe/id1442345746"><img src="DownloadApple.png" alt="App Download" style="width:200px"></a>
+
 
 # How to run the code locally
 
