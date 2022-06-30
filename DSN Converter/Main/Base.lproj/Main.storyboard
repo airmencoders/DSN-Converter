@@ -2446,22 +2446,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caJ-dl-KE7">
                                                 <rect key="frame" x="0.0" y="402" width="414" height="369"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd4-je-6iw">
-                                                        <rect key="frame" x="8" y="0.0" width="398" height="55"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="55" id="XPN-AB-vHh"/>
-                                                            <constraint firstAttribute="width" constant="398" id="b8M-HS-ibZ"/>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="y4x-1D-9I2"/>
-                                                        </constraints>
-                                                        <string key="text">Our apologies, we were unable to find the requested DSN in our database.
-</string>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ew-uq-lSI" userLabel="ReportBox" customClass="DisagnableSignin" customModule="DSN_Converter" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="63" width="400" height="50"/>
+                                                        <rect key="frame" x="6" y="223" width="400" height="80"/>
                                                         <subviews>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HJ-Sr-edh">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HJ-Sr-edh">
                                                                 <rect key="frame" x="19" y="-43" width="97" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="97" id="YDu-ES-XzY"/>
@@ -2471,7 +2459,11 @@
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-LG-7vD" customClass="ButtonModification" customModule="DSN_Converter" customModuleProvider="target">
-                                                                <rect key="frame" x="8" y="0.0" width="384" height="50"/>
+                                                                <rect key="frame" x="8" y="15" width="384" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="KM2-YI-o2e"/>
+                                                                    <constraint firstAttribute="width" constant="384" id="z3B-Ts-hWn"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <state key="normal" title="Report DSN">
                                                                     <color key="titleColor" systemColor="systemBlueColor"/>
@@ -2491,15 +2483,86 @@
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="Ncf-LG-7vD" secondAttribute="bottom" id="1ew-6h-vHS"/>
-                                                            <constraint firstItem="0HJ-Sr-edh" firstAttribute="top" secondItem="5Ew-uq-lSI" secondAttribute="top" constant="-43" id="9Rc-Mo-Zf4"/>
-                                                            <constraint firstAttribute="height" constant="50" id="9Ys-lJ-G6i"/>
+                                                            <constraint firstAttribute="height" constant="80" id="0sy-9H-JA1"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ncf-LG-7vD" secondAttribute="bottom" constant="15" id="BVg-Ut-9M9"/>
+                                                            <constraint firstItem="Ncf-LG-7vD" firstAttribute="leading" secondItem="5Ew-uq-lSI" secondAttribute="leading" constant="8" id="KAx-LJ-af4"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Ncf-LG-7vD" secondAttribute="trailing" constant="8" id="KkB-mL-ElH"/>
                                                             <constraint firstItem="Ncf-LG-7vD" firstAttribute="top" secondItem="0HJ-Sr-edh" secondAttribute="bottom" constant="8" id="N01-iK-TVp"/>
-                                                            <constraint firstAttribute="width" constant="400" id="QK5-j7-V77"/>
-                                                            <constraint firstItem="Ncf-LG-7vD" firstAttribute="leading" secondItem="5Ew-uq-lSI" secondAttribute="leadingMargin" id="Zfg-ZL-uV4"/>
-                                                            <constraint firstItem="Ncf-LG-7vD" firstAttribute="centerY" secondItem="5Ew-uq-lSI" secondAttribute="centerY" id="afj-LV-AXe"/>
-                                                            <constraint firstItem="Ncf-LG-7vD" firstAttribute="trailing" secondItem="5Ew-uq-lSI" secondAttribute="trailingMargin" id="rEr-kQ-1UE"/>
-                                                            <constraint firstItem="0HJ-Sr-edh" firstAttribute="leading" secondItem="5Ew-uq-lSI" secondAttribute="leading" constant="19" id="zpl-Rn-AdE"/>
+                                                            <constraint firstAttribute="width" constant="400" id="Yul-Z8-I0O"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpM-SM-j16">
+                                                        <rect key="frame" x="7" y="0.0" width="401" height="127"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="401" id="aRx-KJ-N0C"/>
+                                                            <constraint firstAttribute="height" constant="127" id="yLi-3W-0XE"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment>
+                                                                <string key="content">Our apologies, we were unable to find the requested DSN in our database. 
+
+</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor"/>
+                                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="You can still get connected through the USAFE Switchboard or Report the DSN">
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor"/>
+                                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GD-4d-cs5" userLabel="ReportBox" customClass="DisagnableSignin" customModule="DSN_Converter" customModuleProvider="target">
+                                                        <rect key="frame" x="6" y="135" width="400" height="80"/>
+                                                        <subviews>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyH-II-68l">
+                                                                <rect key="frame" x="19" y="-43" width="97" height="35"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="97" id="R59-aU-sHf"/>
+                                                                </constraints>
+                                                                <color key="textColor" systemColor="labelColor"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y6-qW-77C" customClass="ButtonModification" customModule="DSN_Converter" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="15" width="384" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="Ewe-1B-AmE"/>
+                                                                    <constraint firstAttribute="width" constant="384" id="iB5-Ay-k2i"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                                <state key="normal" title="DSN Switchboard">
+                                                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="2Y6-qW-77C" firstAttribute="leading" secondItem="9GD-4d-cs5" secondAttribute="leading" constant="8" id="0tp-bz-5hL"/>
+                                                            <constraint firstItem="2Y6-qW-77C" firstAttribute="top" secondItem="nyH-II-68l" secondAttribute="bottom" constant="8" id="Igq-Qc-gRg"/>
+                                                            <constraint firstAttribute="width" constant="400" id="J2Z-l0-zSn"/>
+                                                            <constraint firstAttribute="height" constant="80" id="MjT-Uz-kvz"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2Y6-qW-77C" secondAttribute="trailing" constant="8" id="Quj-71-Jxb"/>
+                                                            <constraint firstAttribute="bottom" secondItem="2Y6-qW-77C" secondAttribute="bottom" constant="15" id="k1S-Kh-64Z"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2509,18 +2572,18 @@
                                                     </view>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="5Ew-uq-lSI" secondAttribute="trailing" constant="6" id="GiP-T1-4FZ"/>
-                                                    <constraint firstItem="5Ew-uq-lSI" firstAttribute="top" secondItem="Vd4-je-6iw" secondAttribute="bottom" constant="8" id="KZe-Wy-PiF"/>
-                                                    <constraint firstItem="5Ew-uq-lSI" firstAttribute="leading" secondItem="caJ-dl-KE7" secondAttribute="leading" constant="8" id="LWh-DV-hHZ"/>
-                                                    <constraint firstItem="Vd4-je-6iw" firstAttribute="leading" secondItem="caJ-dl-KE7" secondAttribute="leadingMargin" id="NOf-Jh-6fm"/>
-                                                    <constraint firstItem="Vd4-je-6iw" firstAttribute="trailing" secondItem="caJ-dl-KE7" secondAttribute="trailingMargin" id="SQM-Ps-IrG"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Vd4-je-6iw" secondAttribute="trailing" constant="8" id="ZKv-GC-mWx"/>
-                                                    <constraint firstItem="Vd4-je-6iw" firstAttribute="top" secondItem="caJ-dl-KE7" secondAttribute="top" id="ik7-8F-ZF7"/>
-                                                    <constraint firstItem="Vd4-je-6iw" firstAttribute="top" secondItem="caJ-dl-KE7" secondAttribute="top" id="lim-IS-dRQ"/>
-                                                    <constraint firstItem="Vd4-je-6iw" firstAttribute="leading" secondItem="5Ew-uq-lSI" secondAttribute="leading" id="rM1-ku-8z7"/>
-                                                    <constraint firstAttribute="trailing" secondItem="5Ew-uq-lSI" secondAttribute="trailing" constant="6" id="x4Q-Je-BY3"/>
-                                                    <constraint firstItem="5Ew-uq-lSI" firstAttribute="top" secondItem="Vd4-je-6iw" secondAttribute="bottom" constant="8" symbolic="YES" id="xuo-GQ-sbo"/>
-                                                    <constraint firstItem="Vd4-je-6iw" firstAttribute="leading" secondItem="caJ-dl-KE7" secondAttribute="leading" constant="8" id="zVS-aL-mrI"/>
+                                                    <constraint firstAttribute="width" constant="414" id="1qm-a8-0h7"/>
+                                                    <constraint firstAttribute="height" constant="369" id="69e-gM-Kzg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9GD-4d-cs5" secondAttribute="trailing" constant="8" id="6MV-3m-tMA"/>
+                                                    <constraint firstItem="9GD-4d-cs5" firstAttribute="top" secondItem="cpM-SM-j16" secondAttribute="bottom" constant="8" id="6lj-p1-pzk"/>
+                                                    <constraint firstItem="5Ew-uq-lSI" firstAttribute="leading" secondItem="caJ-dl-KE7" secondAttribute="leading" constant="6" id="VUc-8g-dfq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5Ew-uq-lSI" secondAttribute="trailing" constant="8" id="WB3-lM-gzx"/>
+                                                    <constraint firstItem="cpM-SM-j16" firstAttribute="top" secondItem="caJ-dl-KE7" secondAttribute="top" id="WiN-pX-TGF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5Ew-uq-lSI" secondAttribute="bottom" constant="66" id="cPS-72-REQ"/>
+                                                    <constraint firstItem="5Ew-uq-lSI" firstAttribute="top" secondItem="9GD-4d-cs5" secondAttribute="bottom" constant="8" symbolic="YES" id="dH0-cX-wT3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cpM-SM-j16" secondAttribute="trailing" constant="6" id="lYO-O7-esN"/>
+                                                    <constraint firstItem="cpM-SM-j16" firstAttribute="leading" secondItem="caJ-dl-KE7" secondAttribute="leading" constant="7" id="qbZ-I1-25a"/>
+                                                    <constraint firstItem="9GD-4d-cs5" firstAttribute="leading" secondItem="caJ-dl-KE7" secondAttribute="leading" constant="6" id="ynF-wj-jYF"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2534,14 +2597,10 @@
                                             <constraint firstItem="SXr-K3-Ox6" firstAttribute="leading" secondItem="y9I-Pn-w7u" secondAttribute="leading" id="Byd-0C-uar"/>
                                             <constraint firstItem="g5T-2u-AbF" firstAttribute="leading" secondItem="ihO-1w-Qo1" secondAttribute="leading" id="CNu-Xq-Z2s"/>
                                             <constraint firstItem="1gf-SW-5ZB" firstAttribute="top" secondItem="y9I-Pn-w7u" secondAttribute="bottom" constant="11" id="Ez7-jd-Orl"/>
-                                            <constraint firstAttribute="bottom" secondItem="caJ-dl-KE7" secondAttribute="bottom" id="FsA-2J-7qL"/>
-                                            <constraint firstItem="try-iX-0M6" firstAttribute="leading" secondItem="caJ-dl-KE7" secondAttribute="leading" id="G0e-dK-vBk"/>
                                             <constraint firstItem="7pC-IQ-b0q" firstAttribute="top" secondItem="W5P-r3-HHE" secondAttribute="top" constant="346" id="HDk-jp-nJS"/>
                                             <constraint firstItem="try-iX-0M6" firstAttribute="trailing" secondItem="1gf-SW-5ZB" secondAttribute="trailing" id="HPk-hN-o5n"/>
                                             <constraint firstItem="YfD-Or-4bS" firstAttribute="leading" secondItem="g5T-2u-AbF" secondAttribute="leading" id="LDS-SS-zcy"/>
-                                            <constraint firstItem="62e-aq-twa" firstAttribute="trailing" secondItem="caJ-dl-KE7" secondAttribute="trailing" id="MqG-mU-omu"/>
                                             <constraint firstItem="62e-aq-twa" firstAttribute="top" secondItem="W5P-r3-HHE" secondAttribute="top" id="Nkh-SD-abc"/>
-                                            <constraint firstItem="caJ-dl-KE7" firstAttribute="top" secondItem="7pC-IQ-b0q" secondAttribute="bottom" constant="22" id="O8E-qO-gwH"/>
                                             <constraint firstItem="7pC-IQ-b0q" firstAttribute="top" secondItem="y9I-Pn-w7u" secondAttribute="bottom" constant="9" id="P3z-Fd-cPF"/>
                                             <constraint firstItem="SXr-K3-Ox6" firstAttribute="trailing" secondItem="y9I-Pn-w7u" secondAttribute="trailing" id="RLG-aA-zjf"/>
                                             <constraint firstItem="YfD-Or-4bS" firstAttribute="top" secondItem="62e-aq-twa" secondAttribute="bottom" constant="35.5" id="U9c-VW-oWQ"/>
@@ -2553,13 +2612,15 @@
                                             <constraint firstItem="62e-aq-twa" firstAttribute="leading" secondItem="W5P-r3-HHE" secondAttribute="leading" id="e9Y-IG-H6o"/>
                                             <constraint firstItem="g5T-2u-AbF" firstAttribute="top" secondItem="YfD-Or-4bS" secondAttribute="bottom" constant="14" id="f2G-Bk-b8c"/>
                                             <constraint firstItem="g5T-2u-AbF" firstAttribute="trailing" secondItem="ihO-1w-Qo1" secondAttribute="trailing" id="g7I-hH-WdB"/>
+                                            <constraint firstAttribute="trailing" secondItem="caJ-dl-KE7" secondAttribute="trailing" id="gjZ-Ch-pOY"/>
                                             <constraint firstItem="y9I-Pn-w7u" firstAttribute="top" secondItem="W5P-r3-HHE" secondAttribute="top" constant="292" id="i4m-ZO-UAd"/>
                                             <constraint firstItem="ihO-1w-Qo1" firstAttribute="top" secondItem="W5P-r3-HHE" secondAttribute="top" constant="186" id="kt1-34-3ps"/>
                                             <constraint firstAttribute="trailing" secondItem="YfD-Or-4bS" secondAttribute="trailing" constant="24" id="qwP-Sm-Wwq"/>
+                                            <constraint firstItem="caJ-dl-KE7" firstAttribute="leading" secondItem="W5P-r3-HHE" secondAttribute="leading" id="rP8-4J-cHP"/>
                                             <constraint firstItem="7pC-IQ-b0q" firstAttribute="trailing" secondItem="1gf-SW-5ZB" secondAttribute="trailing" id="sgj-r8-MMb"/>
+                                            <constraint firstAttribute="bottom" secondItem="caJ-dl-KE7" secondAttribute="bottom" id="tZ7-cC-Ozv"/>
                                             <constraint firstItem="ihO-1w-Qo1" firstAttribute="top" secondItem="g5T-2u-AbF" secondAttribute="bottom" constant="8" id="tgK-Xz-Rwc"/>
                                             <constraint firstItem="SXr-K3-Ox6" firstAttribute="top" secondItem="W5P-r3-HHE" secondAttribute="top" constant="239" id="ubp-5b-KO1"/>
-                                            <constraint firstItem="62e-aq-twa" firstAttribute="leading" secondItem="caJ-dl-KE7" secondAttribute="leading" id="x2H-BR-dir"/>
                                             <constraint firstItem="ihO-1w-Qo1" firstAttribute="trailing" secondItem="SXr-K3-Ox6" secondAttribute="trailing" id="zSN-fU-7b6"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -2567,6 +2628,11 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="try-iX-0M6"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -2881,6 +2947,9 @@
     <designables>
         <designable name="1i1-4i-pU0">
             <size key="intrinsicContentSize" width="46" height="35"/>
+        </designable>
+        <designable name="2Y6-qW-77C">
+            <size key="intrinsicContentSize" width="136" height="32"/>
         </designable>
         <designable name="4St-Dg-bxF">
             <size key="intrinsicContentSize" width="67" height="32"/>
