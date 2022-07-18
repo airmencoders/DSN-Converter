@@ -24,8 +24,9 @@ class PhoneCallViewController:
     
     @IBOutlet weak var callBtn: ButtonModification!
     @IBOutlet weak var CallView: UIView!
-    @IBOutlet weak var CallViewStack: UIStackView!
-    
+//    @IBOutlet weak var CallViewStack: UIStackView!
+    @IBOutlet weak var DsnFound: UIView!
+
     //Statitics Variables
     
     var googleFormsLink: String = ""
@@ -87,7 +88,7 @@ class PhoneCallViewController:
         getDsnNumber =  dsnPhoneGlobal
         //Devides the Area code with "-" from the rest of the number
         if getDsnNumber.range(of: "-") != nil {
-            CallViewStack.isHidden = false
+            DsnFound.isHidden = false
             DsnNotFound.isHidden = true
             reportaCorrection.isHidden = false
             //Splits DSN in Prefix (480) or Postfix(XXXX)
@@ -212,7 +213,7 @@ extension PhoneCallViewController {
             UCCLbl.text = "Not Found"
             countryLbl.text = "Not Found"
             DsnNotFound.isHidden = false
-            CallViewStack.isHidden = true
+            DsnFound.isHidden = true
             floaty.isHidden = true
         }
         
