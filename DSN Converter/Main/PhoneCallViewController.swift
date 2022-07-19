@@ -14,7 +14,11 @@ import Floaty
 
 
 class PhoneCallViewController:
-    UIViewController,CNContactViewControllerDelegate, FloatyDelegate{
+    UIViewController,CNContactViewControllerDelegate, FloatyDelegate,UIPickerViewDelegate, UIPickerViewDataSource{
+
+
+
+
     
     @IBOutlet weak var favBtn: ButtonModification!
     @IBOutlet weak var contactBtn: ButtonModification!
@@ -24,7 +28,7 @@ class PhoneCallViewController:
     
     @IBOutlet weak var callBtn: ButtonModification!
     @IBOutlet weak var CallView: UIView!
-//    @IBOutlet weak var CallViewStack: UIStackView!
+    //    @IBOutlet weak var CallViewStack: UIStackView!
     @IBOutlet weak var DsnFound: UIView!
 
     //Statitics Variables
@@ -67,7 +71,9 @@ class PhoneCallViewController:
     @IBOutlet weak var dsnLbl: UILabel!
     @IBOutlet weak var LocationLbl: UILabel!
     @IBOutlet weak var reportaCorrection: UIButton!
-   
+
+    @IBOutlet weak var operatorNumber: UILabel!
+    @IBOutlet weak var operatorCountries: UIPickerView!
     @IBOutlet weak var UCCLbl: UILabel!
     @IBOutlet weak var countryLbl: UILabel!
     //Decodable Struct - JSON
@@ -78,12 +84,17 @@ class PhoneCallViewController:
         let country: String
         let command: String
     }
+
+    //Operators Countries:
+    var operatorCountriesData = ["Germany","United Kingdom","Italy","Turkey","Spain"]
+
     //ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-//        floaty.addDragging()
-    
+
+        //        floaty.addDragging()
+        self.operatorCountries.dataSource = self
+        self.operatorCountries.delegate = self
         
         getDsnNumber =  dsnPhoneGlobal
         //Devides the Area code with "-" from the rest of the number
@@ -100,12 +111,12 @@ class PhoneCallViewController:
             ReadDataJSON(DsnPrefix: areaCode, DsnPostfix: phoneNumber)
             //Display Flotting Button in UI
             layoutFAB()
-        
+
         }
     }
 
     @IBAction func MakeACall(_ sender: Any) {
-       Call()
+        Call()
     }
     
     @IBAction func Close(_ sender: Any) {
@@ -119,7 +130,33 @@ class PhoneCallViewController:
         self.present(alertVC, animated: true, completion: nil)
         
     }
-}
+
+    // Operator Picker
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return operatorCountriesData.count
+    }
+    func pickerView(_ pickerView: UIPickerView,
+                    titleForRow row: Int,
+                    forComponent component: Int) -> String? {
+
+        // Return a string from the array for this row.
+        return operatorCountriesData[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        operatorNumber.text =  operatorCountriesData[row]
+      }
+
+
+
+    }
+
+
+
 
 // All Function are below
 extension PhoneCallViewController {
@@ -219,18 +256,18 @@ extension PhoneCallViewController {
         
     }
     func layoutFAB() {
-      let item = FloatyItem()
-      item.hasShadow = false
-      item.buttonColor = UIColor.red
-      item.circleShadowColor = UIColor.red
-      item.titleShadowColor = UIColor.blue
-      item.titleLabelPosition = .right
-//      item.title = "titlePosition right"
-      item.handler = { item in
-        
-      }
-      
-      floaty.hasShadow = false
+        let item = FloatyItem()
+        item.hasShadow = false
+        item.buttonColor = UIColor.red
+        item.circleShadowColor = UIColor.red
+        item.titleShadowColor = UIColor.blue
+        item.titleLabelPosition = .right
+        //      item.title = "titlePosition right"
+        item.handler = { item in
+
+        }
+
+        floaty.hasShadow = false
         if #available(iOS 13.0, *) {
             floaty.addItem("Call \(getDsnNumber)", icon: UIImage(systemName: "phone", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) { item in
                 self.Call()
@@ -285,13 +322,13 @@ extension PhoneCallViewController {
             // Fallback on earlier versi
             
         }
-     
-      floaty.paddingX = self.view.frame.width/30 - floaty.frame.width/30
-//      floaty.paddingY = self.view.frame.height/15 - floaty.frame.height/15
-      floaty.fabDelegate = self
-      
-      self.view.addSubview(floaty)
-      
+
+        floaty.paddingX = self.view.frame.width/30 - floaty.frame.width/30
+        //      floaty.paddingY = self.view.frame.height/15 - floaty.frame.height/15
+        floaty.fabDelegate = self
+
+        self.view.addSubview(floaty)
+
     }
     func GetDateAndTime() {
         //Get the time and Date
