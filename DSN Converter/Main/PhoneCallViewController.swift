@@ -88,14 +88,14 @@ class PhoneCallViewController:
     }
 
     //Operators Countries Dict:
-    let operatorsData:[(operator: String, phoneNumber: String)] = [("Choose a country","Choose a country to call"),("🇩🇪 Germany", "+49 6371 471110"), ("🇬🇧 United Kingdom", "+44 163 8521110"), ("🇮🇹 Italy", "+39 043 4301110"), ("🇹🇷 Turkey", "+90 322 3161110"), ("🇪🇸Spain","+34 955 848111")]
+    let operatorsData:[(operator: String, phoneNumber: String)] = [("Choose a country","Choose the country you are calling from"),("🇩🇪 Germany", "+49 6371 471110"), ("🇵🇹 Portugal","+351 295 571110"),("🇬🇧 United Kingdom", "+44 163 8521110"), ("🇮🇹 Italy", "+39 043 4301110"), ("🇹🇷 Turkey", "+90 322 3161110"), ("🇪🇸Spain","+34 955 848111"),("🇺🇸 United States","+1 707 424 1110")]
 
     
     //ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        operatorNumber.text = "Choose a country to call"
+        operatorNumber.text = "Choose the country you are calling from"
 
         //        floaty.addDragging()
         self.operatorCountries.dataSource = self
