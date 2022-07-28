@@ -54,6 +54,7 @@ class PhoneCallViewController:
     var managedObjectContext : NSManagedObjectContext?
     var phoneOutput = ""
     var callCommericalNumber = ""
+    var callOperatorNumber = ""
     var whatDateisit = ""
     var whatTimeisit = ""
     var areaCodeValue = ""
@@ -65,6 +66,7 @@ class PhoneCallViewController:
     var timer = Timer()
     var getTimefromTimer = ""
     
+    @IBOutlet weak var CallOperator: UIButton!
     var floaty = Floaty()
 
     @IBOutlet weak var commLbl: UILabel!
@@ -85,12 +87,15 @@ class PhoneCallViewController:
         let command: String
     }
 
-    //Operators Countries:
-    var operatorCountriesData = ["Germany","United Kingdom","Italy","Turkey","Spain"]
+    //Operators Countries Dict:
+    let operatorsData:[(operator: String, phoneNumber: String)] = [("Choose a country","Choose a country to call"),("🇩🇪 Germany", "+49 6371 471110"), ("🇬🇧 United Kingdom", "+44 163 8521110"), ("🇮🇹 Italy", "+39 043 4301110"), ("🇹🇷 Turkey", "+90 322 3161110"), ("🇪🇸Spain","+34 955 848111")]
 
+    
     //ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        operatorNumber.text = "Choose a country to call"
 
         //        floaty.addDragging()
         self.operatorCountries.dataSource = self
@@ -132,28 +137,41 @@ class PhoneCallViewController:
     }
 
     // Operator Picker
+    
+    var operatorNumberVar = ""
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return operatorCountriesData.count
+        return operatorsData.count
     }
     func pickerView(_ pickerView: UIPickerView,
                     titleForRow row: Int,
                     forComponent component: Int) -> String? {
 
         // Return a string from the array for this row.
-        return operatorCountriesData[row]
+        return operatorsData[row].operator
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        operatorNumber.text =  operatorCountriesData[row]
+        operatorNumber.text =  operatorsData[row].phoneNumber
+        operatorNumberVar = operatorsData[row].phoneNumber
       }
 
-
-
+    @IBAction func operatorCallBtn(_ sender: Any) {
+        print(operatorNumberVar)
+        let operatorNumberCall = operatorNumberVar.replacingOccurrences(of: " ", with: "")
+        if let url = URL(string: "tel://\(operatorNumberCall))"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    
+        
     }
+}
 
 
 
