@@ -18,7 +18,9 @@ class PhoneCallViewController:
 
 
 
-
+    @IBOutlet weak var operatorLbl: UILabel!
+    @IBOutlet weak var taporSelectLbl: UILabel!
+    
     
     @IBOutlet weak var favBtn: ButtonModification!
     @IBOutlet weak var contactBtn: ButtonModification!
@@ -33,6 +35,8 @@ class PhoneCallViewController:
 
     //Statitics Variables
     
+    @IBOutlet weak var CallBox: DisagnableSignin!
+    @IBOutlet weak var switchboardImg: UIImageView!
     var googleFormsLink: String = ""
     var googleDate:String = ""
     var googlePrefix:String = ""
@@ -88,15 +92,20 @@ class PhoneCallViewController:
     }
 
     //Operators Countries Dict:
-    let operatorsData:[(operator: String, phoneNumber: String)] = [("Choose a country","Choose the country you are calling from"),("🇩🇪 Germany", "+49 6371 471110"), ("🇵🇹 Portugal","+351 295 571110"),("🇬🇧 United Kingdom", "+44 163 8521110"), ("🇮🇹 Italy", "+39 043 4301110"), ("🇹🇷 Turkey", "+90 322 3161110"), ("🇪🇸Spain","+34 955 848111"),("🇺🇸 United States","+1 707 424 1110")]
+    let operatorsData:[(operator: String, phoneNumber: String)] = [("Choose a operator",""),("🇩🇪 Germany", "+49 6371 471110"), ("🇵🇹 Portugal","+351 295 571110"),("🇬🇧 United Kingdom", "+44 163 8521110"), ("🇮🇹 Italy", "+39 043 4301110"), ("🇹🇷 Turkey", "+90 322 3161110"), ("🇪🇸Spain","+34 955 848111"),("🇺🇸 United States","+1 707 424 1110")]
 
     
     //ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        operatorNumber.text = "Choose the country you are calling from"
-
+        operatorNumber.text = ""
+        taporSelectLbl.text = "Select an Operator to call"
+        operatorLbl.text = ""
+        switchboardImg.isHidden = false
+        CallBox.isHidden = true
+        
+    
         //        floaty.addDragging()
         self.operatorCountries.dataSource = self
         self.operatorCountries.delegate = self
@@ -138,7 +147,7 @@ class PhoneCallViewController:
 
     // Operator Picker
     
-    var operatorNumberVar = ""
+    var operatorNumberVar = "test"
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -151,11 +160,32 @@ class PhoneCallViewController:
                     forComponent component: Int) -> String? {
 
         // Return a string from the array for this row.
+        
+        
+        print(operatorsData[row])
+        
         return operatorsData[row].operator
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        operatorNumber.text =  operatorsData[row].phoneNumber
-        operatorNumberVar = operatorsData[row].phoneNumber
+        
+        if operatorsData[row].phoneNumber == "" {
+            taporSelectLbl.text = "Select an Operator to call"
+            operatorLbl.text = ""
+            operatorNumber.text = ""
+            CallOperator.isEnabled = false
+            switchboardImg.isHidden = false
+            CallBox.isHidden = true
+        }else {
+            taporSelectLbl.text = "Tap to Call an Operator"
+            operatorNumber.text =  operatorsData[row].phoneNumber
+            operatorLbl.text = "\(operatorsData[row].operator)"
+            operatorNumberVar = operatorsData[row].phoneNumber
+            CallOperator.isEnabled = true
+            switchboardImg.isHidden = true
+            CallBox.isHidden = false
+        }
+        
+     
       }
 
     @IBAction func operatorCallBtn(_ sender: Any) {
