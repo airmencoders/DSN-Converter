@@ -53,6 +53,8 @@
 		A10141D474C0159CB8F818F3 /* Pods_DSN_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900C13A8508B2059C82DB452 /* Pods_DSN_Converter.framework */; };
 		DB426C692801BAC700E1FE87 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB426C682801BAC700E1FE87 /* Notes.swift */; };
 		DB426C6B2801C3BF00E1FE87 /* DSNList.json in Resources */ = {isa = PBXBuildFile; fileRef = DB426C6A2801C3BF00E1FE87 /* DSNList.json */; };
+		DB8BB6DF28AEDE8500C92E6A /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8BB6DE28AEDE8500C92E6A /* OperatorViewController.swift */; };
+		DB8BB6E228AEDF5000C92E6A /* OperatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8BB6E128AEDF5000C92E6A /* OperatorTableViewCell.swift */; };
 		F7D606642424D59F00C58458 /* Airman Coders.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D606632424D59F00C58458 /* Airman Coders.png */; };
 		F7E9CC17241D56BA003C59FB /* airmanCoders.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F7E9CC16241D56BA003C59FB /* airmanCoders.JPG */; };
 /* End PBXBuildFile section */
@@ -116,6 +118,8 @@
 		D7F6E08A181A6058088A3351 /* Pods-DSN ConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterTests/Pods-DSN ConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB426C682801BAC700E1FE87 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		DB426C6A2801C3BF00E1FE87 /* DSNList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DSNList.json; sourceTree = "<group>"; };
+		DB8BB6DE28AEDE8500C92E6A /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
+		DB8BB6E128AEDF5000C92E6A /* OperatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorTableViewCell.swift; sourceTree = "<group>"; };
 		DE2CDB60BF9F6BF262DF9676 /* Pods-DSN ConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN ConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSN ConverterTests/Pods-DSN ConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB081574A713E1F952BFDA0B /* Pods-DSN Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSN Converter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSN Converter/Pods-DSN Converter.debug.xcconfig"; sourceTree = "<group>"; };
 		F7D606632424D59F00C58458 /* Airman Coders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Airman Coders.png"; sourceTree = "<group>"; };
@@ -244,6 +248,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB8BB6E028AEDF2C00C92E6A /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				DB8BB6DE28AEDE8500C92E6A /* OperatorViewController.swift */,
+				DB8BB6E128AEDF5000C92E6A /* OperatorTableViewCell.swift */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
 		F3587F5B68C712F9634F272B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +277,7 @@
 				9C3BFD7A2231B2CE005169B5 /* ChooseBranchViewController.swift */,
 				9C5E3547219623C600846683 /* ViewController.swift */,
 				9C5E3549219623C600846683 /* Main.storyboard */,
+				DB8BB6E028AEDF2C00C92E6A /* Operator */,
 				9CB5E97021AAD10A0099FC61 /* PhoneCallViewController.swift */,
 				DB426C682801BAC700E1FE87 /* Notes.swift */,
 				DB426C6A2801C3BF00E1FE87 /* DSNList.json */,
@@ -500,10 +514,12 @@
 				9CCF216E219773CC003484E9 /* RecentViewController.swift in Sources */,
 				9CCF2170219774BB003484E9 /* RecentTableViewCell.swift in Sources */,
 				9C5E35822196266E00846683 /* PhoneDigitOrg.swift in Sources */,
+				DB8BB6DF28AEDE8500C92E6A /* OperatorViewController.swift in Sources */,
 				9CCF21782199D96D003484E9 /* FavoriteSignUpViewController.swift in Sources */,
 				9CCF217A2199D9CF003484E9 /* FavoriteViewController.swift in Sources */,
 				9C5E3546219623C600846683 /* AppDelegate.swift in Sources */,
 				9CCF217C2199DA1A003484E9 /* DesignableTextField.swift in Sources */,
+				DB8BB6E228AEDF5000C92E6A /* OperatorTableViewCell.swift in Sources */,
 				9C1B33F5220EC1B800C5A0D3 /* OnBoardViewController.swift in Sources */,
 				9CE0C06021A7F81E00ADF6BF /* SettingsTableViewController.swift in Sources */,
 			);
