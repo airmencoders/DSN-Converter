@@ -359,7 +359,7 @@
 				9C5E353E219623C600846683 /* Sources */,
 				9C5E353F219623C600846683 /* Frameworks */,
 				9C5E3540219623C600846683 /* Resources */,
-				8D8D8864D5843908FCF803B9 /* [CP] Embed Pods Frameworks */,
+				6C1A5B37B4C321AD1267397B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -439,7 +439,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8D8D8864D5843908FCF803B9 /* [CP] Embed Pods Frameworks */ = {
+		6C1A5B37B4C321AD1267397B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -671,7 +671,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ9T47YT3S;
 				INFOPLIST_FILE = "DSN Converter/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -692,7 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ9T47YT3S;
 				INFOPLIST_FILE = "DSN Converter/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
