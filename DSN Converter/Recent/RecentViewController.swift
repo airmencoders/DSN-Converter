@@ -215,83 +215,14 @@ class RecentViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         
         if let cell = RecenttableView.dequeueReusableCell(withIdentifier: "RecentSegue",for: indexPath) as? RecentTableViewCell {
-          //  print("Array ContactName")
-         //   print(contactNameArray.count)
-         //   print("Array Phone")
-         //   print(commPhoneArray.count)
-            
-            
             let person = dsnRecentDatabase[indexPath.row]
-            
-            
-            
-            
-            
+
          cell.commercialLbl!.text = person.value(forKeyPath: "dsnPhone")! as? String
            // cell.dsnLbl!.text = person.value(forKeyPath: "dsnPhone")! as? String
            cell.locationLbl!.text = person.value(forKeyPath: "location")! as? String
             cell.timeLbl!.text = person.value(forKeyPath: "timeofCall")! as? String
             cell.dateLbl!.text = person.value(forKeyPath: "dateofCall")! as? String
-            
-            
-          //  let contactTemp = contactDatabase[indexPath.row]
-            
-            
-            
-         //   let recentPhoneRecent = person.value(forKeyPath: "commercialPhone")! as? String
-          //  let contactPhoneContacts = contactTemp.value(forKeyPath: "commercialContact")! as? String
-          //  let nameContacts = contactTemp.value(forKeyPath: "nameContact")! as? String
-            
-          //  print("Recent\(recentPhoneRecent!)")
-          //  print("Contact\(contactPhoneContacts!)")
-           // print("Contact Name:\(nameContacts!)")
-        //    var contactNameTemp = ""
-            //for match in commPhoneArray {
-                
-           //     if commPhoneArray.contains(recentPhoneRecent!){
-                    
-           //         print("its a match \(match)")
-            //      let indexTemp = commPhoneArray.firstIndex(of: match)
-            //      let indexName = contactNameArray.firstIndex(of: match)
-            //        print("At Index\(indexTemp!)")
-            //        print("Name\(indexName!)")
-                    
-            //        cell.commercialLbl!.text = contactTemp.value(forKeyPath: "nameContact")! as? String
-                    
-               //     cell.locationLbl!.text = person.value(forKeyPath: "location")! as? String
-              //      cell.timeLbl!.text = person.value(forKeyPath: "timeofCall")! as? String
-               //     cell.dateLbl!.text = person.value(forKeyPath: "dateofCall")! as? String
-                    
-                    
-              //  }else {
-                    
-                 //   print("its not a match ")
-                    
-            
-               // }
-                
-           // }
-            
-            /*
-            if contactPhoneContacts == recentPhoneRecent {
-                print("Same")
-                cell.commercialLbl!.text = contactTemp.value(forKeyPath: "nameContact")! as? String
-                cell.locationLbl!.text = person.value(forKeyPath: "location")! as? String
-                cell.timeLbl!.text = person.value(forKeyPath: "timeofCall")! as? String
-                cell.dateLbl!.text = person.value(forKeyPath: "dateofCall")! as? String
-           
-            }else {
-               print("No the Same")
-                cell.commercialLbl!.text = person.value(forKeyPath: "commercialPhone")! as? String
-                // cell.dsnLbl!.text = person.value(forKeyPath: "dsnPhone")! as? String
-                cell.locationLbl!.text = person.value(forKeyPath: "location")! as? String
-                cell.timeLbl!.text = person.value(forKeyPath: "timeofCall")! as? String
-                cell.dateLbl!.text = person.value(forKeyPath: "dateofCall")! as? String
-            }
-            
-         */
 
-            
             return cell
         }
         return UITableViewCell()

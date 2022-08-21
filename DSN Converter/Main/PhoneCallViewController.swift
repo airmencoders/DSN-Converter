@@ -362,7 +362,7 @@ extension PhoneCallViewController {
         if #available(iOS 13.0, *) {
             floaty.addItem("Share", icon: UIImage(systemName: "square.and.arrow.up", withConfiguration: UIImage.SymbolConfiguration(pointSize:32, weight: .medium))) {item in
                 //Share
-                let Text = "Commerical: \(self.phoneOutput)\n DSN: \(self.getDsnNumber)\n Location: \(self.DsnLocation) \nThis commerical DSN was provided to you by DSN Converter.\n Download it free on the App Store."
+                let Text =  "Commerical: \(dnsCommercialGlobal)\nDSN: \(self.getDsnNumber)\nLocation: \(self.DsnLocation) \n\n This commerical DSN was provided to you by the DSN Europe App.\n Download it free on the App Store."
                 let activyVC = UIActivityViewController(activityItems:[Text], applicationActivities: nil)
                 self.present(activyVC,animated: true,completion: nil)
             }
