@@ -2478,7 +2478,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGa-2V-p6I" customClass="ButtonModification" customModule="DSN_Converter" customModuleProvider="target">
-                                                                                <rect key="frame" x="8" y="8.3333333333333428" width="366" height="64"/>
+                                                                                <rect key="frame" x="8" y="8.3333333333333464" width="366" height="63.333333333333343"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="64" id="qpo-zu-u78"/>
                                                                                 </constraints>
@@ -3514,8 +3514,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9dQ-5D-ak3">
-                                <rect key="frame" x="0.0" y="274" width="390" height="570"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9dQ-5D-ak3">
+                                <rect key="frame" x="0.0" y="285" width="390" height="559"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="operatorsSegue" rowHeight="70" id="tPs-5N-W74" customClass="OperatorTableViewCell" customModule="DSN_Converter" customModuleProvider="target">
@@ -3595,15 +3595,16 @@
                                     <outlet property="delegate" destination="5Dm-XM-a6w" id="MN4-dL-I9Y"/>
                                 </connections>
                             </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YP4-tK-N8t">
-                                <rect key="frame" x="7" y="138" width="373" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YP4-tK-N8t">
+                                <rect key="frame" x="7" y="138" width="373" height="139"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Please select a country from the list below to get connected to a Switchboard Operator. 
 
+Once connected, let the operator know the DSN or Toll-Free number your are calling.  
+Check with your mobile carrier regarding possible international charges. 
 </string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.94945877788323607" green="1" blue="0.94767646888422008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYJ-KT-c7c" customClass="ButtonModification" customModule="DSN_Converter" customModuleProvider="target">
@@ -3637,13 +3638,17 @@
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="9dQ-5D-ak3" secondAttribute="bottom" constant="-83" id="4TY-ZA-ofq"/>
                             <constraint firstItem="KYJ-KT-c7c" firstAttribute="leading" secondItem="Saf-bk-rSR" secondAttribute="leading" constant="143" id="7ls-8M-fJc"/>
+                            <constraint firstItem="YP4-tK-N8t" firstAttribute="trailing" secondItem="62y-Lc-lyx" secondAttribute="trailing" id="HfY-Gr-c9K"/>
+                            <constraint firstItem="9dQ-5D-ak3" firstAttribute="top" secondItem="YP4-tK-N8t" secondAttribute="bottom" constant="8" id="KnF-Oe-rtU"/>
                             <constraint firstItem="Saf-bk-rSR" firstAttribute="bottom" secondItem="KYJ-KT-c7c" secondAttribute="bottom" constant="293" id="MgM-Bd-3wa"/>
                             <constraint firstItem="62y-Lc-lyx" firstAttribute="top" secondItem="Saf-bk-rSR" secondAttribute="top" constant="56" id="N9u-MZ-UCs"/>
                             <constraint firstItem="62y-Lc-lyx" firstAttribute="leading" secondItem="Saf-bk-rSR" secondAttribute="leading" constant="21" id="NdL-bH-akq"/>
                             <constraint firstItem="Saf-bk-rSR" firstAttribute="trailing" secondItem="62y-Lc-lyx" secondAttribute="trailing" constant="10" id="PBD-Yi-Yle"/>
+                            <constraint firstItem="YP4-tK-N8t" firstAttribute="leading" secondItem="Saf-bk-rSR" secondAttribute="leading" constant="7" id="Qyj-hz-7IK"/>
                             <constraint firstItem="9dQ-5D-ak3" firstAttribute="centerX" secondItem="llr-Nh-710" secondAttribute="centerX" id="SrY-1j-Hbt"/>
+                            <constraint firstItem="YP4-tK-N8t" firstAttribute="top" secondItem="62y-Lc-lyx" secondAttribute="bottom" constant="8" id="d15-Jt-FoC"/>
                             <constraint firstItem="9dQ-5D-ak3" firstAttribute="leading" secondItem="Saf-bk-rSR" secondAttribute="leading" id="eSl-vF-InT"/>
-                            <constraint firstItem="9dQ-5D-ak3" firstAttribute="top" secondItem="62y-Lc-lyx" secondAttribute="bottom" constant="144" id="yux-hF-QwK"/>
+                            <constraint firstItem="9dQ-5D-ak3" firstAttribute="top" secondItem="62y-Lc-lyx" secondAttribute="bottom" constant="155" id="yux-hF-QwK"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -3728,7 +3733,7 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="VTq-GR-V43"/>
-        <segue reference="iGL-7J-IQh"/>
+        <segue reference="eli-IL-UFh"/>
         <segue reference="hRy-Hq-Ldm"/>
     </inferredMetricsTieBreakers>
     <resources>

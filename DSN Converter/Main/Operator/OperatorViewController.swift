@@ -47,7 +47,7 @@ class OperatorViewController: UIViewController,UITableViewDelegate,UITableViewDa
         tableView.deselectRow(at: indexPath, animated: true)
 
         let operatorsPhone = operatorsData[indexPath.row].phoneNumber.replacingOccurrences(of: " ", with: "")
-     
+
         print(operatorsPhone)
       
         if let url = URL(string: "tel://\(operatorsPhone))"), UIApplication.shared.canOpenURL(url) {
@@ -59,9 +59,45 @@ class OperatorViewController: UIViewController,UITableViewDelegate,UITableViewDa
         }
 
     }
+    func tableView(_ tableView: UITableView,
+                       trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // Call action
+        let call = UIContextualAction(style: .normal,
+                                         title: "Call") { [weak self] (action, view, completionHandler) in
+            self?.handleMakeACall(indexValue: indexPath.row)
+                                            completionHandler(true)
+        }
+//        call.backgroundColor = .systemGreen
+        call.image = UIImage(systemName: "phone.circle")
+       
+        // Share action
+        let share = UIContextualAction(style: .normal,
+                                         title: "Share") { [weak self] (action, view, completionHandler) in
+            self?.handleShare(indexValue: indexPath.row)
+                                            completionHandler(true)
+        }
+        share.backgroundColor = .systemBlue
+        return UISwipeActionsConfiguration(actions: [call,share])
+    }
+
+    private func handleMakeACall(indexValue:Int) {
+        let operatorsPhone = operatorsData[indexValue].phoneNumber.replacingOccurrences(of: " ", with: "")
+        if let url = URL(string: "tel://\(operatorsPhone))"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
+
+    private func handleShare(indexValue:Int) {
+        print("Share it")
+    }
 
 
 }
+
 
 
 
