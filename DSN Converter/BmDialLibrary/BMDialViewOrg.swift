@@ -169,14 +169,9 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
     
     @objc private func backspaceTapped(btn: UIButton) {
         let color = textField?.tintColor
-        
-        
         delete()
         if(textField?.text?.isEmpty)!{
             textField?.tintColor = .clear
-            
-            
-            
         }
         else{
             textField?.tintColor = color
@@ -211,20 +206,29 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
             numberTimer?.invalidate()
         }
     }
-    
+
+
     func delete()  {
         UIView.animate(withDuration: 0.2, delay: 0.0, options: [], animations: {
             self.textField?.deleteBackward()
-            
-            if (self.textField?.text?.count)! >= 0 {
-                
-                self.textField?.text = ""
-            }
-            
         }, completion: { (finished: Bool) in
             self.textField?.rightViewMode = (self.textField?.text?.isEmpty)! ? .never : .always
         })
     }
+
+//    func delete()  {
+//        UIView.animate(withDuration: 0.2, delay: 0.0, options: [], animations: {
+//            self.textField?.deleteBackward()
+//
+//            if (self.textField?.text?.count)! >= 0 {
+//
+//                self.textField?.text = ""
+//            }
+//
+//        }, completion: { (finished: Bool) in
+//            self.textField?.rightViewMode = (self.textField?.text?.isEmpty)! ? .never : .always
+//        })
+//    }
     
     func buttonAttTitle(number: String, letter: String) -> NSAttributedString {
         let numberAtt = NSMutableAttributedString.init(string: number, attributes: [NSAttributedString.Key.foregroundColor : TextColor, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 40)!])

@@ -105,7 +105,7 @@ class PhoneCallViewController:
         switchboardImg.isHidden = false
         CallBox.isHidden = true
         
-    
+
         //        floaty.addDragging()
         self.operatorCountries.dataSource = self
         self.operatorCountries.delegate = self
@@ -185,8 +185,8 @@ class PhoneCallViewController:
             CallBox.isHidden = false
         }
         
-     
-      }
+
+    }
 
     @IBAction func operatorCallBtn(_ sender: Any) {
         print(operatorNumberVar)
@@ -198,7 +198,7 @@ class PhoneCallViewController:
                 UIApplication.shared.openURL(url)
             }
         }
-    
+
         
     }
 }
@@ -347,7 +347,10 @@ extension PhoneCallViewController {
                 vc.delegate = self
                 let nav = UINavigationController(rootViewController: vc)
                 self.present(nav, animated: true, completion: nil)
-                
+
+                //
+
+
             }
         } else {
             // Fallback on earlier versions
@@ -378,6 +381,7 @@ extension PhoneCallViewController {
         self.view.addSubview(floaty)
 
     }
+    func contactViewController(_ viewController: CNContactViewController, didCompleteWith contact: CNContact?) { self.dismiss(animated: true, completion: nil) }
     func GetDateAndTime() {
         //Get the time and Date
         //Date
