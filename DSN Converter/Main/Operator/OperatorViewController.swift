@@ -30,19 +30,13 @@ class OperatorViewController: UIViewController,UITableViewDelegate,UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         if let cell = operatorsTableView.dequeueReusableCell(withIdentifier: "operatorsSegue",for: indexPath) as? OperatorTableViewCell {
-
-
             cell.countryLbl!.text = operatorsData[indexPath.row].operator
-
             cell.phoneLbl!.text =  operatorsData[indexPath.row].phoneNumber
-
-
             return cell
         }
         return UITableViewCell()
-
-
     }
+    // Tap to call
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
@@ -67,17 +61,18 @@ class OperatorViewController: UIViewController,UITableViewDelegate,UITableViewDa
             self?.handleMakeACall(indexValue: indexPath.row)
                                             completionHandler(true)
         }
-//        call.backgroundColor = .systemGreen
+        call.backgroundColor = .systemBlue
         call.image = UIImage(systemName: "phone.circle")
-       
+
         // Share action
         let share = UIContextualAction(style: .normal,
                                          title: "Share") { [weak self] (action, view, completionHandler) in
             self?.handleShare(indexValue: indexPath.row)
                                             completionHandler(true)
         }
-        share.backgroundColor = .systemBlue
-        return UISwipeActionsConfiguration(actions: [call,share])
+        share.backgroundColor = .systemGray
+        share.image = UIImage(systemName:"square.and.arrow.up.circle")
+        return UISwipeActionsConfiguration(actions: [share,call])
     }
 
     private func handleMakeACall(indexValue:Int) {
@@ -92,7 +87,13 @@ class OperatorViewController: UIViewController,UITableViewDelegate,UITableViewDa
     }
 
     private func handleShare(indexValue:Int) {
-        print("Share it")
+        let operatorsPhone = operatorsData[indexValue].phoneNumber.replacingOccurrences(of: " ", with: "")
+        let countryOperator = operatorsData[indexValue].operator
+
+        let Text =  "Switchboard Operator: \(operatorsPhone)\n Operator Location: \(countryOperator)\n\n Download DSN Europe free on the App Store."
+        let activyVC = UIActivityViewController(activityItems:[Text], applicationActivities: nil)
+        self.present(activyVC,animated: true,completion: nil)
+
     }
 
 
