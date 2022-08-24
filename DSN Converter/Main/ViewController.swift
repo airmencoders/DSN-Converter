@@ -12,7 +12,7 @@ import PMAlertController
 import CoreData
 import ContactsUI
 import CoreTelephony
-
+import StoreKit
 // Global Variables
 var dnsCommercialGlobal = " "
 var dnsCommercialGlobalNoLbl = " "
@@ -31,6 +31,15 @@ class ViewController: UIViewController,CNContactViewControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Display background color depeding what is saved in value
+
+        let visitedView = UserDefaults.standard.integer(forKey: "visitedViewDev2")
+
+           if visitedView > 3 && visitedView < 5{
+               print("Visisted in ViewDidLoad\(visitedView)")
+               SKStoreReviewController.requestReview()
+           }
+
+
         if let value = UserDefaults.standard.value(forKey: "dsnService"){
             if  0 == value as! Int {
                 self.view.backgroundColor = #colorLiteral(red: 0.1045187339, green: 0.2495509088, blue: 0.4657436013, alpha: 1)
@@ -72,6 +81,7 @@ class ViewController: UIViewController,CNContactViewControllerDelegate{
     }
     //MARK: ViewDidAppear
     override func viewDidAppear(_ animated: Bool) {
+
 
         if let value = UserDefaults.standard.value(forKey: "dsnService"){
             if  0 == value as! Int {

@@ -11,7 +11,7 @@ import CoreData
 import ContactsUI
 import PMAlertController
 import Floaty
-
+import StoreKit
 
 class PhoneCallViewController:
     UIViewController,CNContactViewControllerDelegate, FloatyDelegate,UIPickerViewDelegate, UIPickerViewDataSource{
@@ -82,6 +82,9 @@ class PhoneCallViewController:
     @IBOutlet weak var operatorCountries: UIPickerView!
     @IBOutlet weak var UCCLbl: UILabel!
     @IBOutlet weak var countryLbl: UILabel!
+
+    let defaults = UserDefaults.standard
+
     //Decodable Struct - JSON
     struct DSNData: Decodable {
         let prefix:Int
@@ -98,14 +101,11 @@ class PhoneCallViewController:
     //ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         operatorNumber.text = ""
         taporSelectLbl.text = "Select an Operator to call"
         operatorLbl.text = ""
         switchboardImg.isHidden = false
         CallBox.isHidden = true
-        
-
         //        floaty.addDragging()
         self.operatorCountries.dataSource = self
         self.operatorCountries.delegate = self
@@ -125,12 +125,19 @@ class PhoneCallViewController:
             ReadDataJSON(DsnPrefix: areaCode, DsnPostfix: phoneNumber)
             //Display Flotting Button in UI
             layoutFAB()
-
         }
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+
+
+     
     }
 
     @IBAction func MakeACall(_ sender: Any) {
         Call()
+        //Reviews counter
+        UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "visitedViewDev2")+1, forKey: "visitedViewDev2")
     }
     
     @IBAction func Close(_ sender: Any) {
