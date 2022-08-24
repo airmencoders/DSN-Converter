@@ -7,6 +7,7 @@
 
 import UIKit
 import AudioToolbox
+import PMAlertController
 var itsSevenGlobal = false
 class BMDialViewOrg: UIView, UITextFieldDelegate {
     
@@ -50,7 +51,7 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
         backspaceButton.setBackgroundImage(image, for: UIControl.State.normal)
         backspaceButton.addTarget(self, action: #selector(backspaceTapped), for: UIControl.Event.touchUpInside)
         
-    
+
         
         
         let longPress = UILongPressGestureRecognizer.init(target: self, action: #selector(longPressedDeleteBtn))
@@ -135,21 +136,24 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
         //Adds "-" to the textfield
         if textField?.text?.count == 7 {
             
-          itsSevenGlobal = true
+            itsSevenGlobal = true
             print("ITs 7")
-            
             let phone = textField?.text!
             textField?.text!.insert("-", at: (phone?.index((phone?.startIndex)!,offsetBy:3))!);
-            
-            
-        }else {
-            
-            print("More than 7")
-            
+
+        }else if (textField?.text?.count)! > 8{
+
+
         }
-        
-        
-        
+    }
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("Its hahhpeinig")
+        let maxLength = 8
+        let currentString: NSString = (textField.text ?? "") as NSString
+        let newString: NSString =  currentString.replacingCharacters(in: range, with: string) as NSString
+
+        return newString.length <= maxLength
     }
     
     @objc private func call(btn: UIButton) {
@@ -168,6 +172,7 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
     }
     
     @objc private func backspaceTapped(btn: UIButton) {
+        print("BackPRess")
         let color = textField?.tintColor
         delete()
         if(textField?.text?.isEmpty)!{
@@ -210,26 +215,16 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
 
     func delete()  {
         UIView.animate(withDuration: 0.2, delay: 0.0, options: [], animations: {
+            //Adds the cursor position to the end of the TextField
+            let endPosition: UITextPosition = self.textField!.endOfDocument
+            self.textField?.selectedTextRange = self.textField?.textRange(from: endPosition, to: endPosition)
             self.textField?.deleteBackward()
+            print(self.textField?.text?.count as Any)
+
         }, completion: { (finished: Bool) in
             self.textField?.rightViewMode = (self.textField?.text?.isEmpty)! ? .never : .always
         })
     }
-
-//    func delete()  {
-//        UIView.animate(withDuration: 0.2, delay: 0.0, options: [], animations: {
-//            self.textField?.deleteBackward()
-//
-//            if (self.textField?.text?.count)! >= 0 {
-//
-//                self.textField?.text = ""
-//            }
-//
-//        }, completion: { (finished: Bool) in
-//            self.textField?.rightViewMode = (self.textField?.text?.isEmpty)! ? .never : .always
-//        })
-//    }
-    
     func buttonAttTitle(number: String, letter: String) -> NSAttributedString {
         let numberAtt = NSMutableAttributedString.init(string: number, attributes: [NSAttributedString.Key.foregroundColor : TextColor, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 40)!])
         if(!letter.isEmpty){
