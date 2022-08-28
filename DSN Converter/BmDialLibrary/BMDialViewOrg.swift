@@ -14,10 +14,15 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
     
     
     var callTapped: ((String)->())?
-    var CallButtonColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
-    var TextColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
-    var BorderColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
-    var CursorColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
+    var CallButtonColor = UIColor.systemGreen
+    var TextColor = UIColor(named: "DarkMode")
+    var BackgrounColor = UIColor.systemGray4
+    var CursorColor = UIColor.systemBlue
+
+//    var CallButtonColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
+//    var TextColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
+//    var BorderColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
+//    var CursorColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
     
     private var padView: UIView?
     private var textField: UITextField?
@@ -98,7 +103,7 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
         let callBtn: UIButton = UIButton()
         callBtn.addTarget(self, action: #selector(call), for: UIControl.Event.touchUpInside)
         callBtn.titleLabel?.font = UIFont.init(name: "HelveticaNeue-Thin", size: 20)
-        callBtn.setImage(UIImage.init(named: "phoneIcon"), for: UIControl.State.normal)
+        callBtn.setImage(UIImage.init(named: "phoneBar"), for: UIControl.State.normal)
         callBtn.backgroundColor = CallButtonColor
         callBtn.frame = CGRect.init(x: ((padView?.frame.size.width)!-width)/2, y: y + width + yGap, width: width, height: width)
         callBtn.layer.cornerRadius = callBtn.frame.width/2
@@ -109,13 +114,14 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
     }
     
     private func createButton(frame: CGRect) -> UIButton {
-        let btn: UIButton = UIButton.init(type: UIButton.ButtonType.system)
+        let btn: UIButton = UIButton.init(type: UIButton.ButtonType.roundedRect)
         btn.addTarget(self, action: #selector(buttonTapped), for: UIControl.Event.touchUpInside)
         btn.frame = frame;
         btn.titleLabel?.textAlignment = NSTextAlignment.center
         btn.titleLabel?.numberOfLines = 0
         btn.layer.cornerRadius = frame.width/2
-        btn.layer.borderColor = BorderColor.cgColor
+        btn.layer.borderColor = BackgrounColor.cgColor
+//        btn.layer.backgroundColor = BackgrounColor.cgColor
         btn.layer.borderWidth = 2
         btn.layer.masksToBounds = true
         self.padView?.addSubview(btn)

@@ -33,26 +33,26 @@ class FavoriteViewController: UIViewController,UITableViewDelegate,UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let value = UserDefaults.standard.value(forKey: "dsnService"){
-            
-            if  0 == value as! Int {
-                
-           
-                self.view.backgroundColor = #colorLiteral(red: 0.1045187339, green: 0.2495509088, blue: 0.4657436013, alpha: 1)
-                
-                
-            }else if 1 == value as! Int{
-                self.view.backgroundColor = #colorLiteral(red: 0.1572559077, green: 0.4129788669, blue: 0.1819413052, alpha: 1)
-       
-                
-                
-            }else if 2 == value as! Int{
-                
-                self.view.backgroundColor = #colorLiteral(red: 0.1620297223, green: 0.4949354393, blue: 0.7333416692, alpha: 1)
-       
-            }
-            
-        }
+//        if let value = UserDefaults.standard.value(forKey: "dsnService"){
+//            
+//            if  0 == value as! Int {
+//                
+//           
+//                self.view.backgroundColor = #colorLiteral(red: 0.1045187339, green: 0.2495509088, blue: 0.4657436013, alpha: 1)
+//                
+//                
+//            }else if 1 == value as! Int{
+//                self.view.backgroundColor = #colorLiteral(red: 0.1572559077, green: 0.4129788669, blue: 0.1819413052, alpha: 1)
+//       
+//                
+//                
+//            }else if 2 == value as! Int{
+//                
+//                self.view.backgroundColor = #colorLiteral(red: 0.1620297223, green: 0.4949354393, blue: 0.7333416692, alpha: 1)
+//       
+//            }
+//            
+//        }
         
         
         self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(self.tick) , userInfo: nil, repeats: true)

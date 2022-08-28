@@ -12,20 +12,20 @@ class OnBoardViewController: UIViewController {
     @IBOutlet var skipButton: UIButton!
     
     fileprivate let items = [
-        OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "phone-call-3"),
+        OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "OnBoardPhone"),
                            title: "DSN Converter",
-                           description: "DSN phone numbers are part of our everyday life as military members. Sometimes not having access to the right conversion outside of the office can be very frustrating. With DSN Converter you can dial a DSN number right from your cell phone and our algorithm will make the necessary conversion to a commercial phone number.",
+                           description:"As military members, we use DSN phone numbers every day. Sometimes having access to the right conversion can be challenging. Especially for TDY or Deployed personnel which might not have access to the internet. If they do, the process of searching online for the correct conversion can be time consuming, which can lead to mission impact. With DSN converter, you can dial a DSN number right from your cell phone, our algorithm will make the necessary conversion to a commercial phone number.",
                            pageIcon: #imageLiteral(resourceName: "phone-call-4"),
-                           color: UIColor(red: 0.1045187339, green: 0.2495509088, blue: 0.4657436013, alpha: 1),
-                           titleColor: UIColor.white, descriptionColor: UIColor.white, titleFont: titleFont, descriptionFont: descriptionFont),
+                           color: UIColor.systemBackground,
+                           titleColor: UIColor.label, descriptionColor: UIColor.label, titleFont: titleFont, descriptionFont: descriptionFont),
         
     
         OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "gdpr"),
                            title: "Disclaimer",
                            description: "DO NOT DISCUSS CLASSIFIED INFORMATION.\n\n Please be aware that DSN Converter uses your commercial cell service to make phone calls. Make sure not to discuss any classified information over an unsecured line.\n",
                            pageIcon: #imageLiteral(resourceName: "phone-call-4"),
-                           color: UIColor(red: 0.1045187339, green: 0.2495509088, blue: 0.4657436013, alpha: 1),
-                           titleColor: UIColor.white, descriptionColor: UIColor.white, titleFont: titleFont, descriptionFont: descriptionFont),
+                           color: UIColor.systemBackground,
+                           titleColor: UIColor.label, descriptionColor: UIColor.label, titleFont: titleFont, descriptionFont: descriptionFont),
         OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "gdpr"),
                            title: "Disclaimer",
                            description: "DO NOT DISCUSS CLASSIFIED INFORMATION.\n\n Please be aware that DSN Converter uses your commercial cell service to make phone calls. Make sure not to discuss any classified information over an unsecured line.\n",
