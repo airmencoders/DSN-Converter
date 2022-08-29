@@ -83,7 +83,7 @@ extension OnBoardViewController: PaperOnboardingDelegate {
     func onboardingWillTransitonToIndex(_ index: Int) {
         skipButton.isHidden = index == 2 ? false : true
         
-        if index == 2 {
+        if index == 1 {
             performSegue(withIdentifier: "ChooseBranchSegue", sender: nil)
             
         }

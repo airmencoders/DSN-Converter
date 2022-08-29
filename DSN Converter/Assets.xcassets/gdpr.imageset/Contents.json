@@ -15,7 +15,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "notice.png",
+      "filename" : "gdpr.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -26,7 +26,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "gdpr-1.png",
+      "filename" : "agreement-3.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

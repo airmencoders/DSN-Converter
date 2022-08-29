@@ -138,6 +138,8 @@ class PhoneCallViewController:
         Call()
         //Reviews counter
         UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "visitedViewDev2")+1, forKey: "visitedViewDev2")
+
+        print("Call Button Pressed")
     }
     
     @IBAction func Close(_ sender: Any) {
