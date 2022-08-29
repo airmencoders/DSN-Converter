@@ -479,7 +479,7 @@ Be aware that DSN Converter uses your commercial cell service to make phone call
                                 <rect key="frame" x="0.0" y="138" width="390" height="603"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nxp-HA-R6e">
-                                        <rect key="frame" x="0.0" y="8" width="390" height="689"/>
+                                        <rect key="frame" x="0.0" y="8" width="390" height="595"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentSegue" rowHeight="70" id="CvF-oe-OD9" customClass="RecentTableViewCell" customModule="DSN_Converter" customModuleProvider="target">
@@ -579,7 +579,7 @@ Be aware that DSN Converter uses your commercial cell service to make phone call
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Nxp-HA-R6e" secondAttribute="bottom" constant="-94" id="eij-qQ-bj0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nxp-HA-R6e" secondAttribute="bottom" id="eij-qQ-bj0"/>
                                     <constraint firstItem="Nxp-HA-R6e" firstAttribute="leading" secondItem="hbA-b3-7QG" secondAttribute="leading" id="fRj-Fe-BNX"/>
                                     <constraint firstAttribute="trailing" secondItem="Nxp-HA-R6e" secondAttribute="trailing" id="icc-VL-UVU"/>
                                     <constraint firstItem="Nxp-HA-R6e" firstAttribute="centerX" secondItem="Njc-lv-r3V" secondAttribute="centerX" id="qtd-IK-C9t"/>
@@ -607,7 +607,7 @@ Be aware that DSN Converter uses your commercial cell service to make phone call
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5V4-N7-zYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="789.85507246376812" y="180.80357142857142"/>
+            <point key="canvasLocation" x="789.23076923076917" y="180.56872037914692"/>
         </scene>
         <!--Report View Controller-->
         <scene sceneID="TQK-pN-AFd">
@@ -1915,10 +1915,10 @@ Be aware that DSN Converter uses your commercial cell service to make phone call
                                 <rect key="frame" x="0.0" y="265" width="390" height="495"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.029999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZkZ-at-HXh">
-                                        <rect key="frame" x="0.0" y="239" width="390" height="256"/>
+                                        <rect key="frame" x="0.0" y="290.33333333333337" width="390" height="204.66666666666663"/>
                                     </imageView>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3W-ap-r1R">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="239"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="290.33333333333331"/>
                                         <color key="barTintColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <items>
                                             <navigationItem title="DSN Converter - Europe" id="fLQ-Wn-PVg">
@@ -1956,7 +1956,7 @@ Be aware that DSN Converter uses your commercial cell service to make phone call
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hs6-3z-RNu">
-                                        <rect key="frame" x="22" y="245" width="346" height="52"/>
+                                        <rect key="frame" x="22" y="296.33333333333337" width="346" height="0.66666666666668561"/>
                                         <string key="text">                       Upgrade Package:  1- No more Ads. 2- Get Unlimited DSN Lookup. 3- Ability to save the commercial DSN in your Contacts. 4- Ability to save your Favorite lookups. 5- Ability to share your lookups.</string>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
@@ -2329,7 +2329,9 @@ Be aware that DSN Converter uses your commercial cell service to make phone call
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ls-hf-TxH">
                                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
                                                                         <constraints>
+                                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="K2H-Yr-JRG"/>
                                                                             <constraint firstAttribute="height" constant="80" id="KTB-ef-P4O"/>
+                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="Xf1-T6-yjU"/>
                                                                             <constraint firstAttribute="width" constant="374" id="ugL-NV-Adc"/>
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>

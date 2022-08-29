@@ -12,7 +12,7 @@ class OperatorViewController: UIViewController,UITableViewDelegate,UITableViewDa
 
     @IBOutlet weak var operatorsTableView: UITableView!
 
-    let operatorsData:[(operator: String, phoneNumber: String)] = [("🇩🇪 Germany", "+49 6371 471110"), ("🇵🇹 Portugal","+351 295 571110"),("🇬🇧 United Kingdom", "+44 163 8521110"), ("🇮🇹 Italy", "+39 043 4301110"), ("🇹🇷 Turkey", "+90 322 3161110"), ("🇪🇸Spain","+34 955 848111"),("🇺🇸 United States","+1 707 424 1110")]
+    let operatorsData:[(operator: String, phoneNumber: String)] = [("🇩🇪 Germany", "+49 6371 471110"), ("🇮🇹 Italy", "+39 043 4301110"), ("🇵🇹 Portugal","+351 295 571110"),("🇪🇸Spain","+34 955 848111"),("🇹🇷 Turkey", "+90 322 3161110"),("🇬🇧 United Kingdom", "+44 163 8521110"), ("🇺🇸 United States","+1 707 424 1110")]
 
 
     override func viewDidLoad() {
