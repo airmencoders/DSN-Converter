@@ -14,7 +14,7 @@ class OnBoardViewController: UIViewController {
     fileprivate let items = [
         OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "OnBoardPhone"),
                            title: "DSN Converter",
-                           description:"As military members, we use DSN phone numbers every day. Sometimes having access to the right conversion can be challenging. Especially for TDY or Deployed personnel which might not have access to the internet. If they do, the process of searching online for the correct conversion can be time consuming, which can lead to mission impact. With DSN converter, you can dial a DSN number right from your cell phone, our algorithm will make the necessary conversion to a commercial phone number.",
+                           description:"As military members, we use DSN phone numbers every day. Sometimes having access to the right conversion can be challenging. Especially for TDY or Deployed personnel which might not have access to the internet. If they do, the process of searching online for the correct conversion can be time consuming, which can lead to mission impact. With DSN converter, you can dial a DSN number right from your cell phone. Our algorithm will make the necessary conversion to a commercial phone number.",
                            pageIcon: #imageLiteral(resourceName: "phone-call-4"),
                            color: UIColor.systemBackground,
                            titleColor: UIColor.label, descriptionColor: UIColor.label, titleFont: titleFont, descriptionFont: descriptionFont),

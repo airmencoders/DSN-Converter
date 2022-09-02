@@ -141,15 +141,16 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
         
         //Adds "-" to the textfield
         if textField?.text?.count == 7 {
-            
-            itsSevenGlobal = true
-            print("ITs 7")
-            let phone = textField?.text!
-            textField?.text!.insert("-", at: (phone?.index((phone?.startIndex)!,offsetBy:3))!);
+            // If the text does not contain "-" Do nothing
+            if ((textField?.text?.contains("-")) == false) {
 
-        }else if (textField?.text?.count)! > 8{
-
-
+               //
+                print("- No Here")
+                itsSevenGlobal = true
+                print("ITs 7")
+                let phone = textField?.text!
+                textField?.text!.insert("-", at: (phone?.index((phone?.startIndex)!,offsetBy:3))!);
+            }
         }
     }
 
@@ -232,9 +233,9 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
         })
     }
     func buttonAttTitle(number: String, letter: String) -> NSAttributedString {
-        let numberAtt = NSMutableAttributedString.init(string: number, attributes: [NSAttributedString.Key.foregroundColor : TextColor, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 40)!])
+        let numberAtt = NSMutableAttributedString.init(string: number, attributes: [NSAttributedString.Key.foregroundColor : TextColor!, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 40)!])
         if(!letter.isEmpty){
-            let letterAtt = NSAttributedString.init(string: "\n" + letter, attributes: [NSAttributedString.Key.foregroundColor : TextColor, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 13)!])
+            let letterAtt = NSAttributedString.init(string: "\n" + letter, attributes: [NSAttributedString.Key.foregroundColor : TextColor!, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 13)!])
             numberAtt.append(letterAtt)
         }
         return numberAtt

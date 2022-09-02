@@ -32,7 +32,7 @@ class ViewController: UIViewController,CNContactViewControllerDelegate{
         super.viewDidLoad()
         // Display background color depeding what is saved in value
 
-        let visitedView = UserDefaults.standard.integer(forKey: "visitedViewDev2")
+        let visitedView = UserDefaults.standard.integer(forKey: "visitedViewProd")
 
            if visitedView > 3 && visitedView < 5{
                print("Visisted in ViewDidLoad\(visitedView)")
