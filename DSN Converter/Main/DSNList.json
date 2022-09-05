@@ -1,0 +1,737 @@
+[
+{
+"prefix": 226,
+"number": "+44 1638 52 ",
+"location": "RAF LAKENHEATH",
+"country": "UK",
+"command": "EUCOM"
+},
+{
+"prefix": 235,
+"number": "+44 1895 61",
+"location": "BLENHEIM CRESCENT",
+"country": "UK",
+"command": "EUCOM"
+},
+{
+"prefix": 236,
+"number": "+44 1280 70",
+"location": "RAF CROUGHTON",
+"country": "UK",
+"command": "EUCOM"
+},
+{
+"prefix": 238,
+"number": "+44 1638 54 ",
+"location": "RAF MILDENHALL",
+"country": "UK",
+"command": "EUCOM"
+},
+{
+"prefix": 247,
+"number": "+44 1285 71 ",
+"location": "RAF FAIRFORD",
+"country": "UK",
+"command": "EUCOM"
+},
+{
+"prefix": 268,
+"number": "+44 1480 84",
+"location": "RAF ALCONBURY/MOLESWORTH",
+"country": "UK",
+"command": "EUCOM"
+},
+{
+"prefix": 250,
+"number": "+44 1420 40",
+"location": "OAKHANGER",
+"country": "UK",
+"command": "EUCOM"
+},
+{
+"prefix": 262,
+"number": "+44 1423 77",
+"location": "MENWITH HILL",
+"country": "UK",
+"command": "EUCOM"
+},
+{
+"prefix": 266,
+"number": "+30 282102",
+"location": "NAS SOUDA BAY",
+"country": "GR",
+"command": "EUCOM"
+},
+{
+"prefix": 336,
+"number": "+49 6118 16",
+"location": "WIESBADEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 337,
+"number": "+49 6117 05",
+"location": "WIESBADEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 338,
+"number": "+49 6113 80",
+"location": "WIESBADEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 346,
+"number": "+49 6151 397",
+"location": "WIESBADEN PBX",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 353,
+"number": "+49 9721 96",
+"location": "CONN BARRACKS, SCHWEINFURT",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 354,
+"number": "+49 9721 96",
+"location": "SCHWEINFURT",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 357,
+"number": "+31 046 443",
+"location": "SHINNEN HI-PATH",
+"country": "NL",
+"command": "EUCOM"
+},
+{
+"prefix": 358,
+"number": "+31 1163 ",
+"location": "KLEINE BROGEL, CHIEVRES",
+"country": "NL",
+"command": "EUCOM"
+},
+{
+"prefix": 359,
+"number": "+31 413 33",
+"location": "VOKEL",
+"country": "NL",
+"command": "EUCOM"
+},
+{
+"prefix": 360,
+"number": "+31 046 443",
+"location": "SCHINNEN",
+"country": "NL",
+"command": "EUCOM"
+},
+{
+"prefix": 361,
+"number": "+32 06827",
+"location": "CHIEVRES",
+"country": "BE",
+"command": "EUCOM"
+},
+{
+"prefix": 362,
+"number": "+31 10 459",
+"location": "ROTTERDAM",
+"country": "NL",
+"command": "EUCOM"
+},
+{
+"prefix": 363,
+"number": "+49 6565 61",
+"location": "SPANGDAHLEM VOIP",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 364,
+"number": "+31 45 526",
+"location": "CHIEVRES",
+"country": "BE",
+"command": "EUCOM"
+},
+{
+"prefix": 365,
+"number": "+32 2 707",
+"location": " BRUSSELS",
+"country": "BE",
+"command": "EUCOM"
+},
+{
+"prefix": 366,
+"number": "+32 06532",
+"location": "BRUSSELS",
+"country": "BE",
+"command": "EUCOM"
+},
+{
+"prefix": 367,
+"number": "+32 65 32",
+"location": "BRUSSELS",
+"country": "BE",
+"command": "EUCOM"
+},
+{
+"prefix": 368,
+"number": "+32 02717",
+"location": "BRUSSELS",
+"country": "BE",
+"command": "EUCOM"
+},
+{
+"prefix": 369,
+"number": "+32 2 707",
+"location": "BRUSSELS",
+"country": "BE",
+"command": "EUCOM"
+},
+{
+"prefix": 378,
+"number": "+49 7274 58",
+"location": "GERMERSHEIN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 380,
+"number": "+49 621 730",
+"location": "MANNHEIM ",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 382,
+"number": "+49 621 779",
+"location": "MANNHEIM ",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 420,
+"number": "+49 7118 19",
+"location": "STUTTGART ",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 421,
+"number": "+49 7117 29",
+"location": "MOEHRINGEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 423,
+"number": "+32 06544",
+"location": "SHAPE NATO",
+"country": "BE",
+"command": "EUCOM"
+},
+{
+"prefix": 430,
+"number": "+49 7116 80",
+"location": "VAIHINGEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 431,
+"number": "+49 7031 15",
+"location": "BOEBLINGEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 432,
+"number": "+49 711 680",
+"location": "STUTTGART ",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 433,
+"number": "+49 711 680",
+"location": "EUCOM PBX",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 434,
+"number": "+49 711 686 39",
+"location": "PATCH BARRACKS",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 440,
+"number": "+49 8821 750",
+"location": "GARMISH",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 452,
+"number": "+49 6565 61",
+"location": "SPANGDAHLEM AB",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 456,
+"number": "+49 267 891  ",
+"location": "BUECHEL",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 465,
+"number": "+49 9472 83",
+"location": "HOHENFELS",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 466,
+"number": "+49 9472 83",
+"location": "HOHENFELS",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 467,
+"number": "+49 9841 83",
+"location": "KATTERBACH",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 468,
+"number": "+49 9811 83",
+"location": "ANSBACH",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 469,
+"number": "+49 951 300",
+"location": " BAMBERG",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 472,
+"number": "+49 9645",
+"location": "GRAFENWOEHR",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 473,
+"number": "+49 9802 83",
+"location": "OBERDACHSTAETTEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 474,
+"number": "+49 9641 454",
+"location": "GRAFENWOEHR",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 475,
+"number": "+49 9641 83",
+"location": "GRAFENWOEHR",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 476,
+"number": "+49 9662 83",
+"location": "VILSECK",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 478,
+"number": "+49 6371 405",
+"location": "RAMSTEIN AB",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 479,
+"number": "+49 6371 46",
+"location": "RAMSTEIN AB",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 480,
+"number": "+49 6371 47",
+"location": "RAMSTEIN AB",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 481,
+"number": "+49 6372 842",
+"location": "MIESAU",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 483,
+"number": "+49 631 411",
+"location": "KLEBER KASERNE",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 484,
+"number": "+49 631 413",
+"location": "PANZER KASERNE",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 485,
+"number": "+49 678 36",
+"location": "BAUMHOLDER",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 486,
+"number": "+49 6371 86",
+"location": "LANDSTHUL (LRMC)",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 488,
+"number": "+49 6371 92",
+"location": "LANDSTHUL (LRMC)",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 489,
+"number": "+49 631 536",
+"location": "KAPAUN AS",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 490,
+"number": "+49 6371 86",
+"location": "LANDSTHUL",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 491,
+"number": "+49 631 907",
+"location": "LANDSTHUL ",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 493,
+"number": "+49 631 3406",
+"location": "KAISERSLATERN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 495,
+"number": "+49 6331 86",
+"location": "PIRMASENS",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 496,
+"number": "+49 6302 67",
+"location": "SEMBACH AB",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 520,
+"number": "+49 9472 83",
+"location": "GRAFENWOEHR",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 522,
+"number": "+49 9472 708",
+"location": "GRAFENWOEHR",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 526,
+"number": "+49 9641 70 526",
+"location": "GRAFENWOEHR",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 529,
+"number": "+49 711 550 26",
+"location": "STUTTGART ",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 531,
+"number": "+49 611 143 531",
+"location": "BAUMHOLDER",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 535,
+"number": "+351 295 57 ",
+"location": "LAJES FIELD",
+"country": "PT",
+"command": "EUCOM"
+},
+{
+"prefix": 537,
+"number": "+49 6111 43 537",
+"location": "WIESBADEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 541,
+"number": "+49 6111 43 541",
+"location": "KAISERSLATERN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 542,
+"number": "+49 6111 43 542",
+"location": "KAISERSLATERN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 544,
+"number": "+49 6111 43 544",
+"location": "SEMBACH",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 545,
+"number": "+49 6111 43 545",
+"location": "SEMBACH",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 546,
+"number": "+49 6111 43 546",
+"location": "WIESBADEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 548,
+"number": "+49 6111 43 548",
+"location": "WIESBADEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 549,
+"number": "+49 6111 43 549",
+"location": "SEMBACH",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 552,
+"number": "+49 6111 43 552",
+"location": "SEMBACH",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 569,
+"number": "+49 9641 70 569",
+"location": "GRAFENWOEHR",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 570,
+"number": "+49 6119 774",
+"location": "WIESBADEN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 581,
+"number": "+49 631 411",
+"location": "KAISERSLAUTERN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 583,
+"number": "+49 631 3615",
+"location": "KAISERSLAUTERN",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 590,
+"number": "+49 6371 9464",
+"location": "LANDSTUHL (LRMC)",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 591,
+"number": "+49 611 143 591",
+"location": "STUTTGART ",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 593,
+"number": "+49 611 143 593",
+"location": "STUTTGART ",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 597,
+"number": "+32 06825",
+"location": "CHIEVRES",
+"country": "BE",
+"command": "EUCOM"
+},
+{
+"prefix": 599,
+"number": "+49 9641 70 599",
+"location": "GRAFENWOEHR",
+"country": "GE",
+"command": "EUCOM"
+},
+{
+"prefix": 624,
+"number": "+39 095 56",
+"location": "SIGONELLA",
+"country": "IT",
+"command": "EUCOM"
+},
+{
+"prefix": 626,
+"number": "+39 081 568",
+"location": "NAS GEATA",
+"country": "IT",
+"command": "EUCOM"
+},
+{
+"prefix": 628,
+"number": "+39 081 639",
+"location": "BAGNOLI",
+"country": "IT",
+"command": "EUCOM"
+},
+{
+"prefix": 629,
+"number": "+39 081 811",
+"location": "NAS NAPLES",
+"country": "IT",
+"command": "EUCOM"
+},
+{
+"prefix": 632,
+"number": "+39 0434 30",
+"location": "AVIANO AB",
+"country": "IT",
+"command": "EUCOM"
+},
+{
+"prefix": 633,
+"number": "+39 050 54",
+"location": "CAMP DARBY",
+"country": "IT",
+"command": "EUCOM"
+},
+{
+"prefix": 634,
+"number": "+39 0444 71",
+"location": "VICENZA",
+"country": "IT",
+"command": "EUCOM"
+},
+{
+"prefix": 637,
+"number": "+39 0444 61",
+"location": "VINCENZA",
+"country": "IT",
+"command": "EUCOM"
+},
+{
+"prefix": 672,
+"number": "+90 312 422",
+"location": "ANKARA",
+"country": "TU",
+"command": "EUCOM"
+},
+{
+"prefix": 675,
+"number": "+90 232 462",
+"location": "IZMIR",
+"country": "TU",
+"command": "EUCOM"
+},
+{
+"prefix": 676,
+"number": "+90 322 316",
+"location": "INCIRLIK AB",
+"country": "TU",
+"command": "EUCOM"
+},
+{
+"prefix": 722,
+"number": "+34 955 84",
+"location": "MORON AB",
+"country": "SP",
+"command": "EUCOM"
+},
+{
+"prefix": 727,
+"number": "+34 956 82",
+"location": "NAS ROTA",
+"country": "SP",
+"command": "EUCOM"
+},
+{
+"prefix": 776,
+"number": "+49 9641 83",
+"location": "GRAFENWOEHR",
+"country": "GE",
+"command": "EUCOM"
+}
+]

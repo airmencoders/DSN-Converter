@@ -13,6 +13,7 @@ class SupportTableViewCell: UITableViewCell {
     @IBOutlet weak var dsnNumber: UILabel!
     @IBOutlet weak var locationLbl: UILabel!
     @IBOutlet weak var countryLbl: UILabel!
+    @IBOutlet weak var convertionLbl: UILabel!
     @IBOutlet weak var serviceLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

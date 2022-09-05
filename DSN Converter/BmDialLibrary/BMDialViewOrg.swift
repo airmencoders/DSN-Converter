@@ -7,16 +7,22 @@
 
 import UIKit
 import AudioToolbox
+import PMAlertController
 var itsSevenGlobal = false
 class BMDialViewOrg: UIView, UITextFieldDelegate {
     
     
     
     var callTapped: ((String)->())?
-    var CallButtonColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
-    var TextColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
-    var BorderColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
-    var CursorColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
+    var CallButtonColor = UIColor.systemGreen
+    var TextColor = UIColor(named: "DarkMode")
+    var BackgrounColor = UIColor.systemGray4
+    var CursorColor = UIColor.systemBlue
+
+//    var CallButtonColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
+//    var TextColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
+//    var BorderColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
+//    var CursorColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
     
     private var padView: UIView?
     private var textField: UITextField?
@@ -50,7 +56,7 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
         backspaceButton.setBackgroundImage(image, for: UIControl.State.normal)
         backspaceButton.addTarget(self, action: #selector(backspaceTapped), for: UIControl.Event.touchUpInside)
         
-    
+
         
         
         let longPress = UILongPressGestureRecognizer.init(target: self, action: #selector(longPressedDeleteBtn))
@@ -97,7 +103,7 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
         let callBtn: UIButton = UIButton()
         callBtn.addTarget(self, action: #selector(call), for: UIControl.Event.touchUpInside)
         callBtn.titleLabel?.font = UIFont.init(name: "HelveticaNeue-Thin", size: 20)
-        callBtn.setImage(UIImage.init(named: "phoneIcon"), for: UIControl.State.normal)
+        callBtn.setImage(UIImage.init(named: "phoneBar"), for: UIControl.State.normal)
         callBtn.backgroundColor = CallButtonColor
         callBtn.frame = CGRect.init(x: ((padView?.frame.size.width)!-width)/2, y: y + width + yGap, width: width, height: width)
         callBtn.layer.cornerRadius = callBtn.frame.width/2
@@ -108,13 +114,14 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
     }
     
     private func createButton(frame: CGRect) -> UIButton {
-        let btn: UIButton = UIButton.init(type: UIButton.ButtonType.system)
+        let btn: UIButton = UIButton.init(type: UIButton.ButtonType.roundedRect)
         btn.addTarget(self, action: #selector(buttonTapped), for: UIControl.Event.touchUpInside)
         btn.frame = frame;
         btn.titleLabel?.textAlignment = NSTextAlignment.center
         btn.titleLabel?.numberOfLines = 0
         btn.layer.cornerRadius = frame.width/2
-        btn.layer.borderColor = BorderColor.cgColor
+        btn.layer.borderColor = BackgrounColor.cgColor
+//        btn.layer.backgroundColor = BackgrounColor.cgColor
         btn.layer.borderWidth = 2
         btn.layer.masksToBounds = true
         self.padView?.addSubview(btn)
@@ -134,22 +141,26 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
         
         //Adds "-" to the textfield
         if textField?.text?.count == 7 {
-            
-          itsSevenGlobal = true
-            print("ITs 7")
-            
-            let phone = textField?.text!
-            textField?.text!.insert("-", at: (phone?.index((phone?.startIndex)!,offsetBy:3))!);
-            
-            
-        }else {
-            
-            print("More than 7")
-            
+            // If the text does not contain "-" Do nothing
+            if ((textField?.text?.contains("-")) == false) {
+
+               //
+                print("- No Here")
+                itsSevenGlobal = true
+                print("ITs 7")
+                let phone = textField?.text!
+                textField?.text!.insert("-", at: (phone?.index((phone?.startIndex)!,offsetBy:3))!);
+            }
         }
-        
-        
-        
+    }
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("Its hahhpeinig")
+        let maxLength = 8
+        let currentString: NSString = (textField.text ?? "") as NSString
+        let newString: NSString =  currentString.replacingCharacters(in: range, with: string) as NSString
+
+        return newString.length <= maxLength
     }
     
     @objc private func call(btn: UIButton) {
@@ -168,15 +179,11 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
     }
     
     @objc private func backspaceTapped(btn: UIButton) {
+        print("BackPRess")
         let color = textField?.tintColor
-        
-        
         delete()
         if(textField?.text?.isEmpty)!{
             textField?.tintColor = .clear
-            
-            
-            
         }
         else{
             textField?.tintColor = color
@@ -211,25 +218,24 @@ class BMDialViewOrg: UIView, UITextFieldDelegate {
             numberTimer?.invalidate()
         }
     }
-    
+
+
     func delete()  {
         UIView.animate(withDuration: 0.2, delay: 0.0, options: [], animations: {
+            //Adds the cursor position to the end of the TextField
+            let endPosition: UITextPosition = self.textField!.endOfDocument
+            self.textField?.selectedTextRange = self.textField?.textRange(from: endPosition, to: endPosition)
             self.textField?.deleteBackward()
-            
-            if (self.textField?.text?.count)! >= 0 {
-                
-                self.textField?.text = ""
-            }
-            
+            print(self.textField?.text?.count as Any)
+
         }, completion: { (finished: Bool) in
             self.textField?.rightViewMode = (self.textField?.text?.isEmpty)! ? .never : .always
         })
     }
-    
     func buttonAttTitle(number: String, letter: String) -> NSAttributedString {
-        let numberAtt = NSMutableAttributedString.init(string: number, attributes: [NSAttributedString.Key.foregroundColor : TextColor, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 40)!])
+        let numberAtt = NSMutableAttributedString.init(string: number, attributes: [NSAttributedString.Key.foregroundColor : TextColor!, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 40)!])
         if(!letter.isEmpty){
-            let letterAtt = NSAttributedString.init(string: "\n" + letter, attributes: [NSAttributedString.Key.foregroundColor : TextColor, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 13)!])
+            let letterAtt = NSAttributedString.init(string: "\n" + letter, attributes: [NSAttributedString.Key.foregroundColor : TextColor!, NSAttributedString.Key.font : UIFont.init(name: "HelveticaNeue-Thin", size: 13)!])
             numberAtt.append(letterAtt)
         }
         return numberAtt

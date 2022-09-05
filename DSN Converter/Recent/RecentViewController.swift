@@ -15,7 +15,7 @@ class RecentViewController: UIViewController,UITableViewDelegate,UITableViewData
    
     @IBOutlet weak var RecenttableView: UITableView!
     
-    @IBOutlet weak var backgroundImg: UIImageView!
+
     var dsnCommercialLocal = ""
   
     var dsnRecentDatabase: [NSManagedObject] = []
@@ -32,30 +32,8 @@ class RecentViewController: UIViewController,UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let value = UserDefaults.standard.value(forKey: "dsnService"){
-            
-            if  0 == value as! Int {
-                
-                backgroundImg.image = UIImage(named:"aircraft.png")
-                self.view.backgroundColor = #colorLiteral(red: 0.1045187339, green: 0.2495509088, blue: 0.4657436013, alpha: 1)
-                
-                
-                
-            }else if 1 == value as! Int{
-                self.view.backgroundColor = #colorLiteral(red: 0.1572559077, green: 0.4129788669, blue: 0.1819413052, alpha: 1)
-                backgroundImg.image = UIImage(named:"jeep.png")
-                
-                
-            }else if 2 == value as! Int{
-                
-                self.view.backgroundColor = #colorLiteral(red: 0.1620297223, green: 0.4949354393, blue: 0.7333416692, alpha: 1)
-                backgroundImg.image = UIImage(named:"submarine.png")
-            }
-            
-        }
-        
-        
-        
+
+
          RecenttableView.reloadData()
         
         RecenttableView.delegate = self
@@ -68,24 +46,15 @@ class RecentViewController: UIViewController,UITableViewDelegate,UITableViewData
         let context = appDelegate.persistentContainer.viewContext
         
         let requestProfile = NSFetchRequest<NSFetchRequestResult>(entityName: "Recent")
-        requestProfile.sortDescriptors = [NSSortDescriptor(key:"dateofCall",ascending:true)]
+        requestProfile.sortDescriptors = [NSSortDescriptor(key:"dateofCall",ascending:false)]
+        requestProfile.sortDescriptors = [NSSortDescriptor(key:"timeofCall",ascending:false)]
         requestProfile.returnsObjectsAsFaults = false
-        
-        
-        
         let requestData = NSFetchRequest<NSFetchRequestResult>(entityName: "Recent")
-        
         requestData.returnsObjectsAsFaults = false
-        
-        
         do {
-            
             let results = try context.fetch(requestProfile)
-            
             for result in results as! [NSManagedObject] {
-                
-             
-                
+          
             }
             
             
@@ -142,8 +111,7 @@ class RecentViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Recent")
         fetchRequest.sortDescriptors = [NSSortDescriptor(key:"timeofCall",ascending:false)]
-        
-        
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key:"timeofCall",ascending:false)]
         do {
             dsnRecentDatabase = try managedContext.fetch(fetchRequest)
         } catch let error as NSError {
@@ -226,83 +194,14 @@ class RecentViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         
         if let cell = RecenttableView.dequeueReusableCell(withIdentifier: "RecentSegue",for: indexPath) as? RecentTableViewCell {
-          //  print("Array ContactName")
-         //   print(contactNameArray.count)
-         //   print("Array Phone")
-         //   print(commPhoneArray.count)
-            
-            
             let person = dsnRecentDatabase[indexPath.row]
-            
-            
-            
-            
-            
+
          cell.commercialLbl!.text = person.value(forKeyPath: "dsnPhone")! as? String
            // cell.dsnLbl!.text = person.value(forKeyPath: "dsnPhone")! as? String
            cell.locationLbl!.text = person.value(forKeyPath: "location")! as? String
             cell.timeLbl!.text = person.value(forKeyPath: "timeofCall")! as? String
             cell.dateLbl!.text = person.value(forKeyPath: "dateofCall")! as? String
-            
-            
-          //  let contactTemp = contactDatabase[indexPath.row]
-            
-            
-            
-         //   let recentPhoneRecent = person.value(forKeyPath: "commercialPhone")! as? String
-          //  let contactPhoneContacts = contactTemp.value(forKeyPath: "commercialContact")! as? String
-          //  let nameContacts = contactTemp.value(forKeyPath: "nameContact")! as? String
-            
-          //  print("Recent\(recentPhoneRecent!)")
-          //  print("Contact\(contactPhoneContacts!)")
-           // print("Contact Name:\(nameContacts!)")
-        //    var contactNameTemp = ""
-            //for match in commPhoneArray {
-                
-           //     if commPhoneArray.contains(recentPhoneRecent!){
-                    
-           //         print("its a match \(match)")
-            //      let indexTemp = commPhoneArray.firstIndex(of: match)
-            //      let indexName = contactNameArray.firstIndex(of: match)
-            //        print("At Index\(indexTemp!)")
-            //        print("Name\(indexName!)")
-                    
-            //        cell.commercialLbl!.text = contactTemp.value(forKeyPath: "nameContact")! as? String
-                    
-               //     cell.locationLbl!.text = person.value(forKeyPath: "location")! as? String
-              //      cell.timeLbl!.text = person.value(forKeyPath: "timeofCall")! as? String
-               //     cell.dateLbl!.text = person.value(forKeyPath: "dateofCall")! as? String
-                    
-                    
-              //  }else {
-                    
-                 //   print("its not a match ")
-                    
-            
-               // }
-                
-           // }
-            
-            /*
-            if contactPhoneContacts == recentPhoneRecent {
-                print("Same")
-                cell.commercialLbl!.text = contactTemp.value(forKeyPath: "nameContact")! as? String
-                cell.locationLbl!.text = person.value(forKeyPath: "location")! as? String
-                cell.timeLbl!.text = person.value(forKeyPath: "timeofCall")! as? String
-                cell.dateLbl!.text = person.value(forKeyPath: "dateofCall")! as? String
-           
-            }else {
-               print("No the Same")
-                cell.commercialLbl!.text = person.value(forKeyPath: "commercialPhone")! as? String
-                // cell.dsnLbl!.text = person.value(forKeyPath: "dsnPhone")! as? String
-                cell.locationLbl!.text = person.value(forKeyPath: "location")! as? String
-                cell.timeLbl!.text = person.value(forKeyPath: "timeofCall")! as? String
-                cell.dateLbl!.text = person.value(forKeyPath: "dateofCall")! as? String
-            }
-            
-         */
 
-            
             return cell
         }
         return UITableViewCell()
