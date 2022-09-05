@@ -16,10 +16,10 @@ class OnBoardViewController: UIViewController {
                            title: "DSN Converter",
                            description:"As military members, we use DSN phone numbers every day. Sometimes having access to the right conversion can be challenging. Especially for TDY or Deployed personnel which might not have access to the internet. If they do, the process of searching online for the correct conversion can be time consuming, which can lead to mission impact. With DSN converter, you can dial a DSN number right from your cell phone. Our algorithm will make the necessary conversion to a commercial phone number.",
                            pageIcon: #imageLiteral(resourceName: "phone-call-4"),
-                           color: UIColor.systemBackground,
+                           color: UIColor.systemBlue,
                            titleColor: UIColor.label, descriptionColor: UIColor.label, titleFont: titleFont, descriptionFont: descriptionFont),
         
-    
+
         OnboardingItemInfo(informationImage: #imageLiteral(resourceName: "gdpr"),
                            title: "Disclaimer",
                            description: "DO NOT DISCUSS CLASSIFIED INFORMATION.\n\n Please be aware that DSN Converter uses your commercial cell service to make phone calls. Make sure not to discuss any classified information over an unsecured line.\n",
@@ -64,8 +64,8 @@ class OnBoardViewController: UIViewController {
         }
     }
     @IBAction func Skip(_ sender: Any) {
-        
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "ChooseBranchSegue", sender: nil)
+
     }
 }
 
@@ -73,7 +73,7 @@ class OnBoardViewController: UIViewController {
 extension OnBoardViewController {
     
     @IBAction func skipButtonTapped(_: UIButton) {
-       performSegue(withIdentifier: "ChooseBranchSegue", sender: nil)
+
     }
 }
 
@@ -82,10 +82,10 @@ extension OnBoardViewController: PaperOnboardingDelegate {
     
     func onboardingWillTransitonToIndex(_ index: Int) {
         skipButton.isHidden = index == 2 ? false : true
-        
+
         if index == 1 {
             performSegue(withIdentifier: "ChooseBranchSegue", sender: nil)
-            
+
         }
         
     }
@@ -108,7 +108,7 @@ extension OnBoardViewController: PaperOnboardingDataSource {
     }
     
     func onboardingItemsCount() -> Int {
-        return 3
+        return 2
     }
     
     //    func onboardinPageItemRadius() -> CGFloat {
